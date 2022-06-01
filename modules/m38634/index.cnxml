@@ -1,0 +1,1413 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Two-Dimensional Vectors</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38634</md:content-id>
+  <md:title>Two-Dimensional Vectors</md:title>
+  <md:abstract/>
+  <md:uuid>be565e4e-e908-4fc2-a445-fdc04459eaf1</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1168394862264">
+      <title>Two-Dimensional Vectors</title>
+      <section id="id1168384917634">
+        <title>Determining the Speed of an Airplane Relative to a Stationary Observer</title>
+        <para id="id1168400419386">On occasion objects move within a medium that is itself in motion with respect to an observer. For example, an airplane usually encounters a wind as it flies. The speed of the airplane with respect to a stationary observer situated on the ground will not be the same as the speedometer reading for the plane. In order to calculate the true speed of the plane, it is essential to include the effect due to the wind. In some cases, planes encounter headwinds which will diminish the speed of the plane relative to a stationary observer. I other cases, planes may encounter tail winds which will increase the speed relative to a stationary observer. </para>
+        <para id="id1168396041655">Question 1: Let us consider the example where an airplane is traveling with a speed of 880 km/hr with respect to the air. Suppose the airplane encounters a tailwind of velocity 30 km/hr. What is the resultant velocity of the airplane relative to an observer on the ground?</para>
+        <para id="id1168391584747">This problem can be addressed using the concept of vector addition. We will represent the velocity of the plane relative to the air as the vector <emphasis effect="italics">V</emphasis><sub>1</sub> and that of the tail wind as the vector <emphasis effect="italics">V</emphasis><sub>2</sub>. The velocity of the plane relative to a stationary observer on the ground can be found by performing the vector addition of <emphasis effect="italics">V</emphasis><sub>1</sub> and <emphasis effect="italics">V</emphasis><sub>2</sub>. This addition is accomplished by placing the tail of vector V2 to the head of vector V1. The result, 910 km/m, is shown in Figure 1 (a).</para>
+        <para id="id1168381913289">
+          <figure id="id1168397668784"><media id="id1168397668784_media" alt="">
+              <image mime-type="image/jpg" src="../../media/graphics1-71c3.jpg" id="id1168397668784__onlineimage" height="450" width="600"/>
+            </media>
+          <caption>Combining velocities.</caption></figure>
+        </para>
+        <para id="id1168387857206">Let us now consider a different situation. </para>
+        <para id="id1168390085423">Question 2: Consider the same airplane as in Question 1. However, assume that the airplane is encountering a head wind of 30 km/hr. What is the speed of the plane relative to a stationary observer on the ground?</para>
+        <para id="id1168384424063">In this case, the head wind serves to slow the airplane. The situation is reflected in Figure 1 (b). We note that the vector V2 is directed opposite to that of vector V1 due to the fact that the head wind opposes the motion of the airplane. The resulting speed relative to an observer on the ground is computed as 850 km/hr.</para>
+        <para id="id1168378844125">Now, we will consider a situation in which we must use our knowledge of vectors and trigonometry to find the correct result. </para>
+        <para id="id1168395078923">Question 3: Consider the same airplane as in Question 1. However, assume that the airplane is encountering a cross wind of 30 km/hr. What is the speed of the plane relative to a stationary observer on the ground?</para>
+        <para id="id1168395815999">This situation is depicted in Figure 2. </para>
+        <para id="id1168393256882">
+          <figure id="id1168387889155"><media id="id1168387889155_media" alt="">
+              <image mime-type="image/jpg" src="../../media/graphics2-f947.jpg" id="id1168387889155__onlineimage" height="450" width="600"/>
+            </media>
+          <caption>Adding orthogonal velocities.</caption></figure>
+        </para>
+        <para id="id1168387626502">In this case, the speed of the airplane is represented by the length of the sum of vectors, <emphasis effect="italics">V</emphasis><sub>1</sub> + <emphasis effect="italics">V</emphasis><sub>2</sub>. Using the <emphasis effect="italics">x-y</emphasis> coordinate system shown in the figure, we note that</para>
+        <equation id="id1168395546182">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>V</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>880</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mover accent="true">
+                        <m:mi>x</m:mi>
+                        <m:mo stretchy="false">ˆ</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{1} } ="880"` { hat  {x}}} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168379875087">and</para>
+        <equation id="id1168384424243">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>V</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>30</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mover accent="true">
+                        <m:mi>y</m:mi>
+                        <m:mo stretchy="false">ˆ</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{2} } ="30"` { hat  {y}}} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168388854703">we may write an expression for this sum in vector form as</para>
+        <equation id="id1168392637353">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>V</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:msub>
+                            <m:mi>V</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>880</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mover accent="true">
+                        <m:mi>x</m:mi>
+                        <m:mo stretchy="false">ˆ</m:mo>
+                      </m:mover>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mtext>30</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mover accent="true">
+                        <m:mi>y</m:mi>
+                        <m:mo stretchy="false">ˆ</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{1} } +V rSub { size 8{2} } ="880"` { hat  {x}}`+"30"` { hat  {y}}} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168377823028">To determine the speed of the airplane relative to a stationary observer we must find the magnitude of the vector sum. We can do so by applying the Pythagorean Theorem</para>
+        <equation id="id1168385634520">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mo stretchy="false">∣</m:mo>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>V</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>1</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:msub>
+                                <m:mi>V</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                            </m:mrow>
+                            <m:mo stretchy="false">∣</m:mo>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:msqrt>
+                            <m:mrow>
+                              <m:msup>
+                                <m:mtext>880</m:mtext>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:msup>
+                                <m:mtext>30</m:mtext>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                          </m:msqrt>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>881</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>km</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>hr</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ lline V rSub { size 8{1} } +V rSub { size 8{2} }  rline = sqrt {"880" rSup { size 8{2} } +"30" rSup { size 8{2} } } ="881"` ital "km"/ ital "hr"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168385353462">Thus, we determine speed of the airplane relative to a stationary observer on the ground to be 881 km/hr.</para>
+        <para id="id1168391872112">We note that the heading of the plane has been redirected in light of the cross wind. Let us find the new heading of the plane. We use the tangent function as follows</para>
+        <equation id="id1168387665882">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>tan</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>θ</m:mi>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mtext>30</m:mtext>
+                          <m:mtext>880</m:mtext>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"tan" \( θ \) = {  {"30"}  over  {"880"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168385196356">Applying the inverse tangent leaves us with</para>
+        
+        <equation id="id1168385604805">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>θ</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msup>
+                          <m:mtext>tan</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>341</m:mtext>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:msup>
+                        <m:mtext>953</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{θ="tan" rSup { size 8{ - 1} }  \( 0 "." "341" \) =1 "." "953" rSup { size 8{0} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168395760874">So we conclude the heading of the airplane will be directed 1.953<sup>0</sup> from its initial heading.</para>
+      </section>
+      <section id="id1168390349964">
+        <title>Boat and Trailer on an Inclined Ramp</title>
+        <para id="id1168391597137">Let us now consider another example that will allow us to apply 2-D vectors. Suppose that a force of 750 pounds is required to pull a boat and trailer up a ramp that is inclined at an angle of 20<sup>0</sup> from the horizon. This situation is depicted in Figure 3 (a). Under the assumption of no friction, what is the combined weight of the boat and trailer?</para>
+        <figure id="id1168387739769"><media id="id1168387739769_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics3-f50e.jpg" id="id1168387739769__onlineimage" height="450" width="600"/>
+          </media>
+        <caption>Depiction of a boat on a landing ramp along with a trigonometric description.</caption></figure>
+        <para id="id1168390422068">Let us now use the figure to interpret the vectors shown in Figure 3. The vector 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mover accent="true"><m:mstyle fontstyle="italic"><m:mrow><m:mtext>BA</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">→</m:mo></m:mover></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ widevec  { ital "BA"} } {}</m:annotation></m:semantics></m:math> represents the combined weight of the boat and the trailer. This is the quantity that we need to find. The vector 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mover accent="true"><m:mstyle fontstyle="italic"><m:mrow><m:mtext>BC</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">→</m:mo></m:mover></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ widevec  { ital "BC"} } {}</m:annotation></m:semantics></m:math> represents the force against the ramp. The vector 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mover accent="true"><m:mstyle fontstyle="italic"><m:mrow><m:mtext>AC</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">→</m:mo></m:mover></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ widevec  { ital "AC"} } {}</m:annotation></m:semantics></m:math> which is parallel to the ramp represents the force applied to the boat and trailer. From the problem description we know that it has a magnitude of 750 pounds. We use the fact that this is a right triangle to simplify our efforts.</para>
+        <para id="id1168386009194">We can apply the definition of the sine function to obtain</para>
+        <equation id="id1168393039928">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>sin</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msup>
+                        <m:mtext>20</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mo stretchy="false">∣</m:mo>
+                            <m:mover accent="true">
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>AC</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                              <m:mo stretchy="false">→</m:mo>
+                            </m:mover>
+                            <m:mo stretchy="false">∣</m:mo>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mo stretchy="false">∣</m:mo>
+                            <m:mover accent="true">
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>BA</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                              <m:mo stretchy="false">→</m:mo>
+                            </m:mover>
+                            <m:mo stretchy="false">∣</m:mo>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"sin" \( "20" rSup { size 8{0} }  \) = {  { lline  widevec  { ital "AC"}  rline }  over  { lline  widevec  { ital "BA"}  rline } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168386701577">Substitution leads to the equation</para>
+        <equation id="id1168389937177">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>sin</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msup>
+                        <m:mtext>20</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mtext>750</m:mtext>
+                          <m:mrow>
+                            <m:mo stretchy="false">∣</m:mo>
+                            <m:mover accent="true">
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>BA</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                              <m:mo stretchy="false">→</m:mo>
+                            </m:mover>
+                            <m:mo stretchy="false">∣</m:mo>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"sin" \( "20" rSup { size 8{0} }  \) = {  {"750"}  over  { lline  widevec  { ital "BA"}  rline } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168383819321">We can now solve for the weight of the boat and trailer</para>
+        <equation id="id5625134">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:mover accent="true">
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>BA</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                            <m:mo stretchy="false">→</m:mo>
+                          </m:mover>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mtext>750</m:mtext>
+                          <m:mo stretchy="false">/</m:mo>
+                          <m:mn>0</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>342</m:mtext>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2,</m:mn>
+                      </m:mrow>
+                      <m:mtext>192</m:mtext>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>lbs</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ lline  widevec  { ital "BA"}  rline ="750"/0 "." "342"=2,"192"` ital "lbs"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+      </section>
+      <section id="id1168389559997">
+        <title>Cable Tension for a Hanging Weight</title>
+        <para id="id1168385898625">A 200-pound weight is suspended from a ceiling. The weight is supported by two cables. One cable makes a 20<sup>0</sup> angle away from the vertical and the other a 30<sup>0</sup> angle as shown in Figure 4. Find the tension in each of the support cables.</para>
+        <figure id="id1168387705524"><media id="id1168387705524_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics4-a0d6.jpg" id="id1168387705524__onlineimage" height="450" width="600"/>
+          </media>
+        <caption>Mass suspended from a beam with two cables.</caption></figure>
+        <para id="id1168385333116">Statics is the field of engineering that is used to solve problems of this sort. Because the object does not move, it is said to be static. Another way to look at this, is that the object is at equilibrium. At equilibrium, the forces acting on an object must balance. Otherwise, the object would indeed move. To better analyze the situation, engineers often make use of what is known as a free body diagram. Figure 5 shows the free body diagram related to our problem.</para>
+        <para id="id1168390213924">
+          <figure id="id1168385669256"><media id="id1168385669256_media" alt="">
+              <image mime-type="image/jpg" src="../../media/graphics5-92e4.jpg" id="id1168385669256__onlineimage" height="450" width="600"/>
+            </media>
+          <caption>Free body diagram of mass suspended from a beam with two cables.</caption></figure>
+        </para>
+        <para id="id1168380527016">The free body diagram shows the three forces that act on the object. The Figure also shows the <emphasis effect="italics">x-y</emphasis> coordinate system employed in this solution. The tension in cable 1 can be resolved into its <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis> components and written in vector notation as </para>
+        <equation id="id1168396742922">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>T</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mrow>
+                            <m:mo stretchy="false">∣</m:mo>
+                            <m:msub>
+                              <m:mi>T</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>1</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">∣</m:mo>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>sin</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msup>
+                        <m:mtext>20</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mover accent="true">
+                          <m:mi>x</m:mi>
+                          <m:mo stretchy="false">ˆ</m:mo>
+                        </m:mover>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>cos</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msup>
+                        <m:mtext>20</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mover accent="true">
+                        <m:mi>y</m:mi>
+                        <m:mo stretchy="false">ˆ</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{1} } = -  lline T rSub { size 8{1} }  rline "sin" \( "20" rSup { size 8{0} }  \) ` { hat  {x}}+ lline T rSub { size 8{1} }  rline "cos" \( "20" rSup { size 8{0} }  \) ` { hat  {y}}} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168385265074">Similarly, <emphasis effect="italics">T</emphasis><sub>2</sub> can be written as </para>
+        <equation id="id1168380406856">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>T</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>sin</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msup>
+                        <m:mtext>30</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mover accent="true">
+                          <m:mi>x</m:mi>
+                          <m:mo stretchy="false">ˆ</m:mo>
+                        </m:mover>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>cos</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msup>
+                        <m:mtext>30</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mover accent="true">
+                        <m:mi>y</m:mi>
+                        <m:mo stretchy="false">ˆ</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{2} } = lline T rSub { size 8{2} }  rline "sin" \( "30" rSup { size 8{0} }  \) ` { hat  {x}}+ lline T rSub { size 8{2} }  rline "cos" \( "30" rSup { size 8{0} }  \) ` { hat  {y}}} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168383607060">The weight (<emphasis effect="italics">W</emphasis>) is expressed as </para>
+        <equation id="id1168386739610">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>W</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mtext>200</m:mtext>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mover accent="true">
+                        <m:mi>y</m:mi>
+                        <m:mo stretchy="false">ˆ</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{W= - "200"` { hat  {y}}} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168387711654">The sum of the forces acting on the object must be 0. Thus</para>
+        <equation id="id1168377264795">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>T</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:msub>
+                          <m:mi>T</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mi>W</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{1} } +T rSub { size 8{2} } =W} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168398212594">or</para>
+        <equation id="id1168384246978">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>sin</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msup>
+                        <m:mtext>20</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mover accent="true">
+                          <m:mi>x</m:mi>
+                          <m:mo stretchy="false">ˆ</m:mo>
+                        </m:mover>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>cos</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msup>
+                        <m:mtext>20</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mover accent="true">
+                          <m:mi>y</m:mi>
+                          <m:mo stretchy="false">ˆ</m:mo>
+                        </m:mover>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>sin</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msup>
+                        <m:mtext>30</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mover accent="true">
+                          <m:mi>x</m:mi>
+                          <m:mo stretchy="false">ˆ</m:mo>
+                        </m:mover>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>cos</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msup>
+                        <m:mtext>30</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mover accent="true">
+                          <m:mi>y</m:mi>
+                          <m:mo stretchy="false">ˆ</m:mo>
+                        </m:mover>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mtext>200</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mover accent="true">
+                          <m:mi>y</m:mi>
+                          <m:mo stretchy="false">ˆ</m:mo>
+                        </m:mover>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ -  lline T rSub { size 8{1} }  rline "sin" \( "20" rSup { size 8{0} }  \) ` { hat  {x}}+ lline T rSub { size 8{1} }  rline "cos" \( "20" rSup { size 8{0} }  \) ` { hat  {y}}+ lline T rSub { size 8{2} }  rline "sin" \( "30" rSup { size 8{0} }  \) ` { hat  {x}}+ lline T rSub { size 8{2} }  rline "cos" \( "30" rSup { size 8{0} }  \) ` { hat  {y}} - "200"` { hat  {y}}=0} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168380093466">This problem can be simplified by writing an equation for solely the <emphasis effect="italics">x</emphasis>-component</para>
+        <equation id="id1168377552421">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>sin</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msup>
+                        <m:mtext>20</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>sin</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msup>
+                        <m:mtext>30</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ -  lline T rSub { size 8{1} }  rline "sin" \( "20" rSup { size 8{0} }  \) `+ lline T rSub { size 8{2} }  rline "sin" \( "30" rSup { size 8{0} }  \) =0} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id5260009">We can do the same for the y-component</para>
+        
+        
+        <equation id="id1168390298063">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">∣</m:mo>
+                        <m:msub>
+                          <m:mi>T</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">∣</m:mo>
+                      </m:mrow>
+                      <m:mtext>cos</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msup>
+                        <m:mtext>20</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>cos</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msup>
+                        <m:mtext>30</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mtext>200</m:mtext>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ lline T rSub { size 8{1} }  rline "cos" \( "20" rSup { size 8{0} }  \) + lline T rSub { size 8{2} }  rline "cos" \( "30" rSup { size 8{0} }  \)  - "200"`=0} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168389149016">We begin by substituting in for the trigonometric function values to yield the following set of equations</para>
+        <equation id="id1168390976290">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>342</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>5</m:mn>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ - 0 "." "342"` lline T rSub { size 8{1} }  rline +0 "." 5` lline T rSub { size 8{2} }  rline =0} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168389933678">and</para>
+        <equation id="id1168386285122">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>940</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>866</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>200</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{0 "." "940"` lline T rSub { size 8{1} }  rline +0 "." "866"` lline T rSub { size 8{2} }  rline ="200"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168387961258">First, we find</para>
+        <equation id="id1168384702376">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>684</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mo stretchy="false">∣</m:mo>
+                        <m:msub>
+                          <m:mi>T</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">∣</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ lline T rSub { size 8{2} }  rline =0 "." "684"` lline T rSub { size 8{1} }  rline } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168397670438">This expression can then be substituted into the other equation</para>
+        <equation id="id1525643">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>940</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>866</m:mtext>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>684</m:mtext>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>200</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{0 "." "940"` lline T rSub { size 8{1} }  rline +0 "." "866"` \( 0 "." "684" \) ` lline T rSub { size 8{1} }  rline ="200"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168377924999">This leads to the solution</para>
+        <equation id="id1168388288475">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>130</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>5</m:mn>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>lbs</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ lline T rSub { size 8{1} }  rline ="130" "." 5` ital "lbs"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168388279930">Next, we solve for the other variable</para>
+        <equation id="id1168385613992">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>684</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:msub>
+                            <m:mi>T</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>684</m:mtext>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mtext>130</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>5</m:mn>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>89</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>3</m:mn>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>lbs</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ lline T rSub { size 8{2} }  rline =0 "." "684"` lline T rSub { size 8{1} }  rline =0 "." "684"` \( "130" "." 5 \) ="89" "." 3` ital "lbs"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168383145628">So we conclude that the tension in the cables are 130.5 lbs and 89.3 lbs respectively.</para>
+      </section>
+      <section id="id1168387931028">
+        <title>Exercises</title>
+        <list id="id1168393099774" list-type="enumerated" number-style="arabic">
+          <item>A load is of mass 150 kg is situated atop a moving dolly. A force with a magnitude of 15 Newtons is applied at an angle of 30<sup>0</sup> with respect to the horizontal. Resolve the force into its <emphasis effect="italics">x-</emphasis> and <emphasis effect="italics">y-</emphasis> components. </item>
+          <item>A ship travels 300 miles due East, then 700 miles North of due East. Sketch the geometry of the situation. Be sure to include all angles in your sketch. In all, how far does the ship travel on its voyage?</item>
+          <item>A small airplane travels at a velocity of 320 km/hr at an angle that is 40<sup>0</sup> South of East. The airplane ecounters a wind whose speed is 25 km/hr. (a) If the wind travels in a direction from West to East, what is the resulting speed and direction of the airplane? (b) Repeat for a 25 km/hr wind directed from East to West. (c) Repeat for a 25 km/hr wind directed from North to South. (d) Repeat for a 25 km/hr wind directed from South to North.</item>
+          <item>A 50 kg mass is suspended by two cables of equal length from a beam. Each cable makes a 450 angle with the horizontal beam. Sketch a free body diagram that represents the situation. Determine the tension in each cable.</item>
+          <item>A complex number has two components. One component is real while the other is imaginary. A complex number can be represented as a two-dimensional vector using what is known as the complex plane. The complex plane is a special plane whose abscissa is use to specify the real part of the complex number and whose ordinate is used to specify the imaginary part of the complex number. Consider the complex number 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">+</m:mo><m:mi>i</m:mi></m:mrow></m:mrow><m:mi/><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z=4+i`6} {}</m:annotation></m:semantics></m:math>. This complex number is shown as a vector in the complex plane in the figure below. The symbol <emphasis effect="italics">M</emphasis> represents the magnitude of the complex number and θ represents the angle or argument of the complex number. (a) Find the magnitude and angle of the complex number 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">+</m:mo><m:mi>i</m:mi></m:mrow></m:mrow><m:mi/><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z=4+i`6} {}</m:annotation></m:semantics></m:math>. (b) Repeat for the complex number 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">−</m:mo><m:mi>i</m:mi></m:mrow></m:mrow><m:mi/><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z=4 - i`6} {}</m:annotation></m:semantics></m:math>. (c) Repeat for the complex number 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>4</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mi>i</m:mi></m:mrow></m:mrow><m:mi/><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z= - 4+i`6} {}</m:annotation></m:semantics></m:math>. (d) Repeat for the complex number 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>4</m:mn></m:mrow><m:mo stretchy="false">−</m:mo><m:mi>i</m:mi></m:mrow></m:mrow><m:mi/><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z= - 4 - i`6} {}</m:annotation></m:semantics></m:math>.</item>
+        </list>
+        <figure id="id1168388012076"><media id="id1168388012076_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics6-8cc8.jpg" id="id1168388012076__onlineimage" height="450" width="600"/>
+          </media>
+        <caption>Complex number representation in the complex plane.</caption></figure>
+      </section>
+    </section>
+  </content>
+</document>

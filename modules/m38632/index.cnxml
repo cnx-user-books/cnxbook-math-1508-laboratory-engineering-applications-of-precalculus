@@ -1,0 +1,2581 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Matrices</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38632</md:content-id>
+  <md:title>Matrices</md:title>
+  <md:abstract/>
+  <md:uuid>e866e43f-0fc3-4bc5-bc62-77a09c2dd9df</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1167914048269">
+      <title>Matrices</title>
+      <section id="id1167919800104">
+        <title>Solution of an Electric Circuit with 2 Unknowns by Matrix Inversion</title>
+        <para id="id1167925536881">Let us apply our knowledge of matrices to assist us in the analysis of an electric circuit. We consider the circuit shown below.</para>
+        <figure id="id1167918638166"><media id="id1167918638166_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics1-7ada.jpg" id="id1167918638166__onlineimage" height="450" width="600"/>
+          </media>
+        <caption>Electric circuit with two node voltages specified.</caption></figure>
+        <para id="id1167912794792">In this example, we wish to solve for the two node voltages <emphasis effect="italics">v</emphasis><sub>1</sub> and <emphasis effect="italics">v</emphasis><sub>2</sub>. Since there are two unknowns in this problem, we must first establish two independent equations that reflect the operation of the circuit. </para>
+        <para id="id1167913973249">Kirchoff’s Current Law tells us that the sum of the currents that enter a node must equal the sum of the currents that leave a node. Let us focus first on node 1. The current that enters node 1 from the left can be stated mathematically as</para>
+        <equation id="id1167913857126">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mtext>10</m:mtext>
+                        <m:mi/>
+                        <m:mi>V</m:mi>
+                        <m:mrow>
+                          <m:mi/>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:msub>
+                            <m:mi>v</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mi/>
+                        <m:mo stretchy="false">Ω</m:mo>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {"10"`V` - v rSub { size 8{1} } }  over  {1` %OMEGA } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167917248575">The current that enters node 1 from the right can be stated as</para>
+        <equation id="id1167913859852">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mi/>
+                        <m:mo stretchy="false">Ω</m:mo>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {v rSub { size 8{2} }  - v rSub { size 8{1} } }  over  {1` %OMEGA } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        
+        <para id="id1167916960259">The current that travels downward from node 1 is</para>
+        <equation id="id1167914108431">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mi/>
+                        <m:mo stretchy="false">Ω</m:mo>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {v rSub { size 8{1} } }  over  {2` %OMEGA } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167918543784">We can arrange the expressions for each of the currents in terms of an equation via Kirchoff’s Current Law</para>
+        <equation id="id1167918624807">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mtext>10</m:mtext>
+                            <m:mi/>
+                            <m:mrow>
+                              <m:mi>V</m:mi>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:msub>
+                                <m:mi>v</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>1</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                            </m:mrow>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                            <m:mo stretchy="false">Ω</m:mo>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>v</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>2</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:msub>
+                              <m:mi>v</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>1</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                            <m:mi/>
+                            <m:mo stretchy="false">Ω</m:mo>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                          <m:mi/>
+                          <m:mo stretchy="false">Ω</m:mo>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {"10"`V - v rSub { size 8{1} } }  over  {1 %OMEGA } } + {  {v rSub { size 8{2} }  - v rSub { size 8{1} } }  over  {1` %OMEGA } } = {  {v rSub { size 8{1} } }  over  {2` %OMEGA } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167914083066">We can combine and rearrange these terms into the equation</para>
+        <equation id="id1167918483097">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>5</m:mn>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>20</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>V</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{5`v rSub { size 8{1} }  - 2`v rSub { size 8{2} } ="20"`V} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167917459912">Now let us turn our attention to node 2. The current entering node 2 from the left is given by the expression</para>
+        <equation id="id1167918133920">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mi/>
+                        <m:mo stretchy="false">Ω</m:mo>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {v rSub { size 8{1} }  - v rSub { size 8{2} } }  over  {1` %OMEGA } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167932772042">The current entering node 2 from the right is 2 A. The current leaving node 2 in a downward direction is</para>
+        <equation id="id1167928745456">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mrow>
+                        <m:mn>4</m:mn>
+                        <m:mi/>
+                        <m:mo stretchy="false">Ω</m:mo>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {v rSub { size 8{2} } }  over  {4` %OMEGA } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167917263540">We proceed to combine these currents via Kirchoff’s Current Law </para>
+        <equation id="id1279153">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>v</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>1</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:msub>
+                              <m:mi>v</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>2</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                            <m:mi/>
+                            <m:mo stretchy="false">Ω</m:mo>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:msub>
+                            <m:mi>v</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mrow>
+                            <m:mn>4</m:mn>
+                            <m:mi/>
+                            <m:mo stretchy="false">Ω</m:mo>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {v rSub { size 8{1} }  - v rSub { size 8{2} } }  over  {1` %OMEGA } } +2`A= {  {v rSub { size 8{2} } }  over  {4` %OMEGA } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167924395519">This equation can be rearranged as</para>
+        <equation id="id7180225">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>4</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>5</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mn>8</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>V</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ - 4`v rSub { size 8{1} } +5`v rSub { size 8{2} } = - 8`V} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167916542031">So the pair of equations that we will use to solve for the two unknowns are</para>
+        <equation id="id1167928628297">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>5</m:mn>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>20</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>V</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{5`v rSub { size 8{1} }  - 2`v rSub { size 8{2} } ="20"`V} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167916913784">and</para>
+        <equation id="id1167921690105">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>4</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>5</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mn>8</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>V</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ - 4`v rSub { size 8{1} } +5`v rSub { size 8{2} } = - 8`V} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167925698008">These equations may be expressed in matrix-vector form as</para>
+        <equation id="id1167917755476">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfenced open="[" close="]">
+                        <m:mtable>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>5</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mn>2</m:mn>
+                                </m:mrow>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mn>4</m:mn>
+                                </m:mrow>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>5</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                        </m:mtable>
+                      </m:mfenced>
+                      <m:mi/>
+                      <m:mfenced open="[" close="]">
+                        <m:mtable>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>v</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mn>1</m:mn>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:msub>
+                                <m:mi>v</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                            </m:mtd>
+                          </m:mtr>
+                        </m:mtable>
+                      </m:mfenced>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfenced open="[" close="]">
+                          <m:mtable>
+                            <m:mtr>
+                              <m:mtd>
+                                <m:mrow>
+                                  <m:mtext>20</m:mtext>
+                                  <m:mrow/>
+                                </m:mrow>
+                              </m:mtd>
+                            </m:mtr>
+                            <m:mtr>
+                              <m:mtd>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mn>8</m:mn>
+                                </m:mrow>
+                              </m:mtd>
+                            </m:mtr>
+                          </m:mtable>
+                        </m:mfenced>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+5 {} #  - 2 {} ##
+ - 4 {} # 5{}
+}  right ]` left [ matrix {
+v rSub { size 8{1} }  {} ##
+v rSub { size 8{2} } 
+}  right ]`= left [ matrix {
+"20" {} ##
+ - 8
+}  right ]} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167935059742">or</para>
+        <equation id="id1167915751026">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>A</m:mi>
+                      <m:mi/>
+                      <m:mfenced open="[" close="]">
+                        <m:mtable>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>v</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mn>1</m:mn>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:msub>
+                                <m:mi>v</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                            </m:mtd>
+                          </m:mtr>
+                        </m:mtable>
+                      </m:mfenced>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfenced open="[" close="]">
+                          <m:mtable>
+                            <m:mtr>
+                              <m:mtd>
+                                <m:mrow>
+                                  <m:mtext>20</m:mtext>
+                                  <m:mrow/>
+                                </m:mrow>
+                              </m:mtd>
+                            </m:mtr>
+                            <m:mtr>
+                              <m:mtd>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mn>8</m:mn>
+                                </m:mrow>
+                              </m:mtd>
+                            </m:mtr>
+                          </m:mtable>
+                        </m:mfenced>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{A` left [ matrix {
+v rSub { size 8{1} }  {} ##
+v rSub { size 8{2} } 
+}  right ]`= left [ matrix {
+"20" {} ##
+ - 8
+}  right ]} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        
+        <equation id="id1167924831678">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>A</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfenced open="[" close="]">
+                        <m:mtable>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>5</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mn>2</m:mn>
+                                </m:mrow>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mn>4</m:mn>
+                                </m:mrow>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>5</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                        </m:mtable>
+                      </m:mfenced>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{A= left [ matrix {
+5 {} #  - 2 {} ##
+ - 4 {} # 5{}
+}  right ]} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1301960">Let us find the inverse of the matrix A. The coefficients of this matrix are given by</para>
+        <equation id="id1167917042883">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>1,1</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>5</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{a rSub { size 8{1,1} } =5} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1167918584146">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>1,2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{a rSub { size 8{1,2} } = - 2} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1167923866230">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2,1</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>4</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{a rSub { size 8{2,1} } = - 4} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1167917222894">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2,2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>5</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{a rSub { size 8{2,2} } =5} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167923212525">The inverse can be found making use of the following formula</para>
+        <equation id="id1167924155561">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mi>A</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mrow>
+                            <m:mtext>det</m:mtext>
+                            <m:mi/>
+                            <m:mi>A</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mfenced open="[" close="]">
+                        <m:mtable>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>a</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mn>2,2</m:mn>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:msub>
+                                    <m:mi>a</m:mi>
+                                    <m:mstyle fontsize="8pt">
+                                      <m:mrow>
+                                        <m:mn>1,2</m:mn>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:msub>
+                                </m:mrow>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:msub>
+                                    <m:mi>a</m:mi>
+                                    <m:mstyle fontsize="8pt">
+                                      <m:mrow>
+                                        <m:mn>2,1</m:mn>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:msub>
+                                </m:mrow>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>a</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mn>1,1</m:mn>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                        </m:mtable>
+                      </m:mfenced>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{A rSup { size 8{ - 1} } = {  {1}  over  {"det"`A} }  left [ matrix {
+a rSub { size 8{2,2} }  {} #  - a rSub { size 8{1,2} }  {} ##
+ - a rSub { size 8{2,1} }  {} # a rSub { size 8{1,1} } {}
+}  right ]} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167921968918">It should be noted that this formula works only with (2 x 2) matrices. For matrices of higher rank, other methods need to be applied.</para>
+        <para id="id1167923946506">For this example, the determinant of A is found as </para>
+        <equation id="id1167914252037">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>det</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>5</m:mn>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>5</m:mn>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mo stretchy="false">(</m:mo>
+                        </m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>4</m:mn>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mrow>
+                        <m:mo stretchy="false">(</m:mo>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mrow>
+                            <m:mtext>25</m:mtext>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mn>8</m:mn>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>17</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"det"`A=` \( 5 \)  \( 5 \)  -  \(  - 4 \)  \(  - 2 \) ="25" - 8="17"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167925536370">We can incorporate this information to express the inverse matrix as</para>
+        <equation id="id1167924660655">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mi>A</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mtext>17</m:mtext>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mfenced open="[" close="]">
+                        <m:mtable>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>5</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>4</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>5</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                        </m:mtable>
+                      </m:mfenced>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{A rSup { size 8{ - 1} } = {  {1}  over  {"17"} } ` left [ matrix {
+5 {} # 2 {} ##
+4 {} # 5{}
+}  right ]} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167926071368">which can be written as</para>
+        <equation id="id1167919651357">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>A</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfenced open="[" close="]">
+                        <m:mtable>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mfrac>
+                                  <m:mn>5</m:mn>
+                                  <m:mtext>17</m:mtext>
+                                </m:mfrac>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mfrac>
+                                  <m:mn>2</m:mn>
+                                  <m:mtext>17</m:mtext>
+                                </m:mfrac>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mfrac>
+                                  <m:mn>4</m:mn>
+                                  <m:mtext>17</m:mtext>
+                                </m:mfrac>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mfrac>
+                                  <m:mn>5</m:mn>
+                                  <m:mtext>17</m:mtext>
+                                </m:mfrac>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                        </m:mtable>
+                      </m:mfenced>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{A rSup { size 8{ - 1} } = left [ matrix {
+ {  {5}  over  {"17"} }  {} #  {  {2}  over  {"17"} }  {} ##
+ {  {4}  over  {"17"} }  {} #  {  {5}  over  {"17"} } {}
+}  right ]} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167914330685">We can apply <emphasis effect="italics">A</emphasis><sup>-1</sup> to solve for the unknowns</para>
+        <equation id="id1167924804020">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>A</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mi/>
+                      <m:mi>A</m:mi>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mfenced open="[" close="]">
+                          <m:mtable>
+                            <m:mtr>
+                              <m:mtd>
+                                <m:mrow>
+                                  <m:msub>
+                                    <m:mi>v</m:mi>
+                                    <m:mstyle fontsize="8pt">
+                                      <m:mrow>
+                                        <m:mn>1</m:mn>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:msub>
+                                  <m:mrow/>
+                                </m:mrow>
+                              </m:mtd>
+                            </m:mtr>
+                            <m:mtr>
+                              <m:mtd>
+                                <m:msub>
+                                  <m:mi>v</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mn>2</m:mn>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                              </m:mtd>
+                            </m:mtr>
+                          </m:mtable>
+                        </m:mfenced>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msup>
+                          <m:mi>A</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mfenced open="[" close="]">
+                        <m:mtable>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mtext>20</m:mtext>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>8</m:mn>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                        </m:mtable>
+                      </m:mfenced>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{A rSup { size 8{ - 1} } `A` left [ matrix {
+v rSub { size 8{1} }  {} ##
+v rSub { size 8{2} } 
+}  right ]=A rSup { size 8{ - 1} } ` left [ matrix {
+"20" {} ##
+ - 8
+}  right ]} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167921900994">Recognizing that <emphasis effect="italics">A</emphasis><sup>-1</sup><emphasis effect="italics">A</emphasis> = <emphasis effect="italics">I</emphasis>, we find that</para>
+        <equation id="id1167918223870">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mfenced open="[" close="]">
+                          <m:mtable>
+                            <m:mtr>
+                              <m:mtd>
+                                <m:mrow>
+                                  <m:msub>
+                                    <m:mi>v</m:mi>
+                                    <m:mstyle fontsize="8pt">
+                                      <m:mrow>
+                                        <m:mn>1</m:mn>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:msub>
+                                  <m:mrow/>
+                                </m:mrow>
+                              </m:mtd>
+                            </m:mtr>
+                            <m:mtr>
+                              <m:mtd>
+                                <m:msub>
+                                  <m:mi>v</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mn>2</m:mn>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                              </m:mtd>
+                            </m:mtr>
+                          </m:mtable>
+                        </m:mfenced>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msup>
+                          <m:mi>A</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mfenced open="[" close="]">
+                          <m:mtable>
+                            <m:mtr>
+                              <m:mtd>
+                                <m:mrow>
+                                  <m:mtext>20</m:mtext>
+                                  <m:mrow/>
+                                </m:mrow>
+                              </m:mtd>
+                            </m:mtr>
+                            <m:mtr>
+                              <m:mtd>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mn>8</m:mn>
+                                </m:mrow>
+                              </m:mtd>
+                            </m:mtr>
+                          </m:mtable>
+                        </m:mfenced>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mtext>17</m:mtext>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mfenced open="[" close="]">
+                        <m:mtable>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>5</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>4</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>5</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                        </m:mtable>
+                      </m:mfenced>
+                      <m:mi/>
+                      <m:mfenced open="[" close="]">
+                        <m:mtable>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mtext>20</m:mtext>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>8</m:mn>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                        </m:mtable>
+                      </m:mfenced>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mtext>17</m:mtext>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mfenced open="[" close="]">
+                        <m:mtable>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mtext>84</m:mtext>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mtext>40</m:mtext>
+                            </m:mtd>
+                          </m:mtr>
+                        </m:mtable>
+                      </m:mfenced>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfenced open="[" close="]">
+                          <m:mtable>
+                            <m:mtr>
+                              <m:mtd>
+                                <m:mrow>
+                                  <m:mn>4</m:mn>
+                                  <m:mtext>.</m:mtext>
+                                  <m:mtext>94</m:mtext>
+                                  <m:mrow/>
+                                </m:mrow>
+                              </m:mtd>
+                            </m:mtr>
+                            <m:mtr>
+                              <m:mtd>
+                                <m:mrow>
+                                  <m:mn>2</m:mn>
+                                  <m:mtext>.</m:mtext>
+                                  <m:mtext>35</m:mtext>
+                                </m:mrow>
+                              </m:mtd>
+                            </m:mtr>
+                          </m:mtable>
+                        </m:mfenced>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+v rSub { size 8{1} }  {} ##
+v rSub { size 8{2} } 
+}  right ]=A rSup { size 8{ - 1} }  left [ matrix {
+"20" {} ##
+ - 8
+}  right ]= {  {1}  over  {"17"} }  left [ matrix {
+5 {} # 2 {} ##
+4 {} # 5{}
+}  right ]` left [ matrix {
+"20" {} ##
+ - 8
+}  right ]`= {  {1}  over  {"17"} } ` left [ matrix {
+"84" {} ##
+"40"
+}  right ]`= left [ matrix {
+4 "." "94" {} ##
+2 "." "35"
+}  right ]} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167928019320">So the node voltages are given as</para>
+        <equation id="id1167916044436">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>4</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>94</m:mtext>
+                      <m:mi/>
+                      <m:mi>V</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{1} } =4 "." "94"`V} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167930836454">and</para>
+        <equation id="id1167927146276">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>35</m:mtext>
+                      <m:mi/>
+                      <m:mi>V</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{2} } =2 "." "35"`V} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+      </section>
+      <section id="id1167917491141">
+        <title>Solution of an Electric Circuit with 3 Unknowns by Gaussian Elimination</title>
+        <para id="id1167913831616">Let us consider the electric circuit that is shown below.</para>
+        <figure id="id1167921896976"><media id="id1167921896976_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics2-f968.jpg" id="id1167921896976__onlineimage" height="450" width="600"/>
+          </media>
+        <caption>Electric circuit with three unknown currents.</caption></figure>
+        <para id="id1167929663323">Suppose that we are interested in determining the value of the three unknown currents <emphasis effect="italics">I</emphasis><sub>1</sub>, <emphasis effect="italics">I</emphasis><sub>2</sub> and <emphasis effect="italics">I</emphasis><sub>3</sub>. In order to do so, we rely upon Ohm’s Law and Kirchoff’s Laws to develop a system of three independent, linear equations. We should note that because we have three unknowns (<emphasis effect="italics">I</emphasis><sub>1</sub>, <emphasis effect="italics">I</emphasis><sub>2</sub> and <emphasis effect="italics">I</emphasis><sub>3</sub>), we must have three independent, linear equations. </para>
+        <equation id="id7031797">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>3</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{1} } +I rSub { size 8{2} } +I rSub { size 8{3} } =0} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1167915900202">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>24</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ - 2`I rSub { size 8{1} } +3`I rSub { size 8{2} } ="24"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1167911202735">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>6</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>3</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ - 3`I rSub { size 8{2} } +6`I rSub { size 8{3} } =0} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167923717577">Let us define the matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>6</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A= left [ matrix {
+1 {} # 1 {} # 1 {} ##
+ - 2 {} # 3 {} # 0 {} ##
+0 {} #  - 3 {} # 6{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para>
+        <para id="id1167911370491">In order to find the unknowns, we must first find the inverse of the matrix A. This can be accomplished using elimination. To start the process, we adjoin the vector [0 24 0]<sup>T</sup> to the matrix A.</para>
+        <equation id="id1261491">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mtable>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>3</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>3</m:mn>
+                              </m:mrow>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>6</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                      </m:mtable>
+                      <m:mi/>
+                      <m:mtable>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mtext>24</m:mtext>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mn>0</m:mn>
+                          </m:mtd>
+                        </m:mtr>
+                      </m:mtable>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{\( matrix {
+1 {} # 1 {} # 1 {} ##
+ - 2 {} # 3 {} # 0 {} ##
+0 {} #  - 3 {} # 6{}
+} ~ matrix {
+0 {} ##
+"24" {} ##
+0
+} \)} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167932132229">Next, we wish to force the left-most constant of row 2 to take on a value of 0. We can do so by multiplying each value in the first row by (-2) and subtracting the result from the corresponding value in row 2. This process yields</para>
+        <equation id="id1167914245752">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mtable>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>5</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>3</m:mn>
+                              </m:mrow>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>6</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                      </m:mtable>
+                      <m:mi/>
+                      <m:mtable>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mtext>24</m:mtext>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mn>0</m:mn>
+                          </m:mtd>
+                        </m:mtr>
+                      </m:mtable>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{\( matrix {
+1 {} # 1 {} # 1 {} ##
+0 {} # 5 {} # 2 {} ##
+0 {} #  - 3 {} # 6{}
+} ~ matrix {
+0 {} ##
+"24" {} ##
+0
+} \)} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167921948166">Now, we divide each term in row 2 by (5) to yield</para>
+        <equation id="id1167913984605">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mtable>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                                <m:mo stretchy="false">/</m:mo>
+                                <m:mn>5</m:mn>
+                              </m:mrow>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>3</m:mn>
+                              </m:mrow>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>6</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                      </m:mtable>
+                      <m:mi/>
+                      <m:mtable>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mtext>24</m:mtext>
+                                <m:mo stretchy="false">/</m:mo>
+                                <m:mn>5</m:mn>
+                              </m:mrow>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mn>0</m:mn>
+                          </m:mtd>
+                        </m:mtr>
+                      </m:mtable>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{\( matrix {
+1 {} # 1 {} # 1 {} ##
+0 {} # 1 {} # 2/5 {} ##
+0 {} #  - 3 {} # 6{}
+} ~ matrix {
+0 {} ##
+"24"/5 {} ##
+0
+} \)} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167935073904">Next, we turn our attention to eliminating the (-3) term in row 3. We can do so by multiplying each term of row 2 by (-3) and subtracting the results from the corresponding terms in row 3. This produces the matrix</para>
+        <equation id="id1167912960209">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mfenced open="(" close=")">
+                      <m:mrow>
+                        <m:mtable>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>0</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mn>2</m:mn>
+                                  <m:mo stretchy="false">/</m:mo>
+                                  <m:mn>5</m:mn>
+                                </m:mrow>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>0</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>0</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mtext>36</m:mtext>
+                                  <m:mo stretchy="false">/</m:mo>
+                                  <m:mn>5</m:mn>
+                                </m:mrow>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                        </m:mtable>
+                        <m:mi/>
+                        <m:mtable>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mn>0</m:mn>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mtext>24</m:mtext>
+                                  <m:mo stretchy="false">/</m:mo>
+                                  <m:mn>5</m:mn>
+                                </m:mrow>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                          <m:mtr>
+                            <m:mtd>
+                              <m:mrow>
+                                <m:mtext>72</m:mtext>
+                                <m:mo stretchy="false">/</m:mo>
+                                <m:mn>5</m:mn>
+                              </m:mrow>
+                            </m:mtd>
+                          </m:mtr>
+                        </m:mtable>
+                      </m:mrow>
+                    </m:mfenced>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ left ( matrix {
+1 {} # 1 {} # 1 {} ##
+0 {} # 1 {} # 2/5 {} ##
+0 {} # 0 {} # "36"/5{}
+} ~ matrix {
+0 {} ##
+"24"/5 {} ##
+"72"/5
+}  right )} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167916802266">We can then divide the terms of row 3 by (36/5) to produce</para>
+        <equation id="id1167924835753">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mtable>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                                <m:mo stretchy="false">/</m:mo>
+                                <m:mn>5</m:mn>
+                              </m:mrow>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                      </m:mtable>
+                      <m:mi/>
+                      <m:mtable>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mtext>24</m:mtext>
+                                <m:mo stretchy="false">/</m:mo>
+                                <m:mn>5</m:mn>
+                              </m:mrow>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mn>2</m:mn>
+                          </m:mtd>
+                        </m:mtr>
+                      </m:mtable>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{\( matrix {
+1 {} # 1 {} # 1 {} ##
+0 {} # 1 {} # 2/5 {} ##
+0 {} # 0 {} # 1{}
+} ~ matrix {
+0 {} ##
+"24"/5 {} ##
+2
+} \)} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167913922481">Interpretation of the third row tells us that the value for the third unknown (<emphasis effect="italics">I</emphasis><sub>3</sub>) is 2 A. We can use the coefficients from the second row along with the value for I<sub>3</sub> to solve for I<sub>2</sub>. </para>
+        
+        <equation id="id1167914878194">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mfrac>
+                          <m:mn>2</m:mn>
+                          <m:mn>5</m:mn>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msub>
+                        <m:mi>I</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>3</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mtext>24</m:mtext>
+                          <m:mn>5</m:mn>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{2} } + {  {2}  over  {5} }  \( I rSub { size 8{3} }  \) = {  {"24"}  over  {5} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167919801998">which yields the result </para>
+        <equation id="id1167918640713">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>4</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>A</m:mi>
+                      <m:mtext>.</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{2} } =4`A "." } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167914848530">Lastly, we may use the coefficients of the first row along with the previously determined values for <emphasis effect="italics">I</emphasis><sub>2</sub> and <emphasis effect="italics">I</emphasis><sub>3</sub> to produce the result for <emphasis effect="italics">I</emphasis><sub>1</sub>.</para>
+        <para id="id1167913969818">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>3</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{1} } +I rSub { size 8{2} } +I rSub { size 8{3} } =0} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id1167925691223">Insertion of the previously found unknowns yields</para>
+        <equation id="id1167918468739">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mn>4</m:mn>
+                        </m:mrow>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{1} } +4+2=0} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167912228499">So we find the value for <emphasis effect="italics">I</emphasis><sub>1</sub> to be -6 A.</para>
+      </section>
+      <section id="id2406046">
+        <title>Exercises</title>
+        <list id="id1167914663123" list-type="enumerated" number-style="arabic">
+          <item>Company A has more cash than Company B. If Company A lends $20 million to Company B, then the two companies would have the same amount of cash. If instead Company B gave Company A $22 million, then Company A would have twice as much cash as Company B. Use the matrix inversion method to find how much cash each company has.</item>
+          <item>A computer manufacturer sells two types of units. One unit is primarily marketed to the professional community and sells for $1,700. Another unit is marketed to students and sells for $900. In a typical month, the manufacturer sells 2,000 units. This accounts for $1,380,000 in sales. Use the matrix inversion method to find how many units of each type are sold.</item>
+          <item>A ship can travel 300 miles upstream in 80 hours. Under the same conditions, the same ship can travel 275 miles downstream in 65 hours. Use the matrix inversion method to find the speed of the current along with the speed of the ship. </item>
+          <item>The matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>2</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>6</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>2</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable><m:mi/><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>8</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>2</m:mn></m:mtd></m:mtr></m:mtable></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A= left [ matrix {
+2 {} # 1 {} # 3 {} ##
+0 {} # 6 {} # 2 {} ##
+1 {} # 0 {} # 1{}
+} ~ matrix {
+8 {} ##
+4 {} ##
+2
+}  right ]} {}</m:annotation></m:semantics></m:math> represents a linear system with three unknowns. Use Gaussian elimination to solve for the three unknowns.</item>
+          <item>A system of 3 independent linear equations that govern the operation of the circuit below are 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">+</m:mo><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{1} } +i rSub { size 8{2} } +i rSub { size 8{2} } =0} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>24</m:mtext></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>2</m:mn></m:mrow><m:mi/><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ - i rSub { size 8{1} }  - "24"+2`i rSub { size 8{2} } =0} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mi/><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mn>4</m:mn></m:mrow><m:mi/><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ - 2`i rSub { size 8{2} } +4`i rSub { size 8{3} } =0} {}</m:annotation></m:semantics></m:math>. Use Gaussian elimination to solve for the three currents.</item>
+          <item>Suppose that the value of each resistor in the figure below is 1 Ω. The mesh equations that govern the circuit are 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>6</m:mn><m:mi/><m:mrow><m:mi>V</m:mi><m:mo stretchy="false">=</m:mo><m:mn>2</m:mn></m:mrow><m:mi/><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{6`V=2`i rSub { size 8{a} }  - i rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>2</m:mn><m:mi/><m:mrow><m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>9V</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2`i rSub { size 8{b} }  - i rSub { size 8{a} } +9V=0} {}</m:annotation></m:semantics></m:math>. Use the matrix inversion method to find the two mesh current.</item>
+        </list>
+        <para id="id3872141">
+          <figure id="id1167914059063"><media id="id1167914059063_media" alt="">
+              <image mime-type="image/jpg" src="../../media/graphics3-6b14.jpg" id="id1167914059063__onlineimage" height="450" width="600"/>
+            </media>
+          <caption>Electric circuit with two mesh currents.</caption></figure>
+        </para>
+      </section>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,573 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Radicals</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38603</md:content-id>
+  <md:title>Radicals</md:title>
+  <md:abstract>This module is part of a collection of modules intended for students enrolled in a special section of MATH 1508 (PreCalculus) for preengineers.  This module addresses the topic of radicals.  Radicals play an important role in the modeling of physical phenomena.  Several applications of radicals in the field of engineering are presented.</md:abstract>
+  <md:uuid>4aa3e6b1-0284-4492-b9ca-d4c9147db137</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1168007958946">
+      <title>Radicals</title>
+      <section id="id1168005170806">
+        <title>Introduction</title>
+        <para id="id1168002228269">Equations involving radicals abound in the various fields of engineering. Students of engineering must therefore gain confidence and competence in solving equations that include radical expressions. In this module, several different applications that involve the use of radicals to solve engineering problems are presented along with several exercises.</para>
+      </section>
+      <section id="id1168008843288">
+        <title>Centripetal Force</title>
+        <para id="id1168005572031">Centripetal force is the inward directed force that is exerted on one body as it moves in a circular path about another body. </para>
+        <para id="id1168016984936">Figure 1 illustrates a body that is in circular motion about a center point.</para>
+        <figure id="id1167997190583"><media id="id1167997190583_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics1-fb30.jpg" id="id1167997190583__onlineimage" height="450" width="600"/>
+          </media>
+        <caption>Centripetal force for an object under rotation.</caption></figure>
+        <para id="id1168010658151">As the object moves about the circle, its angle changes. This time rate of change of the angle is called the <emphasis effect="italics">angular velocity</emphasis> and is denoted by the symbol ω. The angular velocity has units of radians/sec. As an example, if the object makes 2 revolutions in a second, it would have an angular velocity </para>
+        <equation id="id2490716">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mi>ω</m:mi>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                                <m:mi/>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>revolutions</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                              <m:mi>s</m:mi>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                              <m:mi/>
+                              <m:mo stretchy="false">(</m:mo>
+                              <m:mn>2</m:mn>
+                              <m:mi/>
+                              <m:mi>π</m:mi>
+                              <m:mi/>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>rad</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                              <m:mo stretchy="false">)</m:mo>
+                            </m:mrow>
+                            <m:mi>s</m:mi>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>4</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>π</m:mi>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>rad</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi>s</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ω= {  {2` ital "revolutions"}  over  {s} } = {  {2` \( 2`π` ital "rad" \) }  over  {s} } =4`π` ital "rad"/s} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168010606776">Examination of Figure 1 shows the centripetal force being directed inward toward the center of the circular path of the object. The velocity of the object is illustrated as being in the direction of the tangent at the point on the circle occupied by the object. If for any reason the body were released from its orbit about the center point, it would travel in a straight line path indicated in the direction of the velocity. </para>
+        <para id="id1167994272391">Quite often, one may measure the amount of time that it takes for the object to complete a complete revolution and denote it as the variable (<emphasis effect="italics">T</emphasis>). This value which is usually expressed in seconds is called the <emphasis effect="italics">period</emphasis> of revolution. For the example given previously where the object makes 2 revolutions per second, the period of revolution (<emphasis effect="italics">T</emphasis>) is ½ second. </para>
+        <para id="id7824474">The period of revolution (<emphasis effect="italics">T</emphasis>) measured in seconds can be calculated by means of a relationship that involves the magnitude of the centripetal force (<emphasis effect="italics">F</emphasis>) measured in Newtons, the mass of the object (<emphasis effect="italics">m</emphasis>) measured in kilograms, and the radius (<emphasis effect="italics">R</emphasis>) of the circle measured in meters.</para>
+        <equation id="id1168004007571">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>T</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:msqrt>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mn>4</m:mn>
+                            <m:mi/>
+                            <m:mi>m</m:mi>
+                            <m:mi/>
+                            <m:mi>R</m:mi>
+                            <m:mi/>
+                            <m:msup>
+                              <m:mi>π</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>2</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mi>F</m:mi>
+                        </m:mfrac>
+                      </m:msqrt>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{T= sqrt { {  {4`m`R`π rSup { size 8{2} } }  over  {F} } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167985623020">Question: A mass of 2 kg revolves about an axis. The radius of the object about the axis is 0.5 m. It takes 0.25 seconds for the mass to make a single revolution. What is the value of the centripetal force?</para>
+        <para id="id1167989399954">Solution: We begin by replacing the variables of equation (2) by their numeric values</para>
+        <equation id="id2753114">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>25</m:mtext>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msqrt>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>4</m:mn>
+                              <m:mi/>
+                              <m:mo stretchy="false">(</m:mo>
+                              <m:mn>2</m:mn>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mi/>
+                              <m:mo stretchy="false">(</m:mo>
+                              <m:mn>0</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mn>5</m:mn>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mi/>
+                              <m:msup>
+                                <m:mi>π</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                            <m:mi>F</m:mi>
+                          </m:mfrac>
+                        </m:msqrt>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{0 "." "25"= sqrt { {  {4` \( 2 \) ` \( 0 "." 5 \) `π rSup { size 8{2} } }  over  {F} } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168011926514">Next we take the square of each side of the equation</para>
+        <equation id="id2939146">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>25</m:mtext>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mn>4</m:mn>
+                            <m:mi/>
+                            <m:msup>
+                              <m:mi>π</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>2</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mi>F</m:mi>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ \( 0 "." "25" \)  rSup { size 8{2} } = {  {4`π rSup { size 8{2} } }  over  {F} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id2988864">We can isolate F on the left hand side of the equation as</para>
+        <equation id="id1167987267074">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>F</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>4</m:mn>
+                          <m:mi/>
+                          <m:msup>
+                            <m:mi>π</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>625</m:mtext>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= {  {4`π rSup { size 8{2} } }  over  {0 "." "625"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168001706153">Which leads to the result 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>632</m:mtext></m:mrow><m:mi/><m:mi>N</m:mi><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F="632"`N "." } {}</m:annotation></m:semantics></m:math></para>
+      </section>
+      <section id="id1167993664282">
+        <title>Nozzle Characteristics for Aircraft De-Icing</title>
+        <para id="id1167985918199">The presence of ice on the wings and fuselage on an aircraft can lead to severe problems during stormy winter weather. Equipment is used to spray aircraft with a de-icing agent prior to take-off in order to remove the ice from the wing surfaces and fuselage of planes. </para>
+        <para id="id1168012699740">The presence of ice on the wings and fuselage on an aircraft can lead to severe problems during stormy winter weather. Equipment is used to spray aircraft with a de-icing agent prior to take-off in order to remove the ice from the wing surfaces and fuselage of planes. </para>
+        <para id="id1167993465268">
+          <figure id="id1168002362285"><media id="id1168002362285_media" alt="">
+              <image mime-type="image/jpg" src="../../media/graphics2-bb27.jpg" id="id1168002362285__onlineimage" height="450" width="600"/>
+            </media>
+          <caption>Photograph of a high-pressure nozzle.</caption></figure>
+        </para>
+        <para id="id1167996213212">There are several important parameters that relate to the performance of a nozzle. These include the diameter of the nozzle (<emphasis effect="italics">d</emphasis>), the nozzle pressure (<emphasis effect="italics">P</emphasis>) and the flow rate (<emphasis effect="italics">r</emphasis>). The nozzle diameter is measured in inches; the flow rate is measured in gallons/minute; and the nozzle pressure is measured in pounds/square inch. The relationship between these parameters can be expressed via the radical equation</para>
+        <equation id="id1167995398244">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>r</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>30</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msup>
+                        <m:mi>d</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mi/>
+                      <m:msqrt>
+                        <m:mi>P</m:mi>
+                      </m:msqrt>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{r="30"`d rSup { size 8{2} } ` sqrt {P} } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id6468311">Question: Water flows at a rate of 2.5 pounds/s through a nozzle whose diameter is 0.25 inches. What is the value of the nozzle pressure at the exit?</para>
+        <para id="id1167991170990">Solution: We can begin by substituting values into equation (5). </para>
+        <equation id="id1168010652793">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>30</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>25</m:mtext>
+                      <m:msup>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mi/>
+                      <m:msqrt>
+                        <m:mi>P</m:mi>
+                      </m:msqrt>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{2 "." 5="30"` \( 0 "." "25" \)  rSup { size 8{2} } ` sqrt {P} } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167987932785">This can be written as </para>
+        <equation id="id1167988608175">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msqrt>
+                            <m:mi>P</m:mi>
+                          </m:msqrt>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mn>5</m:mn>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mtext>30</m:mtext>
+                              <m:mi/>
+                              <m:mo stretchy="false">(</m:mo>
+                              <m:mn>0</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mtext>0625</m:mtext>
+                              <m:mo stretchy="false">)</m:mo>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>33</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ sqrt {P} = {  {2 "." 5}  over  {"30"` \( 0 "." "0625" \) } } =1 "." "33"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167996410779">Squaring each side of the equation yields the result 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1</m:mn></m:mrow><m:mtext>.</m:mtext><m:mtext>778</m:mtext><m:mi/><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>lb</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">/</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:msup><m:mtext>in</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P=1 "." "778"` ital "lb"/ ital "in" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math></para>
+      </section>
+      <section id="id1167991214528">
+        <title>Motion of a Pendulum</title>
+        <para id="id1167994565010">A <emphasis effect="italics">pendulum</emphasis> is a weight suspended from a pivot so that it can swing freely. When a pendulum is displaced from its resting or equilibrium point, it is subject to a restoring force due to gravity that will accelerate it back toward the equilibrium position. When released, the restoring force combined with the pendulum's mass causes it to swing back and forth. The time for one complete cycle, a left swing and a right swing, is called the period. A pendulum swings with a specific period which depends on factors such as its length. From its discovery around 1602 by Galileo, the regular motion of pendulums was used for timekeeping, and was the world's most accurate timekeeping technology until the 1930s. </para>
+        <para id="id1168006262951">Figure 3 shows a picture of a pendulum.</para>
+        <figure id="id1167991215593"><media id="id1167991215593_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics3-f684.jpg" id="id1167991215593__onlineimage" height="450" width="600"/>
+          </media>
+        <caption>Simple pendulum.</caption></figure>
+        <para id="id1167996458518">The period of the pendulum can be represented by the variable <emphasis effect="italics">T</emphasis>. The period is typically measured in seconds. The length of the pendulum can be modeled by the variable <emphasis effect="italics">L</emphasis> and is measured in feet. Under such conditions, the relationship between the period and the length of the pendulum is summarized by the equation</para>
+        <equation id="id1167991454734">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>T</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>π</m:mi>
+                      <m:mi/>
+                      <m:msqrt>
+                        <m:mfrac>
+                          <m:mi>L</m:mi>
+                          <m:mtext>32</m:mtext>
+                        </m:mfrac>
+                      </m:msqrt>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{T=2`π` sqrt { {  {L}  over  {"32"} } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168016886986">Question: The arm of a pendulum makes a complete cycle every two seconds. What is the length of the pendulum?</para>
+        <para id="id1168004913442">Solution: We insert the appropriate value for the period into equation (9)</para>
+        <equation id="id1168004487234">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>π</m:mi>
+                      <m:msqrt>
+                        <m:mrow>
+                          <m:mi>L</m:mi>
+                          <m:mo stretchy="false">/</m:mo>
+                          <m:mtext>32</m:mtext>
+                        </m:mrow>
+                      </m:msqrt>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{2=2`π sqrt {L/"32"} } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167996508705">Next, we square each side of the equation</para>
+        
+        
+        <equation id="id1167984820126">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>4</m:mn>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>4</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msup>
+                        <m:mi>π</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mi>L</m:mi>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mtext>32</m:mtext>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{4=4`π rSup { size 8{2} } ` \( L/"32" \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168007124664">which can be re-arranged as</para>
+        <equation id="id7730747">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>L</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mtext>32</m:mtext>
+                        <m:msup>
+                          <m:mi>π</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{L= {  {"32"}  over  {π rSup { size 8{2} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167997336634">So our solution is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>L</m:mi><m:mo stretchy="false">=</m:mo><m:mn>3</m:mn></m:mrow><m:mtext>.</m:mtext><m:mtext>24</m:mtext><m:mi/><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ft</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L=3 "." "24"` ital "ft"} {}</m:annotation></m:semantics></m:math></para>
+      </section>
+      <section id="id1168009644375">
+        <title>Exercises</title>
+        <list id="id2260518" list-type="enumerated" number-style="arabic">
+          <item>Use algebra to derive a formula that expresses F as a function of T, m and R.</item>
+          <item>A passenger rides around in a ferris wheel of radius 20 m which makes 1 revolution every 10 seconds. If the passenger has a mass of 75 kg, what is the centripetal force exerted on the passenger? (Use the formula you derived in Exercise 1 to solve for the centripetal force.)</item>
+          <item>Find the centripetal force exerted on the passenger described in Exercise 2 if the ferris wheel takes 8 seconds to complete one revolution.</item>
+          <item>What can you say qualitatively about the relationship between the centripetal force and the amount of time it takes to complete one revolution?</item>
+          <item>Apply algebra to equation (3) to produce a formula for <emphasis effect="italics">P</emphasis> as a function of <emphasis effect="italics">r</emphasis> and <emphasis effect="italics">d</emphasis>.</item>
+          <item>Find the nozzle pressure <emphasis effect="italics">P</emphasis> for a nozzle whose diameter is 1.25 inches for a flow rate of 250 gallons/minute.</item>
+          <item>Find the nozzle pressure <emphasis effect="italics">P</emphasis> for a nozzle whose diameter is 1.50 inches for a flow rate of 250 gallons/minute.</item>
+          <item>What can you say qualitatively about the relationship between the pressure <emphasis effect="italics">P</emphasis> and the diameter of the nozzle <emphasis effect="italics">d</emphasis>?</item>
+          <item>A grandfather clock has a pendulum of length 3.5 feet. How long will it take for the pendulum to swing back and forth one time?</item>
+          <item>To achieve a period of 2 seconds, how long must a pendulum be?</item>
+        </list>
+      </section>
+    </section>
+  </content>
+</document>

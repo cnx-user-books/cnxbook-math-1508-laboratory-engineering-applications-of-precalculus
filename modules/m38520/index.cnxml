@@ -1,0 +1,3354 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Exponents</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38520</md:content-id>
+  <md:title>Exponents</md:title>
+  <md:abstract>This module is part of a collection of modules that present topics covered in a PreCalculus (MATH 1508) class at the University of Texas at El Paso.</md:abstract>
+  <md:uuid>20317cb3-ed92-4d40-b351-0b1bae527994</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1169172420578">
+      <title>Exponents</title>
+      <section id="id1169172833239">
+        <title>Introduction</title>
+        <para id="id1169172719725">Exponentiation is a mathematical operation that is employed extensively in applications in fields that range from science and engineering to finance and economics. This module will begin with a brief discussion of the terminology and the mathematics involved with exponentiation. This will be followed with some applications of exponentiation in science and engineering. </para>
+        <para id="id1169171808578">Scientific notation and engineering notation are introduced in this module as two common means for expressing physical quantities. Each of these representational schemes involve the use of exponents. Applications are presented on topics including electrical power, gravitatitational force and electrostatic force are presented as a means for illustrating how exponentiation can be useful in problem solving.</para>
+      </section>
+      <section id="id1169187611955">
+        <title>Definition and Terminology </title>
+        <para id="id1169172917300">Exponentiation is an operation in mathematics that makes use of two numbers known as the base (<emphasis effect="italics">x</emphasis>) and the exponent (<emphasis effect="italics">n</emphasis>) and is expressed as </para>
+        <equation id="id1169174662348">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>n</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msup>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{x rSup { size 8{n} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169175535477">In this module, we will restrict our discussion to situations where the exponent (<emphasis effect="italics">n</emphasis>) is an integer. Being an integer, the exponent may be positive, negative or equal to 0. We will consider each case below.</para>
+        <para id="id1169185039610">If the exponent <emphasis effect="italics">n</emphasis> is a positive integer, then the operation of exponentiation is equivalent to the multiplication of the base <emphasis effect="italics">x</emphasis> with itself a total of <emphasis effect="italics">n</emphasis> times. </para>
+        <para id="id1169172692521">In the situation where the base (<emphasis effect="italics">x</emphasis>) is 5 and the exponent (<emphasis effect="italics">n</emphasis>) is 3, we obtain the result</para>
+        <equation id="id1169173032778">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mn>5</m:mn>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>3</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>5</m:mn>
+                            <m:mo stretchy="false">⋅</m:mo>
+                            <m:mn>5</m:mn>
+                          </m:mrow>
+                          <m:mo stretchy="false">⋅</m:mo>
+                          <m:mn>5</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mtext>125</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{5 rSup { size 8{3} } =5 cdot 5 cdot 5="125"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169172887142">Now, let us the case where the exponent is a negative integer. In this case, the process of exponentiation is equivalent to dividing one by the base <emphasis effect="italics">x</emphasis> by <emphasis effect="italics">n</emphasis> times.</para>
+        <para id="id1169172552759">Let us consider an example where the base (<emphasis effect="italics">x</emphasis>) is 5, but now the exponent (<emphasis effect="italics">n</emphasis>) is -3. In this example, we obtain the result</para>
+        <equation id="id1169174657302">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:msup>
+                              <m:mn>5</m:mn>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mn>3</m:mn>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mfrac>
+                              <m:mn>1</m:mn>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mn>5</m:mn>
+                                  <m:mo stretchy="false">⋅</m:mo>
+                                  <m:mn>5</m:mn>
+                                </m:mrow>
+                                <m:mo stretchy="false">⋅</m:mo>
+                                <m:mn>5</m:mn>
+                              </m:mrow>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mtext>125</m:mtext>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>008</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{5 rSup { size 8{ - 3} } = {  {1}  over  {5 cdot 5 cdot 5} } = {  {1}  over  {"125"} } =0 "." "008"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169173378138">Suppose that we form the product of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mn>5</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{5 rSup { size 8{3} } } {}</m:annotation></m:semantics></m:math> with 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mn>5</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{5 rSup { size 8{ - 3} } } {}</m:annotation></m:semantics></m:math>. </para>
+        <equation id="id1169194319821">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msup>
+                            <m:mn>5</m:mn>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>3</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:msup>
+                            <m:mn>5</m:mn>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mn>3</m:mn>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mtext>125</m:mtext>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:mn>0</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>008</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{5 rSup { size 8{3} }  times 5 rSup { size 8{ - 3} } ="125" times 0 "." "008"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169173317986">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>5</m:mn>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mn>3</m:mn>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:mn>3</m:mn>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{5 rSup { size 8{3 - 3} } =1} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169175010363">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>5</m:mn>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{5 rSup { size 8{0} } =1} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169172471578">The result of the multiplication reminds us of the property of exponents that states whenever a base (<emphasis effect="italics">x</emphasis>) is raised to an exponent (<emphasis effect="italics">n</emphasis>) that is zero, the result is 1.</para>
+      </section>
+      <section id="id1169181004995">
+        <title>Scientific and Engineering Notation</title>
+        <para id="id1169172859455">One of the most important uses of exponents in the fields of science and engineering is that of scientific notation. As is often the case, in the fields of science and engineering one often deals with numbers that are extremely large or extremely small. Scientific notation is an effective means for writing such number that makes use of exponents. In many cases, scientific notation enables one to write very large or very small numbers in a manner that is more convenient, insightful and compact that writing numbers using decimal notation.</para>
+        <para id="id1169173293418">Numbers can be written in scientific notation in the following form</para>
+        <equation id="id1169170739000">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>a</m:mi>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:msup>
+                        <m:mtext>10</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>b</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{a` times `"10" rSup { size 8{b} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169175213858">where <emphasis effect="italics">a</emphasis> is the coefficient which can be any real number in the range 1 &lt; |a| &lt;10 and <emphasis effect="italics">b</emphasis> is an integer that represents the exponent. </para>
+        <para id="id1169171761619">Example (Avogadro’s Number)</para>
+        <para id="id1169171834214">In chemistry, the quantity of an element having a weight in grams numerically equal to that element’s atomic weight is the <emphasis effect="italics">gram atomic weight</emphasis> of that element. This quantity is often refererred to as a <emphasis effect="italics">gram atom</emphasis>. A gram atom of any element contains the same number of atoms as the gram atom of any other element. The number of atoms in any gram atom is called <emphasis effect="italics">Avogadro’s number</emphasis> (N). Through meticulous experimental study, the value of Avogadro’s number has been determined as </para>
+        <equation id="id1169172766044">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>N</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>602</m:mtext>
+                      </m:mrow>
+                      <m:mi>,</m:mi>
+                      <m:mtext>300</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{N="602","300","000","000","000","000","000","000"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169188646033">Question:<emphasis effect="italics"> How can Avogadro’s number be expressed in scientific notation?</emphasis></para>
+        <para id="id1169174616646">Solution: Avogadro’s number can be written as the product of a real number (6.023) by the term (100,000,000,000,000,000,000,000)</para>
+        <equation id="id1169175073043">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>N</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>6</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>023</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mtext>100</m:mtext>
+                      </m:mrow>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{N=6 "." "023" times "100","000","000","000","000","000","000","000"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169172600732">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>N</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>6</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>023</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>23</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{N=6 "." "023" times "10" rSup { size 8{"23"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169172703599">Rather than trying to perform calculations using the decimal form for Avogadro’s number, chemists have learned to appreciate the more mathematically tractable scientific notation form of this important constant. </para>
+        <para id="id1169175477111">Engineering notation is quite similar to scientific notation. Numbers are written in engineering notation in the following form</para>
+        <equation id="id1169180493366">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>a</m:mi>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:msup>
+                        <m:mtext>10</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>c</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{a` times `"10" rSup { size 8{c} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169172718391">where the coefficient a is a real number in the range 1 &lt; |<emphasis effect="italics">a</emphasis> |&lt; 1,000 and the exponent <emphasis effect="italics">c</emphasis> is restricted to be an integer multiple of 3. </para>
+        <para id="id1169172763840">An additional restriction on the coefficient (<emphasis effect="italics">a</emphasis>) requires that a be expressed using no more than 3 significant digits. The restriction that the exponent be an integer multiple of 3 allows the numbers that result from the transformation to engineering notation to be expressed using the standard prefixes associated with the <emphasis effect="italics">Scientifique Internationale</emphasis> (SI) system of units.</para>
+        <para id="id1169175005937">Example (Width of the Asteroid Belt)</para>
+        <para id="id1169174687382">Let’s consider the following application of engineering notation. The width of the asteroid belt has been determined to be 280,000,000 <emphasis effect="italics">m</emphasis>. </para>
+        <para id="id1169174647442">Question:<emphasis effect="italics"> What is the width of the asteroid belt expressed in engineering notation?</emphasis></para>
+        <para id="id1169172759432">Solution: Let us begin by expressing this quantity using scientific notation</para>
+        <equation id="id1169170698110">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>280</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>80</m:mtext>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>8</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi>m</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"280","000","000"`m=2 "." "80"` times "10" rSup { size 8{8} } m} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169195412741">We notice that the exponent is not an integer multiple of 3, so this quantity is not yet expressed in engineering notation. We do know that </para>
+        <equation id="id1169172318622">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>8</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                                <m:mo stretchy="false">+</m:mo>
+                                <m:mn>6</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>6</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"10" rSup { size 8{8} } ="10" rSup { size 8{2+6} } ="10" rSup { size 8{2} }  times "10" rSup { size 8{6} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169173183620">This quantity can be substituted into the previous equation to yield the expression for the width of the asteroid belt in engineering notation</para>
+        <equation id="id1169171772697">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>280</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>80</m:mtext>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>8</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi>m</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"280","000","000"`m=2 "." "80"` times "10" rSup { size 8{8} } m} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169186590864">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>280</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mtext>80</m:mtext>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:msup>
+                            <m:mtext>10</m:mtext>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>6</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi>m</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"280","000","000"`m=2 "." "80" times "10" rSup { size 8{2} }  times "10" rSup { size 8{6} } m} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169170659845">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>280</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>80</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mtext>100</m:mtext>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>6</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi>m</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"280","000","000"`m= \( 2 "." "80" times "100" \)  times "10" rSup { size 8{6} } m} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169175296893">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>280</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mtext>280</m:mtext>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:msup>
+                            <m:mtext>10</m:mtext>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>6</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mi>m</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"280","000","000"`m="280" times "10" rSup { size 8{6} } m} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169175266559">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>280</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>280</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>Mm</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"280","000","000"`m="280"` ital "Mm"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+      </section>
+      <section id="id1169175036520">
+        <title>Application: Electrical Power</title>
+        <para id="id1169189352310">We will begin our investigation of applications of exponents with a discussion of electrical power. Consider the electrical circuit diagram that shows a source voltage (<emphasis effect="italics">V</emphasis>) attached to a resistor (<emphasis effect="italics">R</emphasis>) to produce a current (<emphasis effect="italics">I</emphasis>). </para>
+        <para id="id1169174719070">The relationship between V, R and I is summarized by Ohm’s Law </para>
+        <equation id="id1169172876452">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>V</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mi>I</m:mi>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:mi/>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mi>R</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{V=I times `R} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169172978375">where V is measured in volts (V) , I is measured in amps (A), and R is measured in ohms (Ω). </para>
+        <figure id="id1169190554634"><media id="id1169190554634_media" alt="">
+            <image mime-type="image/jpg" src="../../media/Picture 0-2497.jpg" id="id1169190554634__onlineimage" height="172" width="230"/>
+          </media>
+        <caption>Simple electric circuit.</caption></figure>
+        <para id="id1169174903262">We may write an expression for the current as </para>
+        <equation id="id1169170704084">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>I</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mi>V</m:mi>
+                        <m:mi>R</m:mi>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{I= {  {V}  over  {R} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169173094667">The power that is absorbed by the resistor is known to be the product of the current flowing through the resistor time the potential difference (voltage) across the terminals of the resistor. If we denote the power absorbed by the resistor as <emphasis effect="italics">P</emphasis><emphasis effect="italics">R</emphasis>, then it can be expressed mathematically as </para>
+        <equation id="id1169173116867">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>P</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>R</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mi>I</m:mi>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mi>V</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{R} } =I times V} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169172677677">Substitution of the expression for I obtained from Ohm’s Law yields an equivalent expression for the power absorbed by the resistor</para>
+        <equation id="id1169172887316">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>P</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>R</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mfenced open="(" close=")">
+                            <m:mfrac>
+                              <m:mi>V</m:mi>
+                              <m:mi>R</m:mi>
+                            </m:mfrac>
+                          </m:mfenced>
+                          <m:mo stretchy="false">⋅</m:mo>
+                          <m:mi>V</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:msup>
+                          <m:mi>V</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mi>R</m:mi>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{R} } = left ( {  {V}  over  {R} }  right ) cdot V= {  {V rSup { size 8{2} } }  over  {R} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169175288947">Paying attention to the exponent, we can say that the power absorbed by the resistor is the <emphasis effect="italics">square of the voltage</emphasis> across the terminals of the resistor divided by the resistance. The units associated with power are Watts (W).</para>
+        <para id="id1169173008049">We can obtain an alternative form for the power absorbed by the resistor. We begin with the general expression for the power absorbed by a resistor</para>
+        <equation id="id1169174706716">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>P</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>R</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mi>I</m:mi>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mi>V</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{R} } =I times V} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169181459872">If we now substitute the expression for <emphasis effect="italics">V</emphasis> provided by Ohm’s Law into this equation, we obtain an alternative expression for power </para>
+        <equation id="id1169170710754">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>P</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>R</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mi>I</m:mi>
+                          <m:mo stretchy="false">⋅</m:mo>
+                          <m:mo stretchy="false">(</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mi>I</m:mi>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mi>R</m:mi>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{R} } =I cdot  \( I times R \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169172707485">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>P</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>R</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msup>
+                          <m:mi>I</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi>R</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{R} } =I rSup { size 8{2} } R} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169174594997">This relationship expresses the electrical power absorbed by the resistor as a product of the <emphasis effect="italics">square of the current</emphasis> by the resistance. </para>
+        <para id="id1169181134288">Thus we have two equally useful formulas for the computation of the power absorbed by a resistor. One involves the square of the voltage, while the other incorporates the square of the current. Each formula involves a term that is raised to an exponent of 2.</para>
+        <para id="id1169175371500">Example (Electrical Power)</para>
+        <para id="id1169180477007">A 9 Volt battery is connected to a single 10 kΩ resistor. </para>
+        <figure id="id1169172730861"><media id="id1169172730861_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics1-10b4.jpg" id="id1169172730861__onlineimage" height="163" width="218"/>
+          </media>
+        <caption>Electric circuit.</caption></figure>
+        <para id="id1169173336130">Question<emphasis effect="italics">:</emphasis><emphasis effect="italics"> How much power is dissipated in the resistor? (Express the result in engineering notation.)</emphasis></para>
+        <equation id="id1169173278226">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>P</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>R</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mn>9</m:mn>
+                          <m:mi/>
+                          <m:mi>V</m:mi>
+                          <m:msup>
+                            <m:mo stretchy="false">)</m:mo>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mtext>10</m:mtext>
+                          <m:mrow>
+                            <m:mi/>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>3</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo stretchy="false">Ω</m:mo>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{R} } = {  { \( 9`V \)  rSup { size 8{2} } }  over  {"10"` times "10" rSup { size 8{3} }  %OMEGA } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        
+        <equation id="id1169175064864">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>P</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>R</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mtext>81</m:mtext>
+                          <m:mi/>
+                          <m:msup>
+                            <m:mi>V</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:msup>
+                            <m:mtext>10</m:mtext>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>4</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                          <m:mi/>
+                          <m:mo stretchy="false">Ω</m:mo>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{R} } = {  {"81"``V rSup { size 8{2} } }  over  {"10" rSup { size 8{4} } ` %OMEGA } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169174930833">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>P</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>R</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mtext>81</m:mtext>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:msup>
+                            <m:mtext>10</m:mtext>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mn>4</m:mn>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mfenced open="(" close=")">
+                        <m:mfrac>
+                          <m:msup>
+                            <m:mi>V</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                          <m:mo stretchy="false">Ω</m:mo>
+                        </m:mfrac>
+                      </m:mfenced>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{R} } ="81" times "10" rSup { size 8{ - 4} }  left ( {  {V rSup { size 8{2} } }  over  { %OMEGA } }  right )} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169173011902">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>P</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>R</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mtext>81</m:mtext>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:mo stretchy="false">(</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>3</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mi>W</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{R} } ="81" times  \( "10" rSup { size 8{ - 1} }  times "10" rSup { size 8{ - 3} }  \) `W} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169175361417">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>P</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>R</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mtext>81</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>3</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>W</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{R} } = \( "81" times "10" rSup { size 8{ - 1} }  \)  times "10" rSup { size 8{ - 3} } `W} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169170956968">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>P</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>R</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>8</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>3</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>W</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{R} } =8 "." 1 times "10" rSup { size 8{ - 3} } `W} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169181350732">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>P</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>R</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>8</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>1</m:mn>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>mW</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{R} } =8 "." 1` ital "mW"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+      </section>
+      <section id="id1169175390498">
+        <title>Gravitational Force</title>
+        <para id="id1169174939880">Every object of finite mass near the surface of the earth experiences a force that pulls it downward. This force is called weight. In the 17<sup>th</sup> Century, Sir Isaac Newton postulated that this force which attracts objects to the earth might well be a particular example of a more general kind of interaction between objects. Newton was engaged in the study of the motion of planets around the sun and felt that the planets should obey the same laws of motion as objects falling toward the earth due to their weight. In one of humankind’s greatest bits of insight, Newton discovered that the forces responsible for both planetary motion and the phenomenon of weight could be equally understood if one hypothesized that every object of finite mass attracts every other object of finite mass with a force that depends upon the individual masses of the objects. Such forces are known as gravitational forces and they serve as a basis for what is now known as <emphasis effect="italics">Newton’s law of gravitation</emphasis>. </para>
+        <para id="id1169174905425">Let us consider two objects of respective masses <emphasis effect="italics">m</emphasis><emphasis effect="italics">1</emphasis> an <emphasis effect="italics">m</emphasis><emphasis effect="italics">2</emphasis> that are separated by a distance that we denote as <emphasis effect="italics">r</emphasis>. Newton’s law of gravitation states that each object will exert on the other an attractive force, directed along a straight line connecting the two objects. The magnitude of the force that mass m<sub>1</sub> exerts on m<sub>2</sub> is equal to the magnitude of the force that m<sub>2</sub> exerts on m<sub>1</sub>. The magnitude of the force that the first mass exerts on the second is provided by the equation</para>
+        <equation id="id1169175344075">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi>G</m:mi>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>m</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mi/>
+                          <m:msub>
+                            <m:mi>m</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:msup>
+                          <m:mi>r</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mfrac>
+                      <m:mi/>
+                      <m:mtext>.</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F=G` {  {m rSub { size 8{1} } `m rSub { size 8{2} } }  over  {r rSup { size 8{2} } } } ` "." } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169187543147">Here, G represents the universal gravitational constant and is given by </para>
+        <equation id="id1169170822750">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>G</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>6</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>67</m:mtext>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:msup>
+                        <m:mtext>10</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:mtext>11</m:mtext>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>N</m:mi>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mrow>
+                          <m:msup>
+                            <m:mi>m</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                          <m:mo stretchy="false">/</m:mo>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:msup>
+                                <m:mtext>kg</m:mtext>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mtext>.</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{G=6 "." "67"` times `"10" rSup { size 8{ - "11"} } `N - m rSup { size 8{2} } / ital "kg" rSup { size 8{2} } ` "." } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169171854948">Because the universal constant is so small, the gravitational forces that exists between objects of ordinary mass are extremely small. </para>
+        <para id="id1169173015582">We can incorporate the value for G along with the use of exponents in the equation for the magnitude of the force to yield the expression that follows.</para>
+        
+        <equation id="id1169188732452">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mn>6</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>67</m:mtext>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:msup>
+                        <m:mtext>10</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:mtext>11</m:mtext>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>Newton</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:msup>
+                                <m:mtext>meter</m:mtext>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mstyle>
+                          <m:mo stretchy="false">/</m:mo>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:msup>
+                                <m:mtext>kg</m:mtext>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msub>
+                        <m:mi>m</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mi>m</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:msup>
+                        <m:mi>r</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= \( 6 "." "67"` times `"10" rSup { size 8{ - "11"} } ` ital "Newton" -  ital "meter" rSup { size 8{2} } / ital "kg" rSup { size 8{2} }  \) ` \( m rSub { size 8{1} } `m rSub { size 8{2} }  \) `r rSup { size 8{ - 2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169173385620">Thus we can see that exponents play an important role in the formulation of Newton’s law of gravitation. Exponents are important to the expression of the universal gravitational constant and the attractive force between two objects depends upon the reciprocal of the square of the distance between the objects.</para>
+        <para id="id1169174716634">Example (Gravitational Force)</para>
+        <para id="id1169175403026">The mass of the sun is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">×</m:mo><m:msup><m:mtext>10</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>30</m:mtext></m:mrow></m:mstyle></m:msup></m:mrow><m:mi/><m:mstyle fontstyle="italic"><m:mrow><m:mtext>kg</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2 times "10" rSup { size 8{"30"} } ` ital "kg"} {}</m:annotation></m:semantics></m:math>. The mass of the earth is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>5</m:mn><m:mtext>.</m:mtext><m:mrow><m:mtext>97</m:mtext><m:mo stretchy="false">×</m:mo><m:msup><m:mtext>10</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>24</m:mtext></m:mrow></m:mstyle></m:msup></m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>kg</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{5 "." "97" times "10" rSup { size 8{"24"} }  ital "kg"} {}</m:annotation></m:semantics></m:math>. The approximate distance between the sun and the earth is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>149</m:mtext><m:mtext>.</m:mtext><m:mrow><m:mn>6</m:mn><m:mo stretchy="false">×</m:mo><m:msup><m:mtext>10</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>6</m:mn></m:mrow></m:mstyle></m:msup></m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>km</m:mtext></m:mrow></m:mstyle><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"149" "." 6 times "10" rSup { size 8{6} }  ital "km" "." } {}</m:annotation></m:semantics></m:math></para>
+        <para id="id1169175069074">Question: What is the magnitude of the gravitational force that the sun exerts on the earth? (Express the result in scientific notation.)</para>
+        <para id="id1169173241827">Solution: </para>
+        <equation id="id1169172878143">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mn>6</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>67</m:mtext>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:msup>
+                        <m:mtext>10</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:mtext>11</m:mtext>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>N</m:mi>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mrow>
+                          <m:msup>
+                            <m:mi>m</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                          <m:mo stretchy="false">/</m:mo>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:msup>
+                                <m:mtext>kg</m:mtext>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>30</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>kg</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>5</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>97</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>24</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>kg</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mtext>149</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>6</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>6</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>km</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:msup>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= \( 6 "." "67"` times `"10" rSup { size 8{ - "11"} } `N - m rSup { size 8{2} } / ital "kg" rSup { size 8{2} }  \) ` \( 2 times "10" rSup { size 8{"30"} }  ital "kg" \)  \( 5 "." "97" times "10" rSup { size 8{"24"} }  ital "kg" \) /` \( "149" "." 6 times "10" rSup { size 8{6} }  ital "km" \)  rSup { size 8{2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169174900472">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mn>6</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>67</m:mtext>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:msup>
+                        <m:mtext>10</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:mtext>11</m:mtext>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>N</m:mi>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mrow>
+                          <m:msup>
+                            <m:mi>m</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                          <m:mo stretchy="false">/</m:mo>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:msup>
+                                <m:mtext>kg</m:mtext>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>30</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>kg</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>5</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>97</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>24</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>kg</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mtext>149</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>6</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>9</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi>m</m:mi>
+                      <m:msup>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= \( 6 "." "67"` times `"10" rSup { size 8{ - "11"} } `N - m rSup { size 8{2} } / ital "kg" rSup { size 8{2} }  \) ` \( 2 times "10" rSup { size 8{"30"} }  ital "kg" \)  \( 5 "." "97" times "10" rSup { size 8{"24"} }  ital "kg" \) /` \( "149" "." 6 times "10" rSup { size 8{9} } m \)  rSup { size 8{2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169184610170">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mn>6</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>67</m:mtext>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:msup>
+                        <m:mtext>10</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:mtext>11</m:mtext>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>N</m:mi>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:msup>
+                          <m:mi>m</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>30</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>5</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>97</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>24</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mtext>149</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>6</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>9</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi>m</m:mi>
+                      <m:msup>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= \( 6 "." "67"` times `"10" rSup { size 8{ - "11"} } `N - m rSup { size 8{2} }  \) ` \( 2 times "10" rSup { size 8{"30"} }  \)  \( 5 "." "97" times "10" rSup { size 8{"24"} }  \) /` \( "149" "." 6 times "10" rSup { size 8{9} } m \)  rSup { size 8{2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169173087193">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mn>6</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>67</m:mtext>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:msup>
+                        <m:mtext>10</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:mtext>11</m:mtext>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>N</m:mi>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:msup>
+                          <m:mi>m</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>30</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>5</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>97</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>24</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mtext>22</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mrow>
+                        <m:mtext>380</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>18</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:msup>
+                        <m:mi>m</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= \( 6 "." "67"` times `"10" rSup { size 8{ - "11"} } `N - m rSup { size 8{2} }  \) ` \( 2 times "10" rSup { size 8{"30"} }  \)  \( 5 "." "97" times "10" rSup { size 8{"24"} }  \) /` \( "22","380" times "10" rSup { size 8{"18"} } m rSup { size 8{2} }  \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169172396811">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mn>6</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>67</m:mtext>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:msup>
+                        <m:mtext>10</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:mtext>11</m:mtext>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mi/>
+                      <m:mi>N</m:mi>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>30</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>5</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>97</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>24</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mtext>22</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mrow>
+                        <m:mtext>380</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>18</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= \( 6 "." "67"` times `"10" rSup { size 8{ - "11"} } `N \) ` \( 2 times "10" rSup { size 8{"30"} }  \)  \( 5 "." "97" times "10" rSup { size 8{"24"} }  \) /` \( "22","380" times "10" rSup { size 8{"18"} }  \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169172343389">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mn>6</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>67</m:mtext>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mn>5</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>97</m:mtext>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msup>
+                            <m:mtext>10</m:mtext>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mtext>11</m:mtext>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:msup>
+                            <m:mtext>10</m:mtext>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mtext>30</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>24</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>N</m:mi>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>238</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>22</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= \( 6 "." "67"` times `2 times 5 "." "97" \)  times  \( "10" rSup { size 8{ - "11"} }  times "10" rSup { size 8{"30"} }  times "10" rSup { size 8{"24"} }  \) `N/` \( 2 "." "238" times "10" rSup { size 8{"22"} }  \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169173339378">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mtext>79</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>64</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>43</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>N</m:mi>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>238</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>22</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= \( "79" "." "64" times "10" rSup { size 8{"43"} }  \) `N/` \( 2 "." "238" times "10" rSup { size 8{"22"} }  \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169172024777">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mtext>79</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>64</m:mtext>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>238</m:mtext>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mtext>43</m:mtext>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mtext>22</m:mtext>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>N</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= \( "79" "." "64"/2 "." "238" \)  times "10" rSup { size 8{"43" - "22"} } `N} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169175619958">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mtext>35</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>6</m:mn>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>21</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>N</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= \( "35" "." 6 \)  times "10" rSup { size 8{"21"} } `N} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169173110967">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>56</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>22</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>N</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F=3 "." "56" times "10" rSup { size 8{"22"} } `N} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+      </section>
+      <section id="id1169175291441">
+        <title>Coulomb’s Law</title>
+        <para id="id1169172473782">Electrons and protons are examples of charged particles. In the case of the proton, charge is positive. The charge of a proton is thus said to have positive polarity. On the other hand, an electron has a negative charge. Thus the charge of an electron is said to have negative polarity. </para>
+        <para id="id1169172214738">An <emphasis effect="italics">electrostatic force</emphasis> exists between two charged particles. If the charges associated with the two particles are of the same polarity, the electrostatic force will be <emphasis effect="italics">repulsive</emphasis>. On the other hand if the charges for two particles have opposite polarity, the electrostatic force will be <emphasis effect="italics">attractive</emphasis>. </para>
+        <para id="id1169175257975">Through extensive laboratory work, the physicist Charles Coulomb first established a mathematical expression that calculates the magnitude of the electrostatic force that results from the interaction of two charged particles. This expression which is known as Coulomb’s law for electrostatic forces is given by </para>
+        
+        <equation id="id1169174907284">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi>k</m:mi>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mfenced open="(" close=")">
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mi>q</m:mi>
+                            <m:mi/>
+                            <m:mi>Q</m:mi>
+                          </m:mrow>
+                          <m:msup>
+                            <m:mi>r</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mfrac>
+                      </m:mfenced>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F=k` left ( {  {q`Q}  over  {r rSup { size 8{2} } } }  right )} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169185033302">where q and Q are the values of the charges measured in the units Coulombs, <emphasis effect="italics">r</emphasis> is the distance measured in meters that separates the charged particles and k is a constant </para>
+        <equation id="id1169175086246">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>k</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>9</m:mn>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:msup>
+                        <m:mtext>10</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>9</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>Newton</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:msup>
+                                <m:mtext>meters</m:mtext>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mstyle>
+                          <m:mo stretchy="false">/</m:mo>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:msup>
+                                <m:mtext>Coulomb</m:mtext>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{k=9` times `"10" rSup { size 8{9} } ` ital "Newton" -  ital "meters" rSup { size 8{2} } / ital "Coulomb" rSup { size 8{2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169180811024">It is interesting to note the similarity of the general form of Coulomb’s law for electrostatic forces with Newton’s law of gravitational force. Just as was the case with the gravitational force, the magnitude of the electrostatic force decreases with the <emphasis effect="italics">square of the distance</emphasis> separating the two particles. </para>
+        <para id="id1169175285235">
+          <emphasis effect="bold">Example (Electrostatic Force)</emphasis>
+        </para>
+        <para id="id1169172829121">The charge on an electron is given by the equation</para>
+        <equation id="id1169175024906">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>q</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>e</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>60</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mtext>19</m:mtext>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>Coulombs</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>C</m:mi>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{q rSub { size 8{e} } = - 1 "." "60" times "10" rSup { size 8{ - "19"} }  ital "Coulombs"` \( C \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169174557154">The charge associated with a proton is </para>
+        <equation id="id1169186594394">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>q</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>p</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mtext>=+</m:mtext>
+                      <m:mn>1</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>60</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mtext>19</m:mtext>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>Coulombs</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>C</m:mi>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{q rSub { size 8{p} } "=+"1 "." "60" times "10" rSup { size 8{ - "19"} }  ital "Coulombs"` \( C \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169172400583">Suppose that an electron and a proton are separated by a distance of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mtext>10</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle></m:msup><m:mstyle fontstyle="italic"><m:mrow><m:mtext>nanometers</m:mtext></m:mrow></m:mstyle><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"10" rSup { size 8{ - 6} }  ital "nanometers" "." } {}</m:annotation></m:semantics></m:math></para>
+        <para id="id1169182752038">Questions: What is the magnitude of the electrostatic force that the protonexerts on the electron? Is the force attractive or repulsive?</para>
+        <para id="id1169181434503">Solution: </para>
+        <equation id="id1169173254283">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi>k</m:mi>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>q</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi>e</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mi/>
+                          <m:msub>
+                            <m:mi>q</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi>p</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:msup>
+                          <m:mi>r</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F=k` {  {q rSub { size 8{e} } `q rSub { size 8{p} } }  over  {r rSup { size 8{2} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169172702091">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>F</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mn>9</m:mn>
+                          <m:mrow>
+                            <m:mi/>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:mi/>
+                          </m:mrow>
+                          <m:msup>
+                            <m:mtext>10</m:mtext>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>9</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                          <m:mi/>
+                          <m:mrow>
+                            <m:mi>N</m:mi>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mrow>
+                              <m:msup>
+                                <m:mi>m</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                              <m:mo stretchy="false">/</m:mo>
+                              <m:msup>
+                                <m:mi>C</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mrow>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mi/>
+                          <m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                          <m:mtext>.</m:mtext>
+                          <m:mrow>
+                            <m:mtext>60</m:mtext>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mtext>19</m:mtext>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mi>C</m:mi>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mn>1</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mrow>
+                            <m:mtext>60</m:mtext>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mtext>19</m:mtext>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mi>C</m:mi>
+                          <m:mo stretchy="false">)</m:mo>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mrow>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mn>6</m:mn>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>nanometers</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                          <m:msup>
+                            <m:mo stretchy="false">)</m:mo>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= {  { \( 9` times `"10" rSup { size 8{9} } `N - m rSup { size 8{2} } /C rSup { size 8{2} }  \) ` \(  - 1 "." "60" times "10" rSup { size 8{ - "19"} } C \)  \( 1 "." "60" times "10" rSup { size 8{ - "19"} } C \) }  over  { \( "10" rSup { size 8{ - 6} }  times  ital "nanometers" \)  rSup { size 8{2} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        
+        <equation id="id1169172174784">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>F</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mn>9</m:mn>
+                          <m:mrow>
+                            <m:mi/>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:mi/>
+                          </m:mrow>
+                          <m:msup>
+                            <m:mtext>10</m:mtext>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>9</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mi/>
+                          <m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                          <m:mtext>.</m:mtext>
+                          <m:mrow>
+                            <m:mtext>60</m:mtext>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mtext>19</m:mtext>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mn>1</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mrow>
+                            <m:mtext>60</m:mtext>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mtext>19</m:mtext>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mi/>
+                          <m:mrow>
+                            <m:mi>N</m:mi>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:msup>
+                              <m:mi>m</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>2</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mrow>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mn>6</m:mn>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mn>9</m:mn>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mi/>
+                          <m:mi>m</m:mi>
+                          <m:msup>
+                            <m:mo stretchy="false">)</m:mo>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= {  { \( 9` times `"10" rSup { size 8{9} }  \) ` \(  - 1 "." "60" times "10" rSup { size 8{ - "19"} }  \)  \( 1 "." "60" times "10" rSup { size 8{ - "19"} }  \) `N - m rSup { size 8{2} } }  over  { \( "10" rSup { size 8{ - 6} }  times "10" rSup { size 8{ - 9} } `m \)  rSup { size 8{2} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169181214692">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>F</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mn>9</m:mn>
+                          <m:mi/>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mi/>
+                          <m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>60</m:mtext>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mn>1</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>60</m:mtext>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mi/>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:msup>
+                                <m:mtext>10</m:mtext>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>9</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                              <m:mo stretchy="false">×</m:mo>
+                              <m:msup>
+                                <m:mtext>10</m:mtext>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mrow>
+                                      <m:mo stretchy="false">−</m:mo>
+                                      <m:mtext>19</m:mtext>
+                                    </m:mrow>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mtext>19</m:mtext>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mrow>
+                            <m:mi>N</m:mi>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mi>m</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:msup>
+                            <m:mtext>10</m:mtext>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mtext>15</m:mtext>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                          <m:mi/>
+                          <m:mi>m</m:mi>
+                          <m:msup>
+                            <m:mo stretchy="false">)</m:mo>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= {  { \( 9` \) ` \(  - 1 "." "60" \)  \( 1 "." "60" \) ` \( "10" rSup { size 8{9} }  times "10" rSup { size 8{ - "19"} }  times "10" rSup { size 8{ - "19"} }  \) N - m}  over  { \( "10" rSup { size 8{ - "15"} } `m \)  rSup { size 8{2} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169172929100">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>F</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mtext>23</m:mtext>
+                          <m:mtext>.</m:mtext>
+                          <m:mn>0</m:mn>
+                          <m:mrow>
+                            <m:mi/>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mtext>29</m:mtext>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mi>N</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:msup>
+                            <m:mtext>10</m:mtext>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mtext>15</m:mtext>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                          <m:msup>
+                            <m:mo stretchy="false">)</m:mo>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= {  { \( "23" "." 0` times "10" rSup { size 8{ - "29"} }  \) N}  over  { \( "10" rSup { size 8{ - "15"} }  \)  rSup { size 8{2} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169175474617">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>23</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:msup>
+                            <m:mtext>10</m:mtext>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mtext>29</m:mtext>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>30</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>N</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F="23" "." 0 times "10" rSup { size 8{ - "29"} }  times "10" rSup { size 8{"30"} } `N} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169175075324">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>23</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>N</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F="23" "." 0 times "10" rSup { size 8{1} } `N} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169173001561">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>230</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>N</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F="230"`N} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169186976274">Because the charges on the electron and the proton differ in polarity, the electrostatic force is <emphasis effect="italics">attractive</emphasis>.</para>
+      </section>
+      <section id="id1169175267139">
+        <title>Exercises</title>
+        <list id="id1169175049568" list-type="enumerated" number-style="arabic">
+          <item>The weight of the Space Shuttle is 4,470,000 lb. Express this weight in scientific notation.</item>
+          <item>The weight of a honey bee is 0.000 385 05 lb. Express this weight in scientific notation.</item>
+          <item>Perform the following multiplications. (a) (37.5 x 10<sup>7</sup>) x (2.87 x 10<sup>5</sup>), (b) (37.5 x 10<sup>7</sup>) x (2.87 x 10<sup>-5</sup>).</item>
+          <item>Perform the following divisions. (a) (37.5 x 10<sup>7</sup>) / (2.87 x 10<sup>5</sup>), (b) (37.5 x 10<sup>7</sup>) / (2.87 x 10<sup>-5</sup>).</item>
+          <item>The area of the United States is 9.83 x 10<sup>6</sup> km<sup>2</sup>. Its population is 3.10 x 10<sup>6</sup>. What is the population density (people/km<sup>2</sup>) of the United States?</item>
+          <item>The distance between the Sun and the Earth is 1.47 x 10<sup>11</sup> m. The speed of light is 299,792,458 m/s. How long does it take for light to travel between the Sun and the Earth?</item>
+          <item>The planned Blythe Solar Power Plant in California is expected to produce 968 MW. The Aswan Dam Power Plant in Egypt produces 2.1 gigawatts of power. How may solar power plants with similar power production as that of the Blythe Solar Power Plant would be needed to match the power production of the Aswan Dam Power Plant?</item>
+          <item>An electric circuit consists of a 9.00 V battery in series with a load that has a resistance of 13.78 kΩ. (a) Find the power delivered by the battery. (b) Find the power absorbed by the load.</item>
+          <item>The mass of the Earth is 5.97 x 10<sup>24</sup> kg, while that of the moon is 7.36 x 10<sup>22</sup> kg. The average distance between the Earth and the Moon is 384,403 km. What is he force exerted on the Moon by the Earth?</item>
+          <item>Two charges are separated by 4.66 x 10<sup>-8</sup> m. Each has a positive charge of 3.6 x 10<sup>-18</sup> Coulombs. What is the repulsive force that they exert on one another?</item>
+        </list>
+      </section>
+    </section>
+  </content>
+</document>

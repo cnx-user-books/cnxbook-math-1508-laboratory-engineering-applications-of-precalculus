@@ -1,0 +1,829 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Rational Expressions and Equations</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38602</md:content-id>
+  <md:title>Rational Expressions and Equations</md:title>
+  <md:abstract>This module is part of collection of modules developed for use by students enrolled in a special section of MATH 1508 (PreCalculus) for preengineers.  This module introduces several engineering applications which are based upon rational expressions and equations.</md:abstract>
+  <md:uuid>a22785f6-e24a-4849-87f3-4d403a318322</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1168910461831">
+      <title>Rational Expressions and Equations</title>
+      <section id="id1168900692550">
+        <title>Introduction</title>
+        <para id="id1168899863877">We have seen that much of the analysis that it takes to simplify rational expressions and to solve rational equations is an outgrowth of the mathematics associated with fractions. In most cases, one can begin to solve a problem involving a rational equation by factoring the polynomials that are constituents of the rational equation. Then, one may seek to identify if there are any common factors in the numerator and denominator that cancel with one another. If there are, cancelling these terms will often make our job of solving the equation simpler. </para>
+        <para id="id1168903274059">The fields of science and engineering are filled with rational equations that describe many different application areas. In this section of notes, we will focus on how rational expressions and equations are solved in several different applications. Before we do so, let us examine an example that involves the manipulation of rational expressions to solve a numerical problem involving positive integers.</para>
+      </section>
+      <section id="id1168918536541">
+        <title>Numerical Problem Involving Rational Expressions</title>
+        <para id="id1168899448241">Question: One positive integer is 3 more than another positive integer. When the reciprocal of the smaller integer is added to the reciprocal of the larger integer, the resulting sum is ½. Find the positive integer.</para>
+        <para id="id1168899841956">As a reminder the reciprocal of an integer is 1 divided by the integer. For example, the reciprocal of 10 is 1/10.</para>
+        <para id="id1168899843296">Solution: We begin the solution by defining the variable x.</para>
+        <para id="id1168903322172">Let x = smaller positive integer</para>
+        <para id="id1168913922705">With this definition of x, we know that the larger positive integer can be expressed algebraically as (x + 3).</para>
+        <para id="id1168901098230">Using the definition of the reciprocal, we can translate the problem statement into a rational equation</para>
+        <equation id="id1168899067547">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfenced open="(" close=")">
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mi>x</m:mi>
+                        </m:mfrac>
+                      </m:mfenced>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:mfenced open="(" close=")">
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mrow>
+                            <m:mi>x</m:mi>
+                            <m:mo stretchy="false">+</m:mo>
+                            <m:mn>3</m:mn>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mfenced>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ left ( {  {1}  over  {x} }  right )`+` left ( {  {1}  over  {x+3} }  right )`= {  {1}  over  {2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168901112452">The rational equation consists of three fractions. The lowest common denominator for these three fractions is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi/><m:mo stretchy="false">(</m:mo><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mn>3</m:mn></m:mrow><m:mo stretchy="false">)</m:mo><m:mi/><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ \( x \) ` \( x+3 \) ` \( 2 \)  "." } {}</m:annotation></m:semantics></m:math> We can multiply each side of the rational equation by the lowest common denominator to obtain the equation</para>
+        <equation id="id1168900894816">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mi>x</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mfenced open="{" close="}">
+                        <m:mrow>
+                          <m:mfenced open="(" close=")">
+                            <m:mfrac>
+                              <m:mn>1</m:mn>
+                              <m:mi>x</m:mi>
+                            </m:mfrac>
+                          </m:mfenced>
+                          <m:mrow>
+                            <m:mi/>
+                            <m:mo stretchy="false">+</m:mo>
+                            <m:mi/>
+                          </m:mrow>
+                          <m:mfenced open="(" close=")">
+                            <m:mfrac>
+                              <m:mn>1</m:mn>
+                              <m:mrow>
+                                <m:mi>x</m:mi>
+                                <m:mo stretchy="false">+</m:mo>
+                                <m:mn>3</m:mn>
+                              </m:mrow>
+                            </m:mfrac>
+                          </m:mfenced>
+                        </m:mrow>
+                      </m:mfenced>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mi>x</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ \( 2 \)  \( x \)  \( x+3 \) ` left lbrace  left ( {  {1}  over  {x} }  right )`+` left ( {  {1}  over  {x+3} }  right ) right rbrace `= \( 2 \)  \( x \)  \( x+3 \) ` {  {1}  over  {2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168927135012">We can simplify things on a term by term basis</para>
+        <equation id="id1168921546787">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mi>x</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mi>x</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{2 \( x+3 \) `+`2 \( x \) `=`x \( x+3 \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        
+        
+        
+        <equation id="id1168925045561">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mn>2x</m:mn>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mn>6</m:mn>
+                        </m:mrow>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>2x</m:mn>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mi>x</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>3x</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{2x+6+2x=x rSup { size 8{2} } +3x} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1168911411209">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>4x</m:mn>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>6</m:mn>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mi>x</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>3x</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{4x+6=x rSup { size 8{2} } +3x} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1168904155376">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msup>
+                            <m:mi>x</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>6</m:mn>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{x rSup { size 8{2} }  - x - 6=0} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168902392322">This quadratic equation can be solved a variety of ways. One simple way to do so is to employ factoring.</para>
+        <equation id="id1168915527115">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mi>x</m:mi>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mi>x</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ \( x - 3 \)  \( x+2 \) =0} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168934008430">The roots are therefore x = 3 and x = -2. </para>
+        <para id="id1168919846858">From the problem statement, we know that the solution for x must be positive. We therefore can ignore the root of -2.</para>
+        <para id="id1168919078577">Our answer is therefore 3.</para>
+      </section>
+      <section id="id1168918963406">
+        <title>Rate Applications</title>
+        <para id="id1168932529090">Engineering and science abound with problems that make use of rates. Examples of rate include concepts such as speed which is a measure of the rate of change of distance per unit of time. Flow rates are common in fluid mechanics problems. The flow rate of liquid in a pipe can be expressed as a number of liters of liquid per unit of time. </para>
+        <para id="id1168927752622">An important consideration in working rate problems is to recognize that a rate can be written as a ratio of the quantity of a particular entity over time. The following two examples illustrate the use of rates to solve engineering problems.</para>
+      </section>
+      <section id="id1168918561077">
+        <title>Computing the Time It Takes to Finish a Construction Project</title>
+        <para id="id1168919438703">Civil engineers perform important duties in the management of construction projects. Suppose that a civil engineer is charged with the the completion of a construction project. The civil engineer knows that if he (she) hires Subcontractor A to complete the construction project, it will take 10 months. On the other hand, if Subcontractor B is hired, the construction project can be completed in 15 months</para>
+        <para id="id1168919236287">Instead of hiring just one of the subcontractor, the civil engineer decides to hire both Subcontractor A and Subcontractor B. By doing so, the civil engineer expects the project to be completed more quickly.</para>
+        <para id="id1168929610930">Question: How long will it take both subcontractors working together to complete the construction project?</para>
+        <para id="id1168922074244">Let us begin by considering Subcontractor A. Working alone, it would take Subcontractor A 10 months to complete the project. If we consider the completion of the construction project as a job, then Subcontractor A can complete (1/10) of the job in one month. Another way to look at this is that the rate at which Subcontractor A can complete the job is as (1/10) job/month.</para>
+        <para id="id1168923885928">Now, let us look at Subcontractor B. Working alone, it would take Subcontractor B 15 months to complete the construction project. Thus Subcontractor B can complete (1/15) of job in one month. The rate of Subcontractor B can be stated as (1/15) job/month</para>
+        <para id="id1168903987025">Let us define the variable<emphasis effect="italics"> t</emphasis></para>
+        <para id="id1168919048239"><emphasis effect="italics">t</emphasis> = the time that it takes to complete the entire job using both of the subcontractors, </para>
+        <para id="id1168908441471">where <emphasis effect="italics">t</emphasis> is measured in months. </para>
+        <para id="id1168916356050">In a length of time equal to <emphasis effect="italics">t</emphasis>, the fraction of the job that Subcontractor A can complete is equal to the product </para>
+        
+        <equation id="id1168909761446">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfenced open="(" close=")">
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mtext>10</m:mtext>
+                        </m:mfrac>
+                      </m:mfenced>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>t</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mi>t</m:mi>
+                          <m:mtext>10</m:mtext>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ left ( {  {1}  over  {"10"} }  right )`t= {  {t}  over  {"10"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168914419607">Similarly the fraction of the job that Subcontractor B can complete in the same length of time is </para>
+        <equation id="id4498793">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfenced open="(" close=")">
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mtext>15</m:mtext>
+                        </m:mfrac>
+                      </m:mfenced>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>t</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mi>t</m:mi>
+                          <m:mtext>15</m:mtext>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ left ( {  {1}  over  {"15"} }  right )`t= {  {t}  over  {"15"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168923006992">We may obtain the fraction of the job that can be completed in an interval of time equal to t by adding the fraction associated with the Subcontractor A to that of Subcontractor B, which is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:mi>t</m:mi><m:mtext>10</m:mtext></m:mfrac><m:mrow><m:mi/><m:mo stretchy="false">+</m:mo><m:mfrac><m:mi>t</m:mi><m:mtext>15</m:mtext></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {t}  over  {"10"} } `+ {  {t}  over  {"15"} } } {}</m:annotation></m:semantics></m:math><m:math><m:semantics><m:mrow/><m:annotation encoding="StarMath 5.0">{}</m:annotation></m:semantics></m:math></para>
+        <para id="id1168928825029">If we set this sum to one, we obtain a rational equation that can be solved to produce the amount of time that it will take both subcontractors working together to complete the entire job </para>
+        <equation id="id1168935318000">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mi>t</m:mi>
+                        <m:mtext>10</m:mtext>
+                      </m:mfrac>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi/>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mfrac>
+                            <m:mi>t</m:mi>
+                            <m:mtext>15</m:mtext>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {t}  over  {"10"} } `+ {  {t}  over  {"15"} } =`1} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168926708081">The solution follows</para>
+        <equation id="id1168921074828">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mtext>15</m:mtext>
+                          <m:mi/>
+                          <m:mi>t</m:mi>
+                        </m:mrow>
+                        <m:mtext>150</m:mtext>
+                      </m:mfrac>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi/>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mtext>10</m:mtext>
+                              <m:mi/>
+                              <m:mi>t</m:mi>
+                            </m:mrow>
+                            <m:mtext>150</m:mtext>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {"15"`t}  over  {"150"} } `+ {  {"10"`t}  over  {"150"} } =1} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1168924172266">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>150</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mfenced open="(" close=")">
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mtext>15</m:mtext>
+                              <m:mi/>
+                              <m:mi>t</m:mi>
+                              <m:mrow>
+                                <m:mi/>
+                                <m:mo stretchy="false">+</m:mo>
+                                <m:mtext>10</m:mtext>
+                              </m:mrow>
+                              <m:mi/>
+                              <m:mi>t</m:mi>
+                            </m:mrow>
+                            <m:mtext>150</m:mtext>
+                          </m:mfrac>
+                        </m:mfenced>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>150</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"150"` left ( {  {"15"`t`+"10"`t}  over  {"150"} }  right )="150"` \( 1 \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168926122163">Simplification of this equation yields</para>
+        <equation id="id1168932045179">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>25</m:mtext>
+                      <m:mi/>
+                      <m:mi>t</m:mi>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>150</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"25"`t`="150"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168927832456">From this, we conclude that the two subcontractors working together can complete the job in 6 months.</para>
+      </section>
+      <section id="id1168914418151">
+        <title>Motion of an Automobile Using Two Different Speeds</title>
+        <para id="id1168910486509">Question: Suppose that you are interested in taking an automobile trip to visit a friend in Van Horn, Texas. On your journey, you will travel 40 miles inside the City of El Paso. Once you leave the city limits of El Paso, you will have to travel an additional 90 miles to reach Van Horn. Because of traffic, you anticipate that your average speed within the city limits of El Paso will be only half of the average speed once you leave the city limits. You also project that the total time of your trip from El Paso to Van Horn will be 2.5 hours, </para>
+        <para id="id1168924761172">What is your average speed within the city limits of El Paso? What would be your average velocity outside the city limits? </para>
+        <para id="id1168911346260">Solution: We begin by defining the following variable</para>
+        <para id="id2215153"><emphasis effect="italics">x</emphasis> = average speed (miles/hr) within in the city limits of El Paso. </para>
+        <para id="id1168906396086">The speed at which you would drive outside the city limits would be twice that of the velocity within the city limits. Thus</para>
+        <para id="id1168931967299">2 <emphasis effect="italics">x</emphasis> = average velocity (miles/hr) outside the city limits of El Paso.</para>
+        <para id="id1168917294748">The amount of time that you would spend driving in El Paso would be </para>
+        <equation id="id1168929770408">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mtext>40</m:mtext>
+                        <m:mi/>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>miles</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:mrow>
+                      <m:mi>x</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {"40"` ital "miles"}  over  {x} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168926048546">The amount of time that you would spend driving outside the city limits would be</para>
+        <equation id="id5942783">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mtext>90</m:mtext>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>miles</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                          <m:mi/>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mi/>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {"90"` ital "miles"}  over  {2`x} } `} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168898907996">If we sum these together we obtain the total time of the trip </para>
+        <equation id="id1168899775716">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mtext>40</m:mtext>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>miles</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                        <m:mi>x</m:mi>
+                      </m:mfrac>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mtext>90</m:mtext>
+                            <m:mi/>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>miles</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mi/>
+                            <m:mi>x</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>5</m:mn>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>hr</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {"40"` ital "miles"}  over  {x} } `+` {  {"90"` ital "miles"}  over  {2`x} } =2 "." 5` ital "hr"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168903429531">This rational equation can be solved as follows</para>
+        <equation id="id1168910826766">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                          <m:mi/>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mtext>40</m:mtext>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>miles</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                          <m:mi/>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mi>x</m:mi>
+                          <m:mo stretchy="false">)</m:mo>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mi/>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mtext>90</m:mtext>
+                            <m:mi/>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>miles</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mi/>
+                            <m:mi>x</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>5</m:mn>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>hr</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {2` \( "40" \) ` ital "miles"}  over  {2` \( x \) } } `+` {  {"90"` ital "miles"}  over  {2`x} } =2 "." 5` ital "hr"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168929611993">which can be simplified as</para>
+        <equation id="id1168926127275">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>170</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>miles</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>5</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>x</m:mi>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>hr</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"170"` ital "miles"=5`x` ital "hr"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1168911053159">We solve this for x to obtain the result of 34 miles/hr. This represents the average speed within the city limits of El Paso. Outside the city limits would be twice that within the city limits or 68 miles/hr. </para>
+      </section>
+      <section id="id1638354">
+        <title>Exercises</title>
+        <para id="id1168928615236">1. The difference between the reciprocals of two consecutive positive odd integers is 2/15. Find the two positive odd integers.</para>
+        <para id="id1168913819746">2. Two pipes (A and B) attach to the top of a holding tank that is part of a waste water processing system. The pipes are of different size. If liquid is supplied to the tank by Pipe A only, it takes 12 minutes to fill the tank. Pipe B has a smaller cross-sectional area than that of pipe A. If liquid is supplied to the tank using Pipe B only, it takes 15 minutes to fill the tank. </para>
+        <para id="id1168925549015">A civil engineer is tasked with managing this process. In order to minimize the time needed to fill the tank, the civil engineer decides to supply liquid to the tank via both Pipe A and Pipe B. If this is done, how long will it take to fill the tank?</para>
+        <para id="id1168927786548">
+          <figure id="id1168898065938"><media id="id1168898065938_media" alt="">
+              <image mime-type="image/jpg" src="../../media/Picture 0-e00c.jpg" id="id1168898065938__onlineimage" height="240" width="320"/>
+            </media>
+          <caption>Storage tank with two input pipes.</caption></figure>
+        </para>
+        <para id="id1168910910507">3. The first leg of Mary’s Spring Break trip consisted of 120 miles of traffic. When the traffic cleared she was able to drive twice as fast for 300 miles. If the total trip took 9 hours, how long was Mary stuck in traffic?</para>
+        <para id="id1168932047955">4. Three resistors are connected in parallel. There individual values are 10 Ω, 20 Ω and 50 Ω. What is the equivalent resistance of the parallel combination?</para>
+      </section>
+    </section>
+  </content>
+</document>

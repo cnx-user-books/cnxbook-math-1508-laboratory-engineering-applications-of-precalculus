@@ -1,0 +1,382 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Significant Digits</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38529</md:content-id>
+  <md:title>Significant Digits</md:title>
+  <md:abstract>This module is part of a collection of modules intended for students enrolled in PreCalculus (MATH 1508) at the University of Texas at El Paso.</md:abstract>
+  <md:uuid>2e5f6e28-7b78-4550-8a84-45e05e9f97a7</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1165565829116">
+      <title>Significant Digits</title>
+      <section id="id1165565622628">
+        <title>Introduction</title>
+        <para id="id1165565284608">Though easy to comprehend, significant digits play an important role in engineering calculations. In this module, the rules are presented that govern how to determine which digits present in a number are significant. In addition, several applications are used to illustrate how significant digits can be used to express the results of engineering calculations.</para>
+      </section>
+      <section id="id1165570922678">
+        <title>Basic Rules</title>
+        <para id="id1165564154438">A number can be thought of as a string of digits. Significant digits represent those digits present in a number that carry significance or importance to the precision of the number. </para>
+        <para id="id1165564345753">Rule 1: All digits other than 0 are significant. For example, the number 46 has two significant digits and the number 25.8 has three significant digits.</para>
+        <para id="id1165565420726">Rule 2: Zeros appearing anywhere between two non-zero digits are significant. Let us consider the number 506.72. The 0 that occurs between the 5 and 6 is significant according to Rule 2. Thus the number 506.72 has five significant digits. </para>
+        <para id="id1165563745098">Rule 3: Leading zeros are not significant. For example, 0.00489 has threee significant digits.</para>
+        <para id="id1165567889050">Rule 4: Trailing zeros in a number containing a decimal point are significant. For example, the number 36.500 has five significant digits. </para>
+        <para id="id1165574901129">Rule 5: Zeroes at the end of a number are significant only if they are behind a decimal point. Let us consider 4,600 as the number. It is not clear whether the zeros at the end of the number are significant. As a result, there could be two, three or four significant digits present. To avoid ambiguity, one may express the number by means of scientific notation. If the number is written as 4.6 ×10<sup>3</sup>, then it has two significant digits. If the number is written as 4.60 ×10<sup>3</sup>, then it has three significant digits. Lastly, if the number is written as 4.600 ×10<sup>3</sup>, then it has four significant digits. </para>
+      </section>
+      <section id="id1165565775443">
+        <title>Rounding</title>
+        <para id="id1165580385483">The concept of significant digits is often used in connection with rounding. Rounding to <emphasis effect="italics">n</emphasis> significant digits is a more general-purpose technique than rounding to <emphasis effect="italics">n</emphasis> decimal places, since it handles numbers of different scales in a uniform way. </para>
+        <para id="id1165580836166">Let us consider the population of a town. The population of the town might be known to the nearest thousand, say 12,000. Now let us consider the population of a state. The might be known only to the nearest million and might be stated as 12,000,000. The former number might be in error by hundreds while the latter number might be in error by hundreds of thousands of individuals. Despite this, the two numbers have the same significant digits. They are 5 and 2. This reflects the fact that the significance of the error (its likely size relative to the size of the quantity being measured) is the same in both cases.</para>
+        <para id="id1165566090872">The rules for rounding a number to <emphasis effect="italics">n</emphasis> significant digits are:</para>
+        <para id="id1165565554584">Start with the leftmost non-zero digit (e.g. the "7" in 7400, or the "4" in 0.0456).</para>
+        <list id="id1165565284981" list-type="bulleted">
+          <item>Keep <emphasis effect="italics">n</emphasis> digits. Replace the rest with zeros.</item>
+          <item>Round up by one if appropriate. For example, if rounding 0.89 to 1 significant digit, the result would be 0.9.</item>
+          <item>Or, round down by one if appropriate. For example, if rounding 0.042 to one significant digit, the result would be 0.04</item>
+        </list>
+      </section>
+      <section id="id1165564205801">
+        <title>Multiplication and Division</title>
+        <para id="id1165578561004">In a calculation involving multiplication, division, trigonometric functions, etc., the number of significant digits in an answer should equal the least number of significant digits in any one of the numbers being multiplied, divided etc. </para>
+        <para id="id1165564214344">The product, 4.56 × 3.456, involves the multiplication of a number with three significant digits and another with four significant digits. The product should be expressed as a number with three significant digits. Using a calculator the number, 15.75936, appears on the display of the device. It should then be rounded to three significant digits. So the product expressed using three significant digits is 15.8. Note that in this example, upward rounding was employed. </para>
+      </section>
+      <section id="id1165580944838">
+        <title>Addition and Subtraction</title>
+        <para id="id1165565850376">The results that one obtains through the operations of addition and subtraction follow the following rule. The result of addition and subtraction should have as many decimal places as the number with the smallest number of decimal places. For example the sum 13.678 + 2.59 should be expressed as 16.27.</para>
+      </section>
+      <section id="id1165568020723">
+        <title>Something to Remember</title>
+        <para id="id1165565850394">When performing calculations, you are encouraged to keep as many digits as is practical. This practice will help you obtain more precise results by eliminating some of the error introduced by the rounding operation. Once you have a final answer, then one should go about applying the rules presented in this section to produce a result that is consistent from the standpoint of significant digits.</para>
+      </section>
+      <section id="id1165585561373">
+        <title>Example: Finding Current Using Ohm’s Law</title>
+        <para id="id1165564559288">Let us put to work the ideas put forth earlier in the context of an example that involves calculations centering on Ohm’s Law. Let us suppose that we are presented with the circuit shown in Fig. 1.</para>
+        <para id="id1165570969955">
+          <figure id="id1165567341701"><media id="id1165567341701_media" alt="">
+              <image mime-type="image/jpg" src="../../media/graphics1-6cee.jpg" id="id1165567341701__onlineimage" height="206" width="275"/>
+            </media>
+          <caption>Electric circuit.</caption></figure>
+        </para>
+        <para id="id1165574576523">Suppose that the voltage (<emphasis>V</emphasis>) is 15 V and that the resistance is (<emphasis>R</emphasis>) 3.3 kΩ. What is the value of the current (<emphasis>I</emphasis>)?</para>
+        <para id="id1165566637151">Ohm’s Law tells us that the current is the ratio of the voltage and the resistance.</para>
+        <equation id="id1165586881307">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>I</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mi>V</m:mi>
+                        <m:mi>R</m:mi>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{I= {  {V}  over  {R} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165571041890">Substituting the values for V and R into the equation yields the result</para>
+        <equation id="id1165574387889">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>I</m:mi>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mtext>15</m:mtext>
+                              <m:mi/>
+                              <m:mi>V</m:mi>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mn>3,</m:mn>
+                              <m:mtext>300</m:mtext>
+                              <m:mi/>
+                              <m:mo stretchy="false">Ω</m:mo>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>004545454</m:mtext>
+                      <m:mi/>
+                      <m:mi>A</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{I= {  {"15"`V}  over  {3,"300"` %OMEGA } } =0 "." "004545454"`A} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165567838808">Now, let us consider this result in the context of significant digits. Both the voltage and the resistance were expressed using two significant digits. We realize that the resulting value for the current (<emphasis>I</emphasis>) should contain two significant digits. We can accomplish this by expressing the result after rounding to two significant digit precision.</para>
+        <equation id="id1165564129817">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>I</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>0045</m:mtext>
+                      <m:mi/>
+                      <m:mi>A</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{I=0 "." "0045"`A} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165563924568">Thus the answer to this example should be expressed as 0.0045 A. </para>
+        <para id="id1165585882446">We may choose to express this number using engineering notation and the result becomes</para>
+        <equation id="id1165575682668">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>I</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>4</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>3</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>4</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>5</m:mn>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>mA</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{I=4 "." 5 times "10" rSup { size 8{ - 3} } A=4 "." 5` ital "mA"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165565760546">This is the preferred manner for expressing the result.</para>
+      </section>
+      <section id="id1165569477019">
+        <title>Example: Finding Acceleration by means of Newton’s Law of Motion</title>
+        <para id="id1165565671888">Sir Issac Newton was the first to formulate the relationship between force, mass and acceleration of an object. He found that a force (<emphasis>F</emphasis>) exerted on an object of mass (<emphasis>m</emphasis>) will produce an acceleration (<emphasis>a</emphasis>) according to the following equation</para>
+        <equation id="id1165579097835">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi>m</m:mi>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>a</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F=m`a} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165588128154">Let us assume that we have a mass that weighs 120.6 kg. How much force is required to accelerate the mass at a rate of 26.1 m/s<sup>2</sup>? </para>
+        <para id="id1165574118399">We recognize that the value for mass is expressed using four significant digits, while the value for the acceleration is expressed using only three significant digits. We substitute the values for mass and acceleration into Newton’s Law of Motion</para>
+        
+        <equation id="id1165563604600">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>120</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>6</m:mn>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>kg</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mtext>26</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>2</m:mn>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:msup>
+                          <m:mi>s</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F="120" "." 6` ital "kg" times "26" "." 2`m/s rSup { size 8{2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165565028024">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>3147</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>66</m:mtext>
+                      <m:mi/>
+                      <m:mi>N</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F="3147" "." "66"`N} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165576119925">The number (3147.66) represents what is displayed on the calculator upon calculation of the product. This number has six significant digits. We wish our result to be expressed by the smaller of the number of significant digits contained in the two numbers that were multiplied. In this case the number should be expressed using just three significant digits. So the result expressed using three significant digits is</para>
+        <equation id="id1165565708458">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>3,</m:mn>
+                      </m:mrow>
+                      <m:mtext>150</m:mtext>
+                      <m:mi/>
+                      <m:mi>N</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F=3,"150"`N} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id4770765">In order to remove any uncertainty relating to the trailing 0, the result can be written in engineering notation as</para>
+        <equation id="id1165567838404">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>15</m:mtext>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>kN</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F=3 "." "15"` ital "kN"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165574685352">This is the preferred form for the solution.</para>
+      </section>
+      <section id="id1165565970452">
+        <title>Exercises</title>
+        <list id="id1165585440011" list-type="enumerated" number-style="arabic">
+          <item>Express the quantity 5.342 015 m using 3 significant digits.</item>
+          <item>Express the quantity 5.347 015 m using 3 significant digits.</item>
+          <item>How many significant digits are present in the number 0.1256? Repeat for 0.01256? Repeat for 0.012560?</item>
+          <item>A 5 V source is connected to a 22 Ω resistor. Express the current using 3 significant digits.</item>
+          <item>A 9 V source is connected to a resistor whose value is unknown. The current of the circuit is measured and found to be 125 mA. Express the value of the resistance using 3 significant digits.</item>
+          <item>A current measured to be 35.7 mA passes through a 2.36 MΩ resistor. Express the value of the voltage across the resistor using 3 significant digits.</item>
+          <item>The power delivered by an electrical source is equal to the product of the voltage of the source and the current that flows out of the source. Suppose that the voltage is 120 V and that the current is 856.7 mA. Express the power delivered by the source using 3 significant digits.</item>
+          <item>A mass of 5.00 kg undergoes an acceleration of 2.37 m/s<sup>2</sup>. Express the force that is needed to produce this acceleration using 3 significant digits.</item>
+          <item>A force equal to 2.69 N is applied to a mass of 8.23 kg. Express the resulting acceleration using 3 significant digits.</item>
+          <item>A 78.9 kg object is accelerated at a rate of 2.10 m/s<sup>2</sup>. How much force is required to produce this acceleration?</item>
+        </list>
+      </section>
+    </section>
+  </content>
+</document>

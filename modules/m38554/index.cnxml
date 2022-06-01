@@ -1,0 +1,1291 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Adding Fractions</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38554</md:content-id>
+  <md:title>Adding Fractions</md:title>
+  <md:abstract>This module is part of a collection of modules written for students enrolled in a Pre Calculus Course for Pre Engineers (MATH 1508) at the University of Texas at El Paso.  The module introduces how fractions can be added through the use of the lowest common denominator method.  To illustrate the principle, an introduction to Ohm's Law is presented.  In addition, the rules that govern the determination of the equivalent resistance of series and parallel connections of resistors are introduced.  Finally, exercises involving the addition of fractions in the context of parallel connections of resistors are included to emphasize the importance of the lowest common denominator method in engineering calculations.</md:abstract>
+  <md:uuid>bf4dd137-1eeb-44e4-bb6e-36ed2f2bdac1</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1167910012548">
+      <title>Adding Fractions</title>
+      <section id="id1167918847292">
+        <title>Introduction</title>
+        <para id="id1167913923521">In order to enjoy success as an engineer, it is important to learn how to add fractions. In this module, you will learn to add fractions using the lowest common denominator (LCD) method. Also, you will learn the role that the addition of fractions plays in determining the equivalent resistance of resistors connected in parallel.</para>
+      </section>
+      <section id="id1167921974299">
+        <title>Lowest Common Denominator (LCD) Method</title>
+        <para id="id1167916988668">In the course of working algebraic problems, one often encounters situations that require the addition of fractions with unequal denominators. For example, let us consider the following </para>
+        <equation id="id1167924166653">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mn>3</m:mn>
+                        <m:mtext>10</m:mtext>
+                      </m:mfrac>
+                      <m:mo stretchy="false">+</m:mo>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mtext>12</m:mtext>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {3}  over  {"10"} } + {  {1}  over  {"12"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167922106756">In order to add the two fractions, it is important to rewrite each fraction with the same denominator. In order to accomplish this, we begin by expressing the denominator of the first fraction in terms of a product of its factors</para>
+        <equation id="id1167913588688">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>10</m:mtext>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mn>5</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"10"=2 times 5} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167908050481">We do the same with the denominator of the second fraction</para>
+        <equation id="id1167916685772">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mtext>12</m:mtext>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:mn>3</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mn>2</m:mn>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mn>5</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"12"=2 times 2 times 3=2 rSup { size 8{2} }  times 5} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167914432296">We can express the lowest common denominator as</para>
+        <equation id="id1167920646965">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>LCD</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:msup>
+                              <m:mn>2</m:mn>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>2</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:mn>3</m:mn>
+                          </m:mrow>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:mn>5</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mtext>60</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ ital "LCD"=2 rSup { size 8{2} }  times 3 times 5="60"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167916760338">We proceed to express the sum of fractions using the lowest common denominator just found</para>
+        <equation id="id1167909945696">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mfrac>
+                              <m:mn>3</m:mn>
+                              <m:mtext>10</m:mtext>
+                            </m:mfrac>
+                            <m:mo stretchy="false">+</m:mo>
+                            <m:mfrac>
+                              <m:mn>1</m:mn>
+                              <m:mtext>12</m:mtext>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mrow>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mn>3</m:mn>
+                                <m:mo stretchy="false">×</m:mo>
+                                <m:mn>6</m:mn>
+                              </m:mrow>
+                              <m:mrow>
+                                <m:mtext>10</m:mtext>
+                                <m:mo stretchy="false">×</m:mo>
+                                <m:mn>6</m:mn>
+                              </m:mrow>
+                            </m:mfrac>
+                            <m:mo stretchy="false">+</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                                <m:mo stretchy="false">×</m:mo>
+                                <m:mn>5</m:mn>
+                              </m:mrow>
+                              <m:mrow>
+                                <m:mtext>12</m:mtext>
+                                <m:mo stretchy="false">×</m:mo>
+                                <m:mn>5</m:mn>
+                              </m:mrow>
+                            </m:mfrac>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mtext>18</m:mtext>
+                            <m:mtext>60</m:mtext>
+                          </m:mfrac>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mfrac>
+                            <m:mn>5</m:mn>
+                            <m:mtext>60</m:mtext>
+                          </m:mfrac>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mtext>23</m:mtext>
+                        <m:mtext>60</m:mtext>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {3}  over  {"10"} } + {  {1}  over  {"12"} } = {  {3 times 6}  over  {"10" times 6} } + {  {1 times 5}  over  {"12" times 5} } = {  {"18"}  over  {"60"} } + {  {5}  over  {"60"} } = {  {"23"}  over  {"60"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167911150175">Thus we obtain the result of the addition as 23/60.</para>
+        <para id="id1167912283205">Let us consider another example in which three fractions are to be added</para>
+        <equation id="id1167912204633">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mn>2</m:mn>
+                          <m:mn>3</m:mn>
+                        </m:mfrac>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mfrac>
+                          <m:mn>3</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mo stretchy="false">+</m:mo>
+                      <m:mfrac>
+                        <m:mn>5</m:mn>
+                        <m:mn>7</m:mn>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {2}  over  {3} } + {  {3}  over  {2} } + {  {5}  over  {7} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167930836454">The denominator of each fraction is a prime number, so the lowest common denominator is their product</para>
+        <equation id="id1167912327966">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>LCD</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>3</m:mn>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:mn>7</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mtext>42</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ ital "LCD"=3 times 2 times 7="42"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167914260255">We must rewrite each fraction as an equivalent fraction with a denominator of 42</para>
+        <equation id="id1167916993074">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mn>2</m:mn>
+                          <m:mn>3</m:mn>
+                        </m:mfrac>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                              <m:mo stretchy="false">×</m:mo>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:mn>7</m:mn>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mn>3</m:mn>
+                              <m:mo stretchy="false">×</m:mo>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:mn>7</m:mn>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mtext>28</m:mtext>
+                        <m:mtext>42</m:mtext>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {2}  over  {3} } = {  {2 times 2 times 7}  over  {3 times 2 times 7} } = {  {"28"}  over  {"42"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167920645078">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mi/>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{~} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <equation id="id1167924656077">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mn>3</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mn>3</m:mn>
+                              <m:mo stretchy="false">×</m:mo>
+                              <m:mn>3</m:mn>
+                            </m:mrow>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:mn>7</m:mn>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mn>3</m:mn>
+                              <m:mo stretchy="false">×</m:mo>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:mn>7</m:mn>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mtext>63</m:mtext>
+                        <m:mtext>42</m:mtext>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {3}  over  {2} } = {  {3 times 3 times 7}  over  {3 times 2 times 7} } = {  {"63"}  over  {"42"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1167915088794">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mn>5</m:mn>
+                          <m:mn>7</m:mn>
+                        </m:mfrac>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mn>5</m:mn>
+                              <m:mo stretchy="false">×</m:mo>
+                              <m:mn>3</m:mn>
+                            </m:mrow>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mn>3</m:mn>
+                              <m:mo stretchy="false">×</m:mo>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:mn>7</m:mn>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mtext>30</m:mtext>
+                        <m:mtext>42</m:mtext>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {5}  over  {7} } = {  {5 times 3 times 2}  over  {3 times 2 times 7} } = {  {"30"}  over  {"42"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167923404950">Next, we express the sum of fractions using those equivalent fractions just determined</para>
+        <equation id="id1167927245480">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mfrac>
+                                <m:mn>2</m:mn>
+                                <m:mn>3</m:mn>
+                              </m:mfrac>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mfrac>
+                                <m:mn>3</m:mn>
+                                <m:mn>2</m:mn>
+                              </m:mfrac>
+                            </m:mrow>
+                            <m:mo stretchy="false">+</m:mo>
+                            <m:mfrac>
+                              <m:mn>5</m:mn>
+                              <m:mn>7</m:mn>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mfrac>
+                                <m:mtext>28</m:mtext>
+                                <m:mtext>42</m:mtext>
+                              </m:mfrac>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mfrac>
+                                <m:mtext>63</m:mtext>
+                                <m:mtext>42</m:mtext>
+                              </m:mfrac>
+                            </m:mrow>
+                            <m:mo stretchy="false">+</m:mo>
+                            <m:mfrac>
+                              <m:mtext>30</m:mtext>
+                              <m:mtext>42</m:mtext>
+                            </m:mfrac>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mtext>28</m:mtext>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mtext>63</m:mtext>
+                            </m:mrow>
+                            <m:mo stretchy="false">+</m:mo>
+                            <m:mtext>30</m:mtext>
+                          </m:mrow>
+                          <m:mtext>42</m:mtext>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mtext>121</m:mtext>
+                        <m:mtext>42</m:mtext>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {2}  over  {3} } + {  {3}  over  {2} } + {  {5}  over  {7} } = {  {"28"}  over  {"42"} } + {  {"63"}  over  {"42"} } + {  {"30"}  over  {"42"} } = {  {"28"+"63"+"30"}  over  {"42"} } = {  {"121"}  over  {"42"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167915008494">So 121/42 is the desired result.</para>
+      </section>
+      <section id="id1167908829486">
+        <title>Application: Combining Resistors in Parallel</title>
+        <para id="id1167920621467">Figure 1 depicts a physical device known as a resistor. A resistor is often used in an electrical circuit to control the amount of current that flows throughout the circuit. The relationship between voltage, current and resistance in an electric circuit is governed by a fundamental law of Physics known as Ohm’s Law. Stated in words, Ohm’s Law tells us that the potential difference (<emphasis>V</emphasis>) measured in Volts across a resistor is directly proportional the current (<emphasis>I</emphasis>) measured in Amps that flows through the resistor. Additionally, the constant of proportionality is the value of the resistance (<emphasis>R</emphasis>), measured in Ohms. Ohm’s Law can be stated mathematically as </para>
+        <equation id="id8008890">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>V</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi>I</m:mi>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>R</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{V=I`R} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <figure id="id8248890"><title>Photograph of a resistor.</title><media id="id8248890_media" alt="">
+            <image mime-type="image/jpg" src="../../media/Slide1.jpg" id="id8248890__onlineimage" height="324" width="432"/>
+          </media>
+        </figure>
+        <para id="id1167915008310">Instead of a single resistor, electric circuits often employ multiple resistors. Let us consider the case where we have two resistors that are denoted as <emphasis>R</emphasis><sub>1</sub> and <emphasis>R</emphasis><sub>2</sub>. </para>
+        <para id="id1167914568750">The two resistors can be connected in an end-to-end manner as shown in Figure 2 (a). <figure id="id1167920794290"><media id="id1167920794290_media" alt=""><image mime-type="image/jpg" src="../../media/Slide2.jpg" id="id1167920794290__onlineimage" height="450" width="600"/></media><caption>Series and parallel connections of resistors.</caption></figure></para>
+        <para id="id1167929635028">Resistors connected in this manner are said to be <emphasis>connected in series</emphasis>. We may replace a series connection of two resistors by a single equivalent resistance, <emphasis>R</emphasis><emphasis><sub>eq</sub></emphasis>. From an electrical standpoint, the single equivalent resistance will behave exactly the same as the combination of the two resistors connected in series. The equivalent resistance of two resistors connected in series can be calculated by summing the resistance value of each of the two resistors. </para>
+        <equation id="id1167918458392">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>R</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>eq</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{ ital "eq"} } =R rSub { size 8{1} } +R rSub { size 8{2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167913938602">Let us now consider the case where the two resistors are placed side-by-side and then connected at both ends. This situation is depicted in Figure 2 (b) and is called a parallel combination of resistors. Whenever resistors are connected in this manner, they are said to be connected in parallel. The equivalent resistance of two resistors connected in parallel obeys the following relationship.</para>
+        <equation id="id1167925724493">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>eq</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:msub>
+                            <m:mi>R</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mfrac>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:msub>
+                            <m:mi>R</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {1}  over  {R rSub { size 8{ ital "eq"} } } } = {  {1}  over  {R rSub { size 8{1} } } } + {  {1}  over  {R rSub { size 8{2} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id8904057">Once this quantity is calculated, one may easily take the reciprocal of the result to obtain the value of <emphasis>R</emphasis><emphasis><sub>eq</sub></emphasis>. </para>
+        <para id="id1167910809452">The rule governing the determination of the equivalent resistance for the series connection of more than two resistors can be expanded to accommodate any number (<emphasis>n</emphasis>) of resistors. For <emphasis>n</emphasis> resistors connected in series, the equivalent resistance is equal to the sum of the <emphasis>n</emphasis> resistance values.</para>
+        <para id="id1167920602396">In addition, the rule governing the determination of the equivalent resistance for the parallel connection of more than two resistors can be expanded. For <emphasis>n</emphasis> resistors connected in parallel,</para>
+        <equation id="id1167930605311">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:msub>
+                            <m:mi>R</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>eq</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mfrac>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mfrac>
+                              <m:mn>1</m:mn>
+                              <m:msub>
+                                <m:mi>R</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>1</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                            </m:mfrac>
+                            <m:mo stretchy="false">+</m:mo>
+                            <m:mfrac>
+                              <m:mn>1</m:mn>
+                              <m:msub>
+                                <m:mi>R</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mo stretchy="false">⋯</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>n</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {1}  over  {R rSub { size 8{ ital "eq"} } } } = {  {1}  over  {R rSub { size 8{1} } } } + {  {1}  over  {R rSub { size 8{2} } } } + dotsaxis  {  {1}  over  {R rSub { size 8{n} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167927541227">It is clear to see that one’s ability to determine the equivalent resistance of parallel resistors depends upon one’s ability to add fractions. The following exercises are included to reinforce this idea.</para>
+        <para id="id1167924080906">Example 1: Two resistors are connected in series. The value of resistance for the first resistor is 5 Ω, while that of the second is 9 Ω. Find the equivalent resistance of the series combination.</para>
+        <equation id="id1167928052836">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>eq</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>5</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mo stretchy="false">Ω</m:mo>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>9</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mo stretchy="false">Ω</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>14</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mo stretchy="false">Ω</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{ ital "eq"} } =5` %OMEGA +9` %OMEGA ="14"` %OMEGA } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167916737347">Example 2: Consider the two resistors presented in Example 1. Let the two resistors now be connected in parallel. Find the equivalent resistance of the parallel combination.</para>
+        <equation id="id1167924298637">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>eq</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mrow>
+                            <m:mn>5</m:mn>
+                            <m:mi/>
+                            <m:mo stretchy="false">Ω</m:mo>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mrow>
+                            <m:mn>9</m:mn>
+                            <m:mi/>
+                            <m:mo stretchy="false">Ω</m:mo>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {1}  over  {R rSub { size 8{ ital "eq"} } } } = {  {1}  over  {5` %OMEGA } } + {  {1}  over  {9` %OMEGA } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167914531070">The lowest common denominator is 45 Ω. So we incorporate it into our analysis.</para>
+        <equation id="id1167909143153">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>eq</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mn>9</m:mn>
+                          <m:mrow>
+                            <m:mtext>45</m:mtext>
+                            <m:mi/>
+                            <m:mo stretchy="false">Ω</m:mo>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mfrac>
+                          <m:mn>5</m:mn>
+                          <m:mrow>
+                            <m:mtext>45</m:mtext>
+                            <m:mi/>
+                            <m:mo stretchy="false">Ω</m:mo>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {1}  over  {R rSub { size 8{ ital "eq"} } } } = {  {9}  over  {"45"` %OMEGA } } + {  {5}  over  {"45"` %OMEGA } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1167922077744">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>eq</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mtext>14</m:mtext>
+                        <m:mrow>
+                          <m:mtext>45</m:mtext>
+                          <m:mi/>
+                          <m:mo stretchy="false">Ω</m:mo>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {1}  over  {R rSub { size 8{ ital "eq"} } } } = {  {"14"}  over  {"45"` %OMEGA } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1167914323775">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>R</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>eq</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mtext>45</m:mtext>
+                              <m:mi/>
+                              <m:mo stretchy="false">Ω</m:mo>
+                            </m:mrow>
+                            <m:mtext>14</m:mtext>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>21</m:mtext>
+                      <m:mi/>
+                      <m:mo stretchy="false">Ω</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{ ital "eq"} } = {  {"45"` %OMEGA }  over  {"14"} } =3 "." "21"` %OMEGA } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167909939554">Example 3: Three resistors of values 2 kΩ, 3 kΩ, and 5 kΩ are connected in parallel. Find the equivalent resistance.</para>
+        <equation id="id1167931807417">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>eq</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mrow>
+                              <m:mn>2,</m:mn>
+                              <m:mtext>000</m:mtext>
+                              <m:mi/>
+                              <m:mo stretchy="false">Ω</m:mo>
+                            </m:mrow>
+                          </m:mfrac>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mrow>
+                              <m:mn>3,</m:mn>
+                              <m:mtext>000</m:mtext>
+                              <m:mi/>
+                              <m:mo stretchy="false">Ω</m:mo>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mrow>
+                            <m:mn>5,</m:mn>
+                            <m:mtext>000</m:mtext>
+                            <m:mi/>
+                            <m:mo stretchy="false">Ω</m:mo>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {1}  over  {R rSub { size 8{ ital "eq"} } } } = {  {1}  over  {2,"000"` %OMEGA } } + {  {1}  over  {3,"000"` %OMEGA } } + {  {1}  over  {5,"000"` %OMEGA } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167918214749">The lowest common denominator for the fractional terms is </para>
+        <equation id="id1167914414991">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>LCD</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                              <m:mo stretchy="false">×</m:mo>
+                              <m:mn>3</m:mn>
+                            </m:mrow>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:mn>5</m:mn>
+                          </m:mrow>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:mn>1,</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>000</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mo stretchy="false">Ω</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>30</m:mtext>
+                      </m:mrow>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mi/>
+                      <m:mo stretchy="false">Ω</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ ital "LCD"=2 times 3 times 5 times 1,"000"` %OMEGA ="30","000"` %OMEGA } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167913961461">We rewrite the original equation to reflect the lowest common denominator</para>
+        <equation id="id1167907855901">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>eq</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mtext>15</m:mtext>
+                            <m:mrow>
+                              <m:mtext>30</m:mtext>
+                              <m:mi>,</m:mi>
+                              <m:mtext>000</m:mtext>
+                              <m:mi/>
+                              <m:mo stretchy="false">Ω</m:mo>
+                            </m:mrow>
+                          </m:mfrac>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mfrac>
+                            <m:mtext>10</m:mtext>
+                            <m:mrow>
+                              <m:mtext>30</m:mtext>
+                              <m:mi>,</m:mi>
+                              <m:mtext>000</m:mtext>
+                              <m:mi/>
+                              <m:mo stretchy="false">Ω</m:mo>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mfrac>
+                          <m:mn>6</m:mn>
+                          <m:mrow>
+                            <m:mtext>30</m:mtext>
+                            <m:mi>,</m:mi>
+                            <m:mtext>000</m:mtext>
+                            <m:mi/>
+                            <m:mo stretchy="false">Ω</m:mo>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {1}  over  {R rSub { size 8{ ital "eq"} } } } = {  {"15"}  over  {"30","000"` %OMEGA } } + {  {"10"}  over  {"30","000"` %OMEGA } } + {  {6}  over  {"30","000"` %OMEGA } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1167909867539">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>eq</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mtext>31</m:mtext>
+                        <m:mrow>
+                          <m:mtext>30</m:mtext>
+                          <m:mi>,</m:mi>
+                          <m:mtext>000</m:mtext>
+                          <m:mi/>
+                          <m:mo stretchy="false">Ω</m:mo>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {1}  over  {R rSub { size 8{ ital "eq"} } } } = {  {"31"}  over  {"30","000"` %OMEGA } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1167912858775">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>R</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>eq</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mtext>30</m:mtext>
+                              <m:mi>,</m:mi>
+                              <m:mtext>000</m:mtext>
+                              <m:mi/>
+                              <m:mo stretchy="false">Ω</m:mo>
+                            </m:mrow>
+                            <m:mtext>31</m:mtext>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>968</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mo stretchy="false">Ω</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{ ital "eq"} } = {  {"30","000"` %OMEGA }  over  {"31"} } ="968"` %OMEGA } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+      </section>
+      <section id="id7882887">
+        <title>Summary</title>
+        <para id="id1167922082392">This module has presented how to add fractions using the lowest common denominator method. Also presented is the relationship among voltage, current and resistance that is known as Ohm’s Law. Examples illustrating the use of the lowest common denominator method to solve for equivalent resistances of parallel combinations of resistors are also provided.</para>
+      </section>
+      <section id="id1167914906670">
+        <title>Exercises</title>
+        <list id="id1167917093307" list-type="enumerated" number-style="arabic">
+          <item>Consider a 10 kΩ and a 20 kΩ resistor. (a) What is the equivalent resistance for their series connection? (b) What is the equivalent resistance for their parallel connection?</item>
+          <item>Consider a parallel connection of three resistors. The resistors have values of 25 Ω, 75 Ω, and 100 Ω. What is the equivalent resistance of the parallel connection?</item>
+          <item>Consider a parallel connection of four resistors. The resistors have values of 100 Ω, 100 Ω, 200 Ω and 200 Ω. What is the equivalent resistance of the parallel connection?</item>
+          <item>Conductance is defined as the reciprocal of resistance. Conductance which is typically denoted by the symbol, G, is measured in the units, Siemens. Suppose that you are presented with two resistors of value 500 Ω and 1 kΩ. What is the conductance of each resistor?</item>
+          <item>The equivalent conductance of a parallel connection of two resistors is equal to the sum of the conductance associated with each resistor. What is the equivalent conductance of the parallel connection of the resistors described in exercise 4?</item>
+          <item>What is the equivalent resistance of the parallel connection of resistors described in exercise 5?</item>
+          <item>Suppose that you are presented with 2 resistors. Each resistor has the same value of resistance (say, R). Derive an expression for the equivalent resistance of their parallel connection. </item>
+          <item>Three resistors with resistance values of 100 kΩ, 50 kΩ, and 100 kΩ are connected in parallel. What is the equivalent resistance? (Hint: You may use the result of Exercise 2 to simplify your work.)</item>
+          <item>Four resistors, each with a value of 10 Ω, are connected in parallel. What is the equivalent conductance of the parallel connection? What is the equivalent resistance of the parallel connection?</item>
+          <item>A 30 Ω resistance is connected in series with a parallel connection of two resistors, each with a value of 40 Ω. What is the equivalent resistance of this series/parallel connection?</item>
+        </list>
+        <para id="id1167925507886"/>
+      </section>
+    </section>
+  </content>
+</document>

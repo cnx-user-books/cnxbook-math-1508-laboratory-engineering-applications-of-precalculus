@@ -1,0 +1,542 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Complex Numbers</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38605</md:content-id>
+  <md:title>Complex Numbers</md:title>
+  <md:abstract>This module is part of a collection of modules that address engineering applications of PreCalculus.  The collection is intended for use by students enrolled in a special section of MATH 1508 (PreCalculus) for preengineers at the University of Texas at El Paso.</md:abstract>
+  <md:uuid>ed963c47-56f6-4801-b3ac-8165383ed876</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1164405586081">
+      <title>Complex Numbers</title>
+      <section id="id1164400672617">
+        <title>Introduction</title>
+        <para id="id1164395878145">It is essential that engineers master the concept of complex numbers because the important role that complex numbers play in a variety of application areas. In this module applications in the field of electric circuits are provided. </para>
+      </section>
+      <section id="id1164423550799">
+        <title>Alternating Current (AC) Electric Circuits</title>
+        <para id="id1164422398764">Earlier we introduced a number of components that are typically found in common electric circuits. These included voltage sources, current sources and resistors. We also observed that the behavior of an electric circuit could be predicted by using several laws from Physics, including Ohm’s Law and Kirchoff’s Laws.</para>
+        <para id="id1164387839545">In this laboratory exercise, we will introduce two additional components of electric circuits: the inductor and the capacitor. These elements are typically found in electric circuits which involve sinusoidally varying voltage or current sources. These circuits are called <emphasis effect="italics">alternating current</emphasis> or <emphasis effect="italics">AC</emphasis> circuits. AC circuits abound in the physical world. The voltage and current that power household appliances comes from AC sources.</para>
+        <para id="id1164400802776">Figure 1 shows the plot for a sinusoidally varying waveform that represents the output of an AC voltage source. Such a waveform could also be used to represent the current that is supplied by an AC current source. It is important to note that the waveform has a repetitive or <emphasis effect="italics">periodic</emphasis> nature.</para>
+        <figure id="id1164406393674"><media id="id1164406393674_media" alt="">
+            <image mime-type="image/png" src="../../media/graphics1-c797.png" id="id1164406393674__onlineimage" height="340" width="599"/>
+          </media>
+        <caption>Sketch of a sinusoidal waveform.</caption></figure>
+        <para id="id1164389190525">In the figure, we note that the amount of time that occurs between successive maxima of the sinusoidal waveform is equal to the <emphasis effect="italics">period</emphasis>. The <emphasis effect="italics">angular frequency</emphasis> of the waveform is denoted by the symbol ω and is defined in terms of the period by the equation</para>
+        
+        <equation id="id2413680">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>ω</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mi/>
+                            <m:mi>π</m:mi>
+                          </m:mrow>
+                          <m:mi>T</m:mi>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>rad</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi>s</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ω= {  {2`π}  over  {T} } ` ital "rad"/s} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164399409632">If we denote the <emphasis effect="italics">amplitude</emphasis> as <emphasis effect="italics">V</emphasis><emphasis effect="italics">max</emphasis><sub/>, then we can express the sinusoidal waveform for the voltage mathematically as </para>
+        <equation id="id1888324">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>v</m:mi>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>t</m:mi>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msub>
+                          <m:mi>V</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>max</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mtext>cos</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>ω</m:mi>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>t</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:msub>
+                          <m:mi>θ</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>v</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v \( t \) =V rSub { size 8{"max"} } "cos" \( ω`t+θ rSub { size 8{v} }  \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164410512480">Here the instantaneous value of the voltage is measured in the units volts. The term <emphasis effect="italics">θ</emphasis><emphasis effect="italics">v</emphasis> is called the <emphasis effect="italics">phase angle</emphasis> of the sinusoidal waveform. It is measured in degrees. Its usage and importance in the analysis of AC circuits will be discussed later in the course during the study of trigonometry.</para>
+        <para id="id1164387367098">Inductors and capacitors are found in circuits of all types and designs, so their understanding is critical to the education of an engineer or scientist. One important distinction between resistors and these two new components (inductors and capacitors) is that they are analyzed using different mathematic techniques. In the case of a resistor, it was quite easy to determine the relationship between the current, voltage and resistance present in a circuit by means of simple algebra. In the case of the inductor and the capacitor, we will see that we must expand our knowledge of mathematics particulary in the are of complex numbers to analyze circuits that contain inductors and capacitors.</para>
+      </section>
+      <section id="id1164387311245">
+        <title>Inductors</title>
+        <para id="id1164413619089">An <emphasis effect="italics">inductor</emphasis> is an electrical component that stores energy in the form of a magnetic field. In its simplest form, an inductor consistsof a wire loop or coil. Figure 2 depicts an inductor next to a coin to show its relative size and structure. </para>
+        <figure id="id1164407793564"><media id="id1164407793564_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics2-8a2b.jpg" id="id1164407793564__onlineimage" height="193" width="200"/>
+          </media>
+        <caption>Photograph of an inductor beside a coin.</caption></figure>
+        <para id="id1164419343064">The <emphasis effect="italics">inductance</emphasis> of the component is directly proportional to the number of turns present in the wire that makes up the coil. Inductance also depends on the radius of the coil and on the type of material around which the coil is wound. The standard unit of inductance is the Henry (H). </para>
+        <para id="id1164406205028">The schematic symbol for an inductor is shown in Figure 3.</para>
+        <para id="id1164389154620">
+          <figure id="id1164396512574"><media id="id1164396512574_media" alt="">
+              <image mime-type="image/png" src="../../media/graphics3.png" id="id1164396512574__onlineimage" height="133" width="533"/>
+            </media>
+          <caption>Schematic symbol for an inductor.</caption></figure>
+        </para>
+      </section>
+      <section id="id1164406521992">
+        <title>Capacitor</title>
+        <para id="id1164416506477">A <emphasis effect="italics">capacitor</emphasis> is an electrical device consisting of two conducting plates separated by an electrical insulator (the <emphasis effect="bold">dielectric</emphasis>), designed to hold an electric charge. Charge builds up when a voltage is applied across the plates, creating an electric field between them. Current can flow through a capacitor only as the voltage across it is changing, not when it is constant. Capacitors are used in power supplies, amplifiers, signal processors, oscillators, and logic gates. </para>
+        <para id="id1164401829790">The standard unit of capacitance is the farad (F). Typical capacitance values are small. Common capacitors have values of capacitance that are expressed in units of microfarads (µF). Figure 4 shows a photograph of a several different capacitors.</para>
+        <figure id="id1164392655897"><media id="id1164392655897_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics4-9f25.jpg" id="id1164392655897__onlineimage" height="87" width="138"/>
+          </media>
+        <caption>Photograph of capacitors of various values.</caption></figure>
+        <para id="id1164408624769">The standard symbol for a capacitor is shown in Figure 5.</para>
+        <figure id="id1164392243167"><media id="id1164392243167_media" alt="">
+            <image mime-type="image/png" src="../../media/graphics5.png" id="id1164392243167__onlineimage" height="33" width="98"/>
+          </media>
+        <caption>Schematic symbol for a capacitor.</caption></figure>
+      </section>
+      <section id="id1164391207411">
+        <title>Impedance</title>
+        <para id="id1164396330055">In the case of electric circuits that are driven by a sinusoidally varying voltage source, the <emphasis effect="bold">impedance</emphasis> serves to restrict the flow of current. Like the resistance, impedance is measured in ohms (Ω). However, the impedance differs from resistance in that the impedance is a complex quantity. Because the impedance is a complex quantity, we will represent the impedance as a complex number</para>
+        <equation id="id8731763">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>Z</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mi>R</m:mi>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mi>j</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>X</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{Z=R+j`X} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164412922019">The real part of Z as stated in equation (3) is <emphasis effect="italics">R</emphasis> and the imaginary part is <emphasis effect="italics">X</emphasis>. </para>
+        <para id="id1164392482306">Resistors, inductors and capacitors serve to contribute to the impedance present in a sinusoidally varying electric circuit. The impedance of a resistor is merely the value of its resistance. </para>
+        <para id="id1164392258170">The <emphasis effect="italics">impedance of an inductor</emphasis> (<emphasis effect="italics">Z</emphasis><sub>L</sub>) can be easily computed via the relationship</para>
+        <equation id="id1164406768461">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>Z</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>L</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi>j</m:mi>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mi>ω</m:mi>
+                      <m:mi/>
+                      <m:mi>L</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{Z rSub { size 8{L} } =j`ω`L} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164404991780">The impedance of an inductor is measured in the units Ω. The term ω is equal to the angular frequency of the sinusoidally varying source voltage. Examination of equation (4) indicates that as the angular frequency increase, so too does the impedance of the inductor. At very high frequencies an inductor will essentially inhibit all flow of current through itself.</para>
+        <para id="id1164389698597">The <emphasis effect="italics">impedance of a capacitor</emphasis> (<emphasis effect="italics">Z</emphasis><sub>c</sub>) is given by the equation</para>
+        <equation id="id1164389144699">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>Z</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>C</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mi>j</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mfenced open="(" close=")">
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mrow>
+                            <m:mi>ω</m:mi>
+                            <m:mi/>
+                            <m:mi>C</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mfenced>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{Z rSub { size 8{C} } = - j` left ( {  {1}  over  {ω`C} }  right )} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id6268815">The impedance of a capacitance is measured in the units Ω. Once again, the term ω is equal to the angular frequency of the sinusoidally varying source voltage. Examination of equation (5) indicates that as the angular frequency increases, the impedance of the capacitor decreases. At very high frequencies a capacitor will behave as a short circuit. That is, its effect at very high frequencies is to allow current to flow through it in an unimpeded manner.</para>
+      </section>
+      <section id="id1164412491895">
+        <title>Series RL Circuit</title>
+        <para id="id2570687">Just as resistors can be combined using series and parallel connections, so too can impedances. In the case of series connections, impedances are merely added. One distinction is that the addition is performed using complex arithmetic. Let us consider the RL circuit shown in Figure 6.</para>
+        <figure id="id1164389777533"><media id="id1164389777533_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics6-fff9.jpg" id="id1164389777533__onlineimage" height="450" width="600"/>
+          </media>
+        <caption>Series RL circuit.</caption></figure>
+        <para id="id1164386808271">The series impedance is equal to the sum of the resistance with the impedance of the inductor. Suppose that for this circuit the value of R is 10 Ω and that the value for the inductance is 100 mH. Suppose that the frequency (ω) of the source voltage is 100 rad/sec. For this specification of values, we can compute the impedance of the series connection</para>
+        <equation id="id1164392908046">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>Z</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mtext>10</m:mtext>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mi>j</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mtext>100</m:mtext>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mtext>100</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>3</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mo stretchy="false">Ω</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mtext>10</m:mtext>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mi>j</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mtext>10</m:mtext>
+                      <m:mi/>
+                      <m:mo stretchy="false">Ω</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{Z="10"+j \( "100" \)  \( "100" times "10" rSup { size 8{ - 3} }  \) ` %OMEGA ="10"+j`"10"` %OMEGA } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164404510342">The square of the magnitude of the impedance can be obtained by use of the complex conjugate.</para>
+        <equation id="id1164406507622">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mrow>
+                            <m:mo stretchy="false">∣</m:mo>
+                            <m:mi>Z</m:mi>
+                            <m:mo stretchy="false">∣</m:mo>
+                          </m:mrow>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mi>Z</m:mi>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:mi>Z</m:mi>
+                          </m:mrow>
+                          <m:mo stretchy="false">∗</m:mo>
+                          <m:mrow/>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mtext>10</m:mtext>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mi>j</m:mi>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mtext>10</m:mtext>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mtext>10</m:mtext>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mi>j</m:mi>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mtext>10</m:mtext>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mrow>
+                            <m:mtext>100</m:mtext>
+                            <m:mo stretchy="false">+</m:mo>
+                            <m:mtext>100</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>200</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ lline Z rline  rSup { size 8{2} } =Z times Z*= \( "10"+j`"10" \)  \( "10" - j`"10" \) ="100"+"100"="200"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164404120669">So we calculate the magnitude of the impedance to be </para>
+        <equation id="id1164387459668">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:mi>Z</m:mi>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>14</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>17</m:mtext>
+                      <m:mi/>
+                      <m:mo stretchy="false">Ω</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ lline Z rline ="14" "." "17"` %OMEGA } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164386939554">An important property of AC circuits that contain an AC source voltage along with resistors, inductors and capacitors is that if the current i(t) will take the form of a sinusoid </para>
+        <equation id="id1164419334867">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>i</m:mi>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>t</m:mi>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>max</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mtext>cos</m:mtext>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>ω</m:mi>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>t</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:msub>
+                          <m:mi>θ</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>i</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{i \( t \) =I rSub { size 8{"max"} } "cos" \( ω`t+θ rSub { size 8{i} }  \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164389149380">The instantaneous value of the current is measured in Amps. The angular frequency of the current sinusoid (ω) will be the same as that of the sinusoid that represents the supply voltage. In addition, electric circuits involving resistors, capacitors and inductors will contribute to a change in the phase angle (<emphasis effect="italics">θ</emphasis><emphasis effect="italics">i</emphasis>) of the current sinuosoid. In general the phase angle of the voltage sinusoid (<emphasis effect="italics">θ</emphasis><emphasis effect="italics">v</emphasis>) will differ from that of the current sinusoid (<emphasis effect="italics">θ</emphasis><emphasis effect="italics">i</emphasis>). Once again, the discussion of how the phase angle of the current can be computed will be deferred until our later discussion of trigonometry.</para>
+        <para id="id1164387673059">Once we know the magnitude of the impedance, we can use it to calculate the amplitude of the sinusoidally varying current, <emphasis effect="italics">I</emphasis><emphasis effect="italics">max</emphasis>. This is accomplished by the following formula.</para>
+        <equation id="id1164386189029">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>I</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mtext>max</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:msub>
+                          <m:mi>V</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>max</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mrow>
+                          <m:mo stretchy="false">∣</m:mo>
+                          <m:mi>Z</m:mi>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{"max"} } = {  {V rSub { size 8{"max"} } }  over  { lline Z rline } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164401824410">So the amplitude of the current is <emphasis effect="italics">V</emphasis><emphasis effect="italics">max</emphasis>/141.7. It is interesting to note that this formula is similar to Ohm’s Law. The differences lie in the fact that the magnitude of the impedance appears instead of the resistance. Also, the amplitudes of the sinusoidally varying current and voltage appear.</para>
+        <para id="id1164408641264">The formula expressed above is useful in determining the amplitude of the current for a wide range of sinusoidally varying AC circuits. These circuits can combine resistors with inductors and capacitors to create a wide range of design options for electrical engineers. The following exercises illustrate the application of complex numbers to the analysis of AC circuits.</para>
+      </section>
+      <section id="id1164405210751">
+        <title>Exercises</title>
+        <para id="id1164416500200">Consider the series RC circuit shown below</para>
+        <para id="id1164403017888">
+          <figure id="id1164404861121"><media id="id1164404861121_media" alt="">
+              <image mime-type="image/jpg" src="../../media/graphics7.jpg" id="id1164404861121__onlineimage" height="450" width="600"/>
+            </media>
+          <caption>Series RC circuit.</caption></figure>
+        </para>
+        <para id="id1164406128215">Suppose that the sinusoidally varying source voltage is given as 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>v</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:mtext>20</m:mtext></m:mrow><m:mi/><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>10</m:mtext><m:mi/><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mi/><m:mi>V</m:mi><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{v \( t \) ="20"`"cos" \( "10"`t \) ``V "." } {}</m:annotation></m:semantics></m:math></para>
+        <list id="id1164388038409" list-type="enumerated" number-style="arabic">
+          <item>What are the amplitude and the radian frequency of the source voltage?</item>
+          <item>If the value of the capacitance is C = 100 µF, what is the impedance of the capacitor? </item>
+          <item>If the value for the resistor is R = 5 KΩ, what is the series impedance of the circuit?</item>
+          <item>Find the magnitude of the series impedance?</item>
+          <item>What is the amplitude of the sinusoidally varying current, <emphasis effect="italics">i</emphasis>(<emphasis effect="italics">t</emphasis>)?</item>
+        </list>
+      </section>
+    </section>
+  </content>
+</document>

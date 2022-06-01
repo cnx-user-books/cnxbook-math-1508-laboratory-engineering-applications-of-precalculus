@@ -1,0 +1,1809 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Simultaneous Equations</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38616</md:content-id>
+  <md:title>Simultaneous Equations</md:title>
+  <md:abstract>This module is part of a collection of modules intended for preengineering students enrolled in MATH 1508 (PreCalculus) at the University of Texas at El Paso.</md:abstract>
+  <md:uuid>b34a00a1-4725-41e4-a1ed-a19a77ef8e93</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1165577957056">
+      <title>Simultaneous Equations</title>
+      <section id="id1165559944076">
+        <title>Introduction</title>
+        <para id="id8806795">The applications of simultaneous equations in the modeling, analysis and design of engineering systems are numerous. This module presents several applications drawn from engineering that illustrate uses of simultaneous equations. </para>
+      </section>
+      <section id="id1165579274973">
+        <title>Unmanned Air Vehicle (Robotics)</title>
+        <para id="id1165560497892">Many applications in engineering involve the quantities speed, distance and time. In some applications, one is presented with two situations. In the two situations, the speed of an object differs. The following is an example involving an Unmanned Air Vehicle (UAV) whose speed varies depending upon whether the UAV travels in the same direction of the wind as opposed to the situation where the UAV travels in the opposite direction in opposition to the wind. Simultaneous equations can be used to solve problems relating to situations such as this.</para>
+        <para id="id1165564124462">Example 1: In a closed course surveillance flight, the downwind leg of length18.6 miles is completed in 2.0 hours. The upwind leg which is also 18.6 miles in length is completed in 3.5 hours. Find both the speed of the UAV and the speed of the wind.</para>
+        <para id="id1165569919373">To address such a problem it is critical to begin with the definition of variables. We will let <emphasis>V</emphasis> be the airspeed of the UAV measured in miles/hr. The wind speed expressed in miles/hr will be represented by the variable <emphasis>W</emphasis>. </para>
+        <para id="id1165560853283">We know that the distance that an object travels is equal the product of its speed and time. When the UAV travels downwind, its speed will be equal to the sum of its airspeed and the windspeed. When the UAV travels upwind, its total speed will equal to the difference of its airspeed minus the windspeed. The distance that the UAV travels is the same (18.6 miles) whether it travels downwind or upwind.</para>
+        <para id="id1165573456247">We can use this information to establish two equations</para>
+        <equation id="id1165560871160">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>18</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>6</m:mn>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>0</m:mn>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mi>V</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mi>W</m:mi>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"18" "." 6=2 "." 0` times  \( V+W \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165560526933">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>18</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>6</m:mn>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mi>V</m:mi>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mi>W</m:mi>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"18" "." 6=3 "." 5 times  \( V - W \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165583097035">From equation (1) we obtain</para>
+        <equation id="id1165569684424">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>18</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>6</m:mn>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mi>V</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mi>W</m:mi>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"18" "." 6=2 "." 0 times  \( V+W \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id2131605">which can can yield an expression for the variable <emphasis effect="italics">V</emphasis></para>
+        <equation id="id1911878">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>V</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>9</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>3</m:mn>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mi>W</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{V=9 "." 3 - W} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165574130324">Next, we can substitute this expression for <emphasis effect="italics">V</emphasis> into equation (2). By doing so, we will be able to solve for <emphasis effect="italics">W</emphasis>.</para>
+        <equation id="id1165561171503">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>18</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>6</m:mn>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>9</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>3</m:mn>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mi>W</m:mi>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mi>W</m:mi>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"18" "." 6=3 "." 5 times  \(  \( 9 "." 3 - W \)  - W \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165560537864">Dividing each side of the equation by (3.5) yields</para>
+        <equation id="id1165561174113">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>5</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>31</m:mtext>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mn>9</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>3</m:mn>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mi>W</m:mi>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mi>W</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{5 "." "31"= \( 9 "." 3 - W \)  - W} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165577416934">This equation can be readily solved for the variable W as follows</para>
+        
+        <equation id="id1165575379026">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mrow>
+                  <m:mtable>
+                    <m:mtr>
+                      <m:mrow>
+                        <m:mstyle fontsize="12pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>3</m:mn>
+                              </m:mrow>
+                              <m:mtext>.</m:mtext>
+                              <m:mrow>
+                                <m:mtext>99</m:mtext>
+                                <m:mo stretchy="false">=</m:mo>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mn>2W</m:mn>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mrow>
+                        <m:mstyle fontsize="12pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mi>W</m:mi>
+                                <m:mo stretchy="false">=</m:mo>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                              <m:mtext>.</m:mtext>
+                              <m:mtext>995</m:mtext>
+                              <m:mi/>
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>miles</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                                <m:mo stretchy="false">/</m:mo>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>hr</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtr>
+                  </m:mtable>
+                  <m:mrow/>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0">alignl { stack {
+ size 12{ - 3 "." "99"= - 2W}  {} # 
+ size 12{W=1 "." "995"` ital "miles"/ ital "hr"}  {} 
+} } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165574037328">Next, we substitute this value for W into equation (4) to solve for <emphasis effect="italics">V</emphasis>. </para>
+        <equation id="id1165560776219">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>V</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>9</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>3</m:mn>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>995</m:mtext>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>7</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>305</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>miles</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>hr</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{V=9 "." 3 - 1 "." "995"=7 "." "305"` ital "miles"/ ital "hr"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165561143796">Thus we conclude that the UAV airspeed is 7.305 miles/hr and the windspeed is 1.995 miles/hr.</para>
+      </section>
+      <section id="id1165560779600">
+        <title>Analysis of a Torsion Beam</title>
+        <para id="id1165575543745"><emphasis effect="italics">Torque</emphasis> is a term that is used to describe the tendency of a force to rotate an object about an axis, a fulcrum or a pivot. Just as a force is a push or a pull, a torque can be thought of as a twist. Loosely speaking, torque is a measure of the turning force on an object such as a bolt. For example, pushing or pulling the handle of a wrench connected to a nut or bolt produces a torque (turning force) that loosens or tightens the nut or bolt.</para>
+        <para id="id1165559903640">Consider the torsion beam shown in Figure 1.</para>
+        <figure id="id1165560699681"><media id="id1165560699681_media" alt="">
+            <image mime-type="image/jpg" src="../../media/Picture 6.jpg" id="id1165560699681__onlineimage" height="293" width="390"/>
+          </media>
+        <caption>Diagram of a torsion beam.</caption></figure>
+        <para id="id1165570806576">Figure 1. Torsion beam.</para>
+        <para id="id1165577432070">In this figure, we observe a situation in which forces are applied at each end of the beam. We also note that each force is applied at a right angle to the beam. Under such conditions, torque can be calculated as the product of the force and the length of the beam from its end to its support point atop the pivot point of the beam. </para>
+        <para id="id8409784">The force (<emphasis effect="italics">F</emphasis><sub>1</sub>) contributes a counter-clockwise torque (<emphasis effect="italics">T</emphasis><emphasis effect="italics">CCW</emphasis>) on the beam. The value of this torque can be calculated </para>
+        <equation id="id1165559859730">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>T</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>CCW</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>F</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "CCW"} } =F rSub { size 8{1} }  times R rSub { size 8{1} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165561019840">The force (<emphasis effect="italics">F</emphasis><sub>2</sub>) contributes a clockwise torque (<emphasis effect="italics">T</emphasis><emphasis effect="italics">CW</emphasis>) on the beam. The value of this torque can be calculated as </para>
+        
+        <equation id="id1165561042404">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>T</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>CW</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>F</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "CW"} } =F rSub { size 8{2} }  times R rSub { size 8{2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165576770243">Suppose that the beam is not in motion. Engineers would say that the beam is static or that the beam system is in equillibrium. A necessary condition for equillibrium of the system is that the two torques be equal, that is </para>
+        <equation id="id1165574584406">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>T</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>CW</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:msub>
+                        <m:mi>T</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>CCW</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "CW"} } =T rSub { size 8{ ital "CCW"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165575718121">We now will apply what we know about simultaneous equations to solve a problem involving a torsion beam.</para>
+        <para id="id1165586517379">Example 2: Assume that a a beam of length 56 inches is supported by a fulcrum. Force is applied at each end of the beam. Assume that the force (<emphasis effect="italics">F</emphasis><sub>1</sub>) on the left hand side of the beam is 24 lbs while the force on the right hand side of the beam (<emphasis effect="italics">F</emphasis><sub>2</sub>) is 32 lbs. If the beam is static, then what are the values of <emphasis effect="italics">R</emphasis><sub>1</sub> and <emphasis effect="italics">R</emphasis><sub>2</sub>?</para>
+        <para id="id1165570157585">We know from that the clockwise and counter-clockwise torques must balance as a condition for equilibrium. This leads to the first equation that we will use to solve this problem</para>
+        <equation id="id1165585785055">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>24</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>32</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mi>R</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"24"`R rSub { size 8{1} } ="32"`R rSub { size 8{2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165577924999">which can be written as</para>
+        <equation id="id1165560664687">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>24</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mtext>32</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"24"`R rSub { size 8{1} }  - "32"`R rSub { size 8{2} } =0} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165587854239">We also know that the overall length of the beam is 56 inches. Therefore,</para>
+        <equation id="id1165581987427">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mtext>56</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{1} } +R rSub { size 8{2} } ="56"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165561175595">which can be solved for <emphasis effect="italics">R</emphasis><sub>1</sub> as</para>
+        <equation id="id1165582708168">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>R</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mtext>56</m:mtext>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{1} } ="56" - R rSub { size 8{2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165578286526">We may substitute the expression for <emphasis effect="italics">R</emphasis><sub>1</sub> in equation () to obtain</para>
+        <equation id="id1165560801509">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>24</m:mtext>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mtext>56</m:mtext>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mtext>32</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"24"` \( "56" - R rSub { size 8{2} }  \)  - "32"`R rSub { size 8{2} } =0} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165575836590">Multiplication and rearrangement yield the equation</para>
+        <equation id="id1165561140432">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>1,</m:mn>
+                      <m:mrow>
+                        <m:mtext>344</m:mtext>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>56</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mi>R</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{1,"344"="56"`R rSub { size 8{2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165585377428">which can be solved for <emphasis effect="italics">R</emphasis><sub>2</sub>. </para>
+        
+        <equation id="id1165560696706">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>24</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>in</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{2} } ="24"` ital "in"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165563628915">The value for R1 can be easily found as</para>
+        <equation id="id1165575663478">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>R</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>1</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mrow>
+                              <m:mtext>56</m:mtext>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:msub>
+                                <m:mi>R</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                            </m:mrow>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mrow>
+                            <m:mtext>56</m:mtext>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mtext>24</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>32</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>inches</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{1} } ="56" - R rSub { size 8{2} } ="56" - "24"="32"~ ital "inches"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+      </section>
+      <section id="id1165560862224">
+        <title>Parallel Processing</title>
+        <para id="id1165560855098">Parallel processing is a term drawn from Compute Science that involves the simultaneous use of more than one central processing unit (CPU) to execute a program. Ideally, parallel processing makes programs run faster because there are more than one processors in use to execute the program. Though most computers have just one CPU, newer computer architectures that feature several CPU’s are becoming the norm more prevalent. </para>
+        <para id="id1165560023272">Example 3: Suppose that we are interested in implementing a computer algorithm on two processors. Let us call these processors A and B. The steps involved in the accomplishment of the algorithm are divided among the two processors. In all there are 17,000,000 computations which will need to be performed on the two processors. Working in parallel, the two processors accomplish the algorithm. In doing so, the processor A is in service for 3 seconds while the processor B is in services for 2 seconds. </para>
+        <para id="id1165581216352">Suppose that a second algorithm is to be accomplished by processors A and B working in parallel. In all, the second algorithm requires the execution of 15,500,000 computations. In executing the second algorithm, 2 seconds of computing time are required of processor A while 3 seconds of computing time are required of processor B. </para>
+        <para id="id1165561077567">What are the processor rates for processor A and processor B?</para>
+        <para id="id1165571042535">Suppose that we define the processing rates (measured in computations/second) for processors A and B to be represented by the variables <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis> respectively. With this definition of variables, the number of computations that processor A can perform in 3 seconds is the product (3 <emphasis effect="italics">x</emphasis>). Likewise the number of computations that processor B can perform in 2 seconds is the product (2 <emphasis effect="italics">y</emphasis>). The total number of computations that must be performed to complete the first algorithm is 17,000,000. Therefore, we obtain the first of two simultaneous equations</para>
+        <equation id="id1165574235658">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>3x</m:mn>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>2y</m:mn>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mtext>17</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>6</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{3x+2y="17" times "10" rSup { size 8{6} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165560124285">Let us now consider the implementation of the second algorithm. The number of computations that processor A can make in 2 seconds is equal to the product (2 <emphasis effect="italics">x</emphasis>). Similarly, the number of computations that processor B can make in 3 seconds is the product (3<emphasis effect="italics"> y</emphasis>). We obtain the second simultaneous equation as </para>
+        <equation id="id1165560711133">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mn>2x</m:mn>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mn>3y</m:mn>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>15</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>6</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{2x+3y="15" "." 5 times "10" rSup { size 8{6} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165570196384">Let us use the first equation to solve for <emphasis effect="italics">x</emphasis> in terms of <emphasis effect="italics">y</emphasis></para>
+        <equation id="id1165582812734">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>3x</m:mn>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mn>2y</m:mn>
+                        </m:mrow>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mrow>
+                          <m:mtext>17</m:mtext>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:msup>
+                            <m:mtext>10</m:mtext>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>6</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{3x= - 2y+"17" times "10" rSup { size 8{6} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165576811278">which results in the expression </para>
+        <equation id="id1165574337692">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>17</m:mtext>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>6</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mn>2y</m:mn>
+                        </m:mrow>
+                        <m:mn>3</m:mn>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{x= {  {"17" times "10" rSup { size 8{6} }  - 2y}  over  {3} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165563443397">Next, we substitute this expression for <emphasis effect="italics">x</emphasis> into equation ()</para>
+        <equation id="id1165560767013">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mfenced open="(" close=")">
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mtext>17</m:mtext>
+                                  <m:mo stretchy="false">×</m:mo>
+                                  <m:msup>
+                                    <m:mtext>10</m:mtext>
+                                    <m:mstyle fontsize="8pt">
+                                      <m:mrow>
+                                        <m:mn>6</m:mn>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:msup>
+                                </m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>2y</m:mn>
+                              </m:mrow>
+                              <m:mn>3</m:mn>
+                            </m:mfrac>
+                          </m:mfenced>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mn>3y</m:mn>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>15</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>6</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{2 left ( {  {"17" times "10" rSup { size 8{6} }  - 2y}  over  {3} }  right )+3y="15" "." 5 times "10" rSup { size 8{6} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id3939720">This equation can be simplified as follows</para>
+        
+        <equation id="id1165560757144">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>17</m:mtext>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>6</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mn>2y</m:mn>
+                        </m:mrow>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mfrac>
+                          <m:mn>3</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>3y</m:mn>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mn>3</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mfenced open="(" close=")">
+                        <m:mrow>
+                          <m:mtext>15</m:mtext>
+                          <m:mtext>.</m:mtext>
+                          <m:mrow>
+                            <m:mn>5</m:mn>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>6</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mfenced>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"17" times "10" rSup { size 8{6} }  - 2y+ {  {3}  over  {2} }  \( 3y \) = {  {3}  over  {2} }  left ("15" "." 5 times "10" rSup { size 8{6} }  right )} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165560042085">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>17</m:mtext>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>6</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mn>2y</m:mn>
+                        </m:mrow>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>4</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>5y</m:mn>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>23</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>25</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>6</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"17" times "10" rSup { size 8{6} }  - 2y+4 "." 5y="23" "." "25" times "10" rSup { size 8{6} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165575088887">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>5y</m:mn>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>6</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>25</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>6</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{2 "." 5y=6 "." "25" times "10" rSup { size 8{6} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id4161151">This leads to the solution</para>
+        <equation id="id1165569582212">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>y</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>6</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>computations</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi>s</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{y=2 "." 5 times "10" rSup { size 8{6} } ~ ital "computations"/s} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165563320082">We now may solve for <emphasis effect="italics">x</emphasis> through the use of equation ()</para>
+        <equation id="id1165563226697">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mtext>17</m:mtext>
+                              <m:mo stretchy="false">×</m:mo>
+                              <m:msup>
+                                <m:mtext>10</m:mtext>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>6</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                          <m:mi/>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mn>2</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mrow>
+                            <m:mn>5</m:mn>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>6</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo stretchy="false">)</m:mo>
+                        </m:mrow>
+                        <m:mn>3</m:mn>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{x= {  {"17" times "10" rSup { size 8{6} }  - 2` \( 2 "." 5 times "10" rSup { size 8{6} }  \) }  over  {3} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165573114350">which lead to the result</para>
+        <equation id="id1165564636399">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>x</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mtext>12</m:mtext>
+                            <m:mo stretchy="false">×</m:mo>
+                            <m:msup>
+                              <m:mtext>10</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>6</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mn>3</m:mn>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mn>4</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>6</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{x= {  {"12" times "10" rSup { size 8{6} } }  over  {3} } =4 times "10" rSup { size 8{6} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165560082204">Thus we conclude that processor A can perform 4 million computations per second while processor B can perform 2.5 million computations per second.</para>
+      </section>
+      <section id="id1165561122090">
+        <title>Alloy Compositions</title>
+        <para id="id1165560697402"><emphasis effect="bold">Metallurgical engineering</emphasis> involves the study of the physical and chemical behavior of metallic elements and their mixtures, which are called alloys. It is also involves the technology of metals. That is, metallurgical engineering encompasses the way in which the science of metals is applied to produce compounds for practical use. </para>
+        <para id="id1165559895287">The following example presents how simultaneous equations can be applied in the study of alloys.</para>
+        <para id="id1165564357923"><emphasis effect="italics">Example 4:</emphasis> Let us consider two alloys comprised of different percentages of copper and zinco. Suppose that the first alloy is made up of a mixture of 70% copper and 30% zinc. The second alloy is comprised of 40% copper and 60% zinc.</para>
+        <para id="id2276612">By melting the two alloys and re-combining their constituents into one 300 gram casting, the resulting alloy is 60% copper and 40% zinc.</para>
+        <para id="id7440167">Find the amount of copper and zinc in each of the original alloys.</para>
+        <para id="id1165577959510">We begin our solution by establishing the variables A and B as being equal to the mass (in grams) of the first alloy and the second alloy respectively. We know that the final casting has a mass of 300 grams, so our first simultaneous equation is</para>
+        <equation id="id6103282">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mtext>300</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{A+B="300"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165578662972">Because 60% of the final casting is copper, the amount of copper in the final casting is the product 0.60 (300 grams) or 180 grams. </para>
+        <para id="id1165576043515">We know that 70% of the first alloy is copper and that 40% of the second alloy is copper. Thus we may write the second simultaneous equation as</para>
+        
+        <equation id="id1165579674691">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>7</m:mn>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>4</m:mn>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>B</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>180</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{0 "." 7`A+0 "." 4`B="180"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165582230850">The variable <emphasis effect="italics">A </emphasis>can be expressed as (300 – B) and substituted into the equation</para>
+        <equation id="id1165560956586">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>7</m:mn>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>4</m:mn>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>B</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>180</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{0 "." 7`A+0 "." 4`B="180"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165575879585">to yield </para>
+        <equation id="id1165583371726">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>7</m:mn>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mtext>300</m:mtext>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>4B</m:mn>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>180</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{0 "." 7` \( "300" - B \) +0 "." 4B="180"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165566195756">This equation can be simplified as</para>
+        <equation id="id1165561141244">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mtext>210</m:mtext>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mn>7B</m:mn>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>180</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"210" - 0 "." 7B+B="180"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165559910410">Combining terms yields</para>
+        <equation id="id8496961">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>3B</m:mn>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mtext>30</m:mtext>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ - 0 "." 3B= - "30"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165588069330">The solution for the variable <emphasis effect="italics">B</emphasis> is 100. So we find that the mass of the second alloy is 100 grams. Because the sum of the masses of the two alloys is 300 grams, the mass of the first allow is 200 grams.</para>
+      </section>
+      <section id="id1165571014193">
+        <title>Photovoltaic Arrays</title>
+        <para id="id1165582949334">A <emphasis effect="bold">photovoltaic system</emphasis> is a system which uses one or more solar panels to convert sunlight into electricity. It consists of multiple components, including the photovoltaic modules, mechanical and electrical connections and mountings and means of regulating and/or modifying the electrical output.</para>
+        <para id="id1165578122607">Due to the low voltage of an individual solar cell (typically on the order of 0.5V), several cells are wired in series in the manufacture of a "laminate". The laminate is assembled into a protective weatherproof enclosure, thus making a photovoltaic module or solar panel. Modules may then be strung together into a photovoltaic array. The electricity generated can be either stored, used directly (island/standalone plant)or fed into a large electricity grid powered by central generation plants (grid-connected/grid-tied plant) or combined with one or many domestic electricity generators to feed into a small grid (hybrid plant) </para>
+        <para id="id1165561151096">A <emphasis effect="italics">photovoltaic array</emphasis> (or <emphasis effect="italics">solar array</emphasis>) is a linked collection of solar panels. The power that one module can produce is seldom enough to meet requirements of a home or a business, so the modules are linked together to form an <emphasis effect="italics">array</emphasis><emphasis effect="bold">.</emphasis> Most arrays use a device known as an inverter to convert the DC power produced by the modules into alternating current that can be used to power lights, household appliances, motors, and other loads. The modules in a photovoltaic array are usually first connected in series to obtain the desired voltage. Once this is accomplished, the individual strings are then connected in parallel to allow the system to produce more current.</para>
+        <para id="id1165576674876"><emphasis effect="italics">Example 6:</emphasis> A photvoltaic array is to be installed. It is a requirement that the length of the array be 8 inches longer than its width. A second requirement states that the total area of the array be 180 in<sup>2</sup>. </para>
+        <para id="id1165581082788">Find the length (<emphasis effect="italics">L</emphasis>) and width (<emphasis effect="italics">W</emphasis>) of the array.</para>
+        <para id="id1165560694776">We may use the first requirement to construct the first simultaneous equation</para>
+        
+        <equation id="id1165573435823">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>L</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mi>W</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>8</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{L=W+8} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165560879049">The second requirement contributes a second simultaneous equation</para>
+        <equation id="id1165582917520">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>L</m:mi>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>W</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>180</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{L`W="180"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165560849662">We may substitute the expression for L given by equation (18) into equation (19)</para>
+        <equation id="id1165575846632">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mi>W</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>8W</m:mn>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mtext>180</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{W rSup { size 8{2} } +8W="180"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165577605045">or equivalently </para>
+        <equation id="id1165561009284">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msup>
+                            <m:mi>W</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mn>8W</m:mn>
+                        </m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mtext>180</m:mtext>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{W rSup { size 8{2} } +8W - "180"=0} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165579199826">This quadratic equation can be factored as </para>
+        <equation id="id8426996">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mi>W</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mtext>18</m:mtext>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mi>W</m:mi>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mtext>10</m:mtext>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ \( W+"18" \) ` \( W - "10" \) =0} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165560025244">The two roots for <emphasis effect="italics">W</emphasis> are 10 <emphasis effect="italics">in</emphasis> and -18 <emphasis effect="italics">in</emphasis>. Because it is physically impossible to have a negative value for width, we ignore the second root and conclude that the width of the photovoltaic array is 10 in. We use this value to solve for the length (L) of the array</para>
+        <equation id="id1165569421248">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>L</m:mi>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mrow>
+                            <m:mi>W</m:mi>
+                            <m:mo stretchy="false">+</m:mo>
+                            <m:mn>8</m:mn>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mtext>10</m:mtext>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mn>8</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>in</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>18</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>in</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{L=W+8="10"+8` ital "in"="18"` ital "in"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165560071124">Therefore, the dimensions of the photovoltaic array are 18 x 10 in.</para>
+      </section>
+      <section id="id1165570797144">
+        <title>Exercises</title>
+        <list id="id1165560984832" list-type="enumerated" number-style="arabic">
+          <item>A rowing team competes in a tournament that has two legs. The first leg covers 15 miles in the direction of the current. The second leg covers the same 15 miles, but against the current. It takes 25 minutes to complete the first leg and 30 minutes to complete the second leg. Assuming that there is no current present, what would be the speed of the boat? What is the speed of the current?</item>
+          <item>A beam of length 3 meters is supported by a fulcrum. Force is applied at each end of the beam. Assume that the force (<emphasis effect="italics">F</emphasis><sub>1</sub>) on the left hand side of the beam is 6 N while the force on the right hand side of the beam (<emphasis effect="italics">F</emphasis><sub>2</sub>) is 7 N. If the beam is static, then what are the lengths between the each end of the beam and its fulcrum?</item>
+          <item>Suppose that we are interested in implementing a computer algorithm on three processors. Let us call these processors A and. The steps involved in the accomplishment of the algorithm are divided among the three processors. In all there are 36,000,000 computations which will need to be performed on the three processors. In performing the overall task, processor A is in service for 2 seconds while the processor B is in services for 4 seconds. A second algorithm is implemented in parallel on processors A and B. In it, a total of 23,000,000 computations are required. In performing the task, processor A is in service for 1 second and processor B is in service for 1.5 seconds. Find the processing rate (computations/s) for each processor.</item>
+          <item>One alloy is made up of a concentration of 25% copper and 75% manganese. A second alloy consists of a concentration of 50% copper and 50% manganese. The two alloys are melted and re-combed. The resulting mixture weighs 450 gram and consists of 35% copper and 65% zinc. Find the weights of the original alloys.</item>
+        </list>
+      </section>
+    </section>
+  </content>
+</document>

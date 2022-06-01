@@ -1,0 +1,1228 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Logarithms</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38608</md:content-id>
+  <md:title>Logarithms</md:title>
+  <md:abstract>This module is part of a collection of modules intended for use by preengineering students enrolled in MATH 108 at the University of Texas at El Paso.  This module addresses some applications of logarithms in several fields of engineering.  Examples are presented.</md:abstract>
+  <md:uuid>f4bedbcc-c729-4a6b-a6ed-a61ea5866313</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1164727170808">
+      <title>Logarithms </title>
+      <section id="id1164743064026">
+        <title>Introduction</title>
+        <para id="id1164722795828">This module is intended to present some areas of engineering in which logarithms are used. By reading the material and solving the associated problems, you will learn about some important applications of logarithms in engineering.</para>
+      </section>
+      <section id="id1164726789206">
+        <title>Decibels</title>
+        <para id="id1164718182654">The <emphasis effect="bold">decibel</emphasis> (<emphasis effect="bold">dB</emphasis>) is a logarithmic unit that indicates the ratio of a physical quantity relative to a specified or implied reference level. The decibel is used for a wide variety of measurements in science and engineering, most prominently in acoustics, electronics, communications, radar, sonar and control systems.</para>
+        <para id="id1164714092610">Decibels are frequently used as a means to express the power ratio for physical systems. It is computed by multiplying the factor 10 by the base 10 logarithm of the ratio of the quantities under consideration. Equation (1) shows the computation that is used to express the ratio of two powers using decibels</para>
+        <equation id="id1164722507314">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>L</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>DB</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>10</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mtext>log</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mtext>10</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mfenced open="(" close=")">
+                        <m:mfrac>
+                          <m:msub>
+                            <m:mi>P</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:msub>
+                            <m:mi>P</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mfrac>
+                      </m:mfenced>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "DB"} } ="10"`"log" rSub { size 8{"10"} }  left ( {  {P rSub { size 8{2} } }  over  {P rSub { size 8{1} } } }  right )} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164719549642"><emphasis effect="italics">Gain of an Amplifier:</emphasis> We will begin our discussion of decibels with an application in the field of electronics. An amplifier is an electronic device that is capable of boosting the power present in an input signal to produce an output signal with more power. It can be thought of as a black box as shown in Figure 1.</para>
+        <figure id="id1164717087832"><media id="id1164717087832_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics1-1403.jpg" id="id1164717087832__onlineimage" height="238" width="319"/>
+          </media>
+        <caption>Block diagram of an amplifier.</caption></figure>
+        <para id="id1164726582100">In practical cases, the ratio of the power in the output signal to the power in the input signal is a positive quantity whose value is greater than unity. The decibel measurement of this ratio of power is often called the <emphasis effect="italics">gain</emphasis> of the amplifier and is given as</para>
+        
+        <equation id="id1164734982064">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>Gain</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>10</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mtext>log</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mtext>10</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mfenced open="(" close=")">
+                        <m:mfrac>
+                          <m:msub>
+                            <m:mi>P</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>output</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:msub>
+                            <m:mi>P</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>input</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mfrac>
+                      </m:mfenced>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>dB</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ ital "Gain"="10"`"log" rSub { size 8{"10"} }  left ( {  {P rSub { size 8{ ital "output"} } }  over  {P rSub { size 8{ ital "input"} } } }  right )~ ital "dB"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164722507182">Question: An electronic signal is passed through an amplifier. Suppose that the power present in the signal at the input to the amplifier is 10 W. The power present in the signal at the output of the amplifier is 20 W. Express the gain of the amplifier in decibels.</para>
+        <para id="id1164730577476">We can use equation (2) to easily express the gain of the amplifier in terms of decibels </para>
+        <equation id="id1164722433030">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>Gain</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>10</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mtext>log</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mtext>10</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mrow>
+                        <m:mfenced open="(" close=")">
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mtext>20</m:mtext>
+                              <m:mi/>
+                              <m:mi>W</m:mi>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mtext>10</m:mtext>
+                              <m:mi/>
+                              <m:mi>W</m:mi>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mfenced>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>10</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mtext>log</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mtext>10</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>01</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>dB</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">≈</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>dB</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ ital "Gain"="10"`"log" rSub { size 8{"10"} }  left ( {  {"20"`W}  over  {"10"`W} }  right )="10"`"log" rSub { size 8{"10"} }  \( 2 \) =3 "." "01"` ital "dB" approx 3` ital "dB"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+      </section>
+      <section id="id1164731433995">
+        <title>Signal to Noise Ratio</title>
+        <para id="id1164717384922">Electrical signals are often corrupted by a random phenomenon known as <emphasis effect="italics">noise</emphasis> when they are transmitted from one point to another . Because it is impossible to know the exact value of the noise at any point in time, it is often becomes difficult to extract the orignal signal at the receiver without the application of some form of <emphasis effect="italics">signal processing algorithm</emphasis> such as a <emphasis effect="italics">filter</emphasis>. The situation is depicted in Figure 2.</para>
+        <figure id="id1164715871753"><media id="id1164715871753_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics2-124b.jpg" id="id1164715871753__onlineimage" height="407" width="543"/>
+          </media>
+        <caption>Communication system with signal processing.</caption></figure>
+        <para id="id1164740372427">A common figure of merit of communication systems is the <emphasis effect="italics">signal-to-noise ratio</emphasis>. Communication systems that are characterized by high signal-to-noise ratios are in general superior to those that are characterized by low signal-to-noise ratios. </para>
+        <para id="id1164743106340">By definition the signal-to-noise ratio or <emphasis effect="italics">SNR</emphasis> is given as the ratio of the power in a signal divided by the power in the noise that is responsible for corrupting the signal. The signal-to-noise ratio can be expressed in decibels as follows</para>
+        <equation id="id1164740825604">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>SNR</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>10</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mtext>log</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mtext>10</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mfenced open="(" close=")">
+                        <m:mfrac>
+                          <m:msub>
+                            <m:mi>P</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>signal</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:msub>
+                            <m:mi>P</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>noise</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mfrac>
+                      </m:mfenced>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>dB</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ ital "SNR"="10"`"log" rSub { size 8{"10"} }  left ( {  {P rSub { size 8{ ital "signal"} } }  over  {P rSub { size 8{ ital "noise"} } } }  right )~ ital "dB"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164744154439">where <emphasis effect="italics">P</emphasis><emphasis effect="italics">signal</emphasis> and <emphasis effect="italics">P</emphasis><emphasis effect="italics">noise</emphasis> represent the values for the signal power and noise power respectively. </para>
+        <para id="id1164720599531">At the receiver, the original signal arrives with an added noise component. Communication engineers use signal processing algorithms in the form of filters to minimize the power of the noise that is present in the received noisy signal while seeking to retain as much of the power of the original signal as possible. Such algorithms are based on the premise that although random, noise may well fall into different regions of angular frequency in the electromagnetic spectrum than the signal itself. Thus, frequency selective filters can be utilized to increase the signal-to-noise ratio.</para>
+        <para id="id1164738278093">Suppose that we represent the signal-to-noise ratio at the input to the signal processing algorithm as <emphasis effect="italics">SNR</emphasis><emphasis effect="italics">in</emphasis> and that at its output as <emphasis effect="italics">SNR</emphasis><emphasis effect="italics">out</emphasis>. For a good designs, <emphasis effect="italics">SNR</emphasis><sub>out</sub> will be significantly higher that that of <emphasis effect="italics">SNR</emphasis><emphasis effect="italics">in</emphasis>. This increase in signal-to-noise ratio results in superior performance and more reliable communication of information. </para>
+        <para id="id1164748338378">Question: A signal with power 30 W is sent through a noisy communication channel. The noise introduced by the communication channel has an associated power of 5 W. What is the signal-to-noise ratio of the noisy signal that is received from the communication channel in decibels?</para>
+        <para id="id1164731382696">Solution: We can find the SNR by substituting the appropriate values for the parameters into equation (4) </para>
+        <equation id="id1164724980204">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>SNR</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>10</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mtext>log</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mtext>10</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mrow>
+                        <m:mfenced open="(" close=")">
+                          <m:mfrac>
+                            <m:msub>
+                              <m:mi>P</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>signal</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:msub>
+                              <m:mi>P</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>noise</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                          </m:mfrac>
+                        </m:mfenced>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>10</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mtext>log</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mtext>10</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mrow>
+                        <m:mfenced open="(" close=")">
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mtext>30</m:mtext>
+                              <m:mi/>
+                              <m:mi>W</m:mi>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mn>5</m:mn>
+                              <m:mi/>
+                              <m:mi>W</m:mi>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mfenced>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>10</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mtext>log</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mtext>10</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>6</m:mn>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>7</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>78</m:mtext>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>dB</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ ital "SNR"="10"`"log" rSub { size 8{"10"} }  left ( {  {P rSub { size 8{ ital "signal"} } }  over  {P rSub { size 8{ ital "noise"} } } }  right )="10"`"log" rSub { size 8{"10"} }  left ( {  {"30"~W}  over  {5~W} }  right )="10"`"log" rSub { size 8{"10"} }  \( 6 \) =7 "." "78"~ ital "dB"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164714888237">Question: Consider the noisy signal described in Example 2. Suppose that a signal processing filter is applied to it. The filter reduces the noise power by 95% while it reduces the signal power by only 10%. What is the signal-to-noise ratio of the filtered output?</para>
+        <para id="id1164721379668">Solution: The amount of signal power present in the filtered output is 30 W – 0.1 (30 W) or 27 W. The amount of noise power present in the filtered output is 5 W – 0.95 (5 W) or 0.25 W.</para>
+        <para id="id1164735212673">The signal-to-noise ratio of the filtered output is </para>
+        <equation id="id1164726779324">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>SNR</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>10</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mtext>log</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mtext>10</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mrow>
+                        <m:mfenced open="(" close=")">
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mtext>27</m:mtext>
+                              <m:mi/>
+                              <m:mi>W</m:mi>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mtext>25</m:mtext>
+                              <m:mi/>
+                              <m:mi>W</m:mi>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mfenced>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>10</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mtext>log</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mtext>10</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mtext>108</m:mtext>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mtext>10</m:mtext>
+                          <m:mo stretchy="false">⋅</m:mo>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>03</m:mtext>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>20</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>33</m:mtext>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>dB</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ ital "SNR"="10"`"log" rSub { size 8{"10"} }  left ( {  {"27"~W}  over  {0 "." "25"~W} }  right )="10"`"log" rSub { size 8{"10"} }  \( "108" \) ="10" cdot 2 "." "03"="20" "." "33"~ ital "dB"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164735224597">We see that the primary result obtained by the application of the signal processing filter is to raise the signal to noise ratio from 7.78 dB to 20.33 <emphasis effect="italics">dB</emphasis>. This represents an increase in SNR of 20.33 – 7.78 <emphasis effect="italics">dB</emphasis> = 12.55 <emphasis effect="italics">dB</emphasis>. Along with this increase in SNR, one would observe an increase in reliable communication of information. </para>
+      </section>
+      <section id="id1164738983191">
+        <title>Transient Response (Exponential Decay)</title>
+        <para id="id1164727442372">The transient response of a circuit is response of a circuit that is expressed as a function of time. Determining the transient response of a circuits is important in that knowledge of the transient response reveals how a circuit will behave whenever perturbations arise, such as the opening or closing of a switch. </para>
+        <para id="id1164726437241">Let us examine the RC circuit present in the figure below</para>
+        <figure id="id1164735399319"><media id="id1164735399319_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics3-f811.jpg" id="id1164735399319__onlineimage" height="450" width="600"/>
+          </media>
+        <caption>Switched RC circuit.</caption></figure>
+        <para id="id1164714312426">This circuit is called an RC circuit in that it contains a resistor and a capacitor. </para>
+        <para id="id1164732595522">The switch is open for values of time (<emphasis effect="italics">t</emphasis>) less than 0. Thus for negative values of time there is no current flow. Because there is no current flow, the voltage across the resistor (<emphasis effect="italics">v</emphasis>(<emphasis effect="italics">t</emphasis>)) is zero. The capacitor is initially charged. The initial voltage across the capacitor (V<sub>0</sub>) is 10 V. </para>
+        <para id="id1164722574334">At <emphasis effect="italics">t </emphasis>=0, the switch is closed. Because the voltage across the capacitor cannot change instantaneously, the value of the voltage across the resistor immediately after the closing of the swith (<emphasis effect="italics">v</emphasis>(0<sup>+</sup>) will be 10 V. After the switch has been closed, current will flow throughout the circuit and the voltage across the resistor will diminish exponentially. Because the decay can be described by the use of an exponential function, this is an example of <emphasis>exponential decay</emphasis>.</para>
+        <para id="id1164742782066">We can write an expression for the transient response, that is, the voltage across the resistor for positive time </para>
+        
+        
+        <equation id="id1164726523712">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>v</m:mi>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>t</m:mi>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>10</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msup>
+                        <m:mi>e</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mi>t</m:mi>
+                              </m:mrow>
+                              <m:mo stretchy="false">/</m:mo>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>RC</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v \( t \) ="10"`e rSup { size 8{ - t/ ital "RC"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        
+        
+        <para id="id1164722954110">Here, the units of <emphasis effect="italics">v</emphasis>(<emphasis effect="italics">t</emphasis>) are Volts. </para>
+        <para id="id1164736261466">The product of the resistance and the capacitance is called the time constant for the circuit and is often denoted as (τ). The time constant is measured in seconds. For this example, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>τ</m:mi><m:mo stretchy="false">=</m:mo><m:mo stretchy="false">(</m:mo></m:mrow><m:mrow><m:mtext>100</m:mtext><m:mo stretchy="false">×</m:mo><m:msup><m:mtext>10</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msup></m:mrow><m:mo stretchy="false">)</m:mo><m:mi/><m:mo stretchy="false">(</m:mo><m:mrow><m:mn>8</m:mn><m:mo stretchy="false">×</m:mo><m:msup><m:mtext>10</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow><m:mrow><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:mrow><m:mtext>800</m:mtext><m:mo stretchy="false">×</m:mo><m:msup><m:mtext>10</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow><m:mtext>.</m:mtext><m:mtext>800</m:mtext><m:mi/><m:mi>s</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{τ= \( "100" times "10" rSup { size 8{3} }  \) ` \( 8 times "10" rSup { size 8{ - 6} }  \) ="800" times "10" rSup { size 8{ - 3} } =0 "." "800"`s} {}</m:annotation></m:semantics></m:math></para>
+        <para id="id1164730651619">So the transient response of the circuit becomes</para>
+        
+        
+        <para id="id1164726523887">Let us now work a problem about this circuit that involves logarithms.</para>
+        <para id="id1164738274991"><emphasis effect="bold">Question</emphasis>: At what instant of time will the transent response be equal to 5 Volts?</para>
+        <para id="id1164730586758"><emphasis effect="bold">Solution</emphasis>: We have been asked to find the value of <emphasis effect="italics">t</emphasis> that satisfies the following equation.</para>
+        <equation id="id1164719213518">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>10</m:mtext>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msup>
+                        <m:mi>e</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mi>t</m:mi>
+                                </m:mrow>
+                                <m:mo stretchy="false">/</m:mo>
+                                <m:mn>0</m:mn>
+                              </m:mrow>
+                              <m:mtext>.</m:mtext>
+                              <m:mn>8</m:mn>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{5="10"`e rSup { size 8{ - t/0 "." 8} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164734540498">Let us divide each side of the equation by (10) and interchange the sides</para>
+        <equation id="id1164730263729">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mi>e</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mi>t</m:mi>
+                                  </m:mrow>
+                                  <m:mo stretchy="false">/</m:mo>
+                                  <m:mn>0</m:mn>
+                                </m:mrow>
+                                <m:mtext>.</m:mtext>
+                                <m:mn>8</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>5</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{e rSup { size 8{ - t/0 "." 8} } =0 "." 5} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164731783281">We now take the natural logarithm of each side</para>
+        <equation id="id1164732902255">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mi>t</m:mi>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                            <m:mtext>.</m:mtext>
+                            <m:mn>8</m:mn>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mn>0</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>693</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  { - t}  over  {0 "." 8} } = - 0 "." "693"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1164744147231">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>t</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>8</m:mn>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>693</m:mtext>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>555</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{t= \( 0 "." 8 \) ` \( 0 "." "693" \) =0 "." "555"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164724857595">So we conclude that at the time 0.555 seconds after the switch closes, the value of the voltage across the resistor will be 5.0 volts.</para>
+      </section>
+      <section id="id1164718375229">
+        <title>Compound Interest</title>
+        <para id="id1164726738802">It is always essential to consider the financial aspects of an engineering project. The field of industrial engineering provides us with the analytical tools necessary to weigh the merits of competing designs. </para>
+        <para id="id1164728327575">Most situations surrounding the financial aspects of an engineering project involve the determination of what is most economical in the long run. That is, engineers must be aware of the costs and benefits of a project over a considerable period of time. In situations as these, it is important to consider the <emphasis>time value</emphasis> of money. Because of the existence of interest, the current value of a dollar is worth more than the value of a dollar some time in the future. </para>
+        <para id="id1164729899746"><emphasis>Interest</emphasis> can be defined as money that is paid for the use of money that has been borrowed. The rate of interest is the ratio between the interest chargeable or payable at the end of a period of time. This period of time is typically yearly, quarterly or monthly. In this module, we will restrict our attention to interest that is paid yearly or <emphasis>per annum</emphasis>.</para>
+        <para id="id1164726507960">As an example, a sum of money is invested at an annual rate of interest of 4%. One year later, the interest that would be paid on the investment would be $40 (4% of $1,000). So after one year, the initial sum would grow to a value of $1,040 one year later. </para>
+        <para id="id1164722678815">Suppose that the $1,040 were invested for a second year at the end of the first year. At the end of the second year, the amount of interest that would be payable would be 4% of $1,040 or $41.60. The amount of interest earned in the second year exceeds the amount earned in the first year because of a phenomenon known as <emphasis>compound interest</emphasis>.</para>
+        <para id="id1164722824271">Interest calculations can be quantified by mathematical formulas. Suppose that we are concerned with making an investment of <emphasis effect="italics">P</emphasis> dollars at an annual rate of interest of <emphasis effect="italics">i</emphasis> for <emphasis effect="italics">n</emphasis> years. Here <emphasis effect="italics">P</emphasis> denotes the present value of the investment, <emphasis effect="italics">n</emphasis> represents the number of years the money is to be invested, and <emphasis effect="italics">i</emphasis> is the interest rate per annum. Let us denote by <emphasis effect="italics">F</emphasis> the future value of the investment at the end of <emphasis effect="italics">n</emphasis> years. The value of F can be calculated via the formula</para>
+        
+        <equation id="id1164729312765">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi>P</m:mi>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mi>i</m:mi>
+                      </m:mrow>
+                      <m:msup>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>n</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F=P` \( 1+i \)  rSup { size 8{n} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164717991124">Let us illustrate the use of this formula by means of a problem.</para>
+        <para id="id1164722530153">Question: A couple has just had a baby. The couple wishes to make an investment in an account that will be used to fund college expenses. The couple visits an investment advisor and establishes a tax-free college savings account. By tax-free, we mean an account where income tax is not paid yearly. The couple is advised that this feature will enable the account to grow faster. </para>
+        <para id="id1164745923069">The couple deposits $25,000 in the account. The couple is told that the value of the account will appreciate at an annual rate of 8% . What will be the value of the account when the child turns 18 years of age?</para>
+        <para id="id1164718376157">Solution: We are asked to find the value of <emphasis effect="italics">F</emphasis>. From the problem statement, <emphasis effect="italics">P</emphasis> is $25,000, <emphasis effect="italics">i</emphasis> is 0.08 and <emphasis effect="italics">n</emphasis> is 18. We substitute into the interest formula to obtain the result</para>
+        <equation id="id1164722466579">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mtext>25</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>08</m:mtext>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>18</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mtext>25</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>08</m:mtext>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>18</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mtext>25</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>3</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>996</m:mtext>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>99</m:mtext>
+                      </m:mrow>
+                      <m:mi>,</m:mi>
+                      <m:mtext>900</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{F= \( "25","000" \) ` \( 1+0 "." "08" \)  rSup { size 8{"18"} } = \( "25","000" \) ` \( 1 "." "08" \)  rSup { size 8{"18"} } = \( "25","000" \) ` \( 3 "." "996" \) ="99","900"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164721563197">We conclude that the account will be worth $99,900 at the end of 18 years. </para>
+        <para id="id1164718422263">Let us now a related problem that involves the use of logarithms.</para>
+        <para id="id1164732721878">Question: An individual inherits $10,000 from a relative. The individual wishes to invest the sum in a tax-free account. He/she plans to use the proceeds of this account as a down payment on a future purchase of a home. The annual interest rate of the account is 6%, </para>
+        <para id="id1164738216166">The individual anticipates that he/she will need at least $20,000 for the down payment. How long will it take for the value of the account to grow to $20,000?</para>
+        <para id="id1164738685569">Solution: Once again, we begin with the identification of the parameters of the problem. Here, P is 10,000, i is 0.06, and F is 20,000. We incorporate these values into the interest formula</para>
+        <equation id="id1164734621625">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>20</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mrow>
+                        <m:mtext>000</m:mtext>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mtext>10</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>000</m:mtext>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>06</m:mtext>
+                      <m:msup>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>n</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"20","000"= \( "10","000" \) ` \( 1+0 "." "06" \)  rSup { size 8{n} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164719610051">Let us divide each side by (10,000) and re-arrange terms</para>
+        <equation id="id1164726386819">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>06</m:mtext>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>n</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ \( 1 "." "06" \)  rSup { size 8{n} } =2} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164717343564">Now let us take the logarithm of each side of the equation. We will use 1.06 as the base of the logarithm</para>
+        <equation id="id1164731907819">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>n</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msub>
+                          <m:mtext>log</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                                <m:mtext>.</m:mtext>
+                                <m:mtext>06</m:mtext>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{n="log" rSub { size 8{1 "." "06"} }  \( 2 \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164722337054">The base 1.06 logarithm is related to the base 10 logarithm as follows</para>
+        
+        <equation id="id1164720443310">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mtext>log</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mtext>06</m:mtext>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mtext>log</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mtext>10</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mi>x</m:mi>
+                            <m:mo stretchy="false">)</m:mo>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mtext>log</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mtext>10</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>1</m:mn>
+                            <m:mtext>.</m:mtext>
+                            <m:mtext>06</m:mtext>
+                            <m:mo stretchy="false">)</m:mo>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"log" rSub { size 8{1 "." "06"} }  \( x \) = {  {"log" rSub { size 8{"10"} }  \( x \) }  over  {"log" rSub { size 8{"10"} }  \( 1 "." "06" \) } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164728052504">We will use this relationship to help us find the value for n</para>
+        <equation id="id1164744002592">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mi>n</m:mi>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mtext>log</m:mtext>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mtext>10</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                                <m:mo stretchy="false">(</m:mo>
+                                <m:mn>2</m:mn>
+                                <m:mo stretchy="false">)</m:mo>
+                              </m:mrow>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mtext>log</m:mtext>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mtext>10</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                                <m:mo stretchy="false">(</m:mo>
+                                <m:mn>1</m:mn>
+                                <m:mtext>.</m:mtext>
+                                <m:mtext>06</m:mtext>
+                                <m:mo stretchy="false">)</m:mo>
+                              </m:mrow>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mtext>301</m:mtext>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mtext>0253</m:mtext>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>11</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>90</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{n= {  {"log" rSub { size 8{"10"} }  \( 2 \) }  over  {"log" rSub { size 8{"10"} }  \( 1 "." "06" \) } } = {  {0 "." "301"}  over  {0 "." "0253"} } ="11" "." "90"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164722338736">So the individual should plan on waiting 11.90 years for the account to grow to a value of $20,000.</para>
+        <para id="id1164726000465">Problems such as the previous one often make use of the relationship</para>
+        <equation id="id1164718046703">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mtext>log</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>a</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mtext>log</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mi>b</m:mi>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mi>x</m:mi>
+                            <m:mo stretchy="false">)</m:mo>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mtext>log</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mi>b</m:mi>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mi>a</m:mi>
+                            <m:mo stretchy="false">)</m:mo>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"log" rSub { size 8{a} }  \( x \) = {  {"log" rSub { size 8{b} }  \( x \) }  over  {"log" rSub { size 8{b} }  \( a \) } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1164725022747">This relationship allows one to convert from the logarithm of any base to a logarithm of another base. Typically, scientific calculators are only able to compute base 10 and natural (base <emphasis effect="italics">e</emphasis>) logarithms. One should become acquainted with the conversion of logarithms of other bases to base 10 or base <emphasis effect="italics">e</emphasis> logarithms.</para>
+      </section>
+      <section id="id1164734142265">
+        <title>Exercises</title>
+        <list id="id1164726837731" list-type="enumerated" number-style="arabic">
+          <item>The power of the signal entering an amplifier is 15 mW. The power of the signal that leaves the amplifier is 25 W. Express the gain of the amplifier in decibels.</item>
+          <item>Unlike an amplifier, some devices reduce the power of input signals. This process is called attenuation. Suppose that the power that enters an attenuator is 60 W and the power at the output is 0.9 W. Express the gain of the attenuator in decibels.</item>
+          <item>Consider a signal processing scheme such as that shown in Figure 2. The power of the input signal before it passes through the noisy channel is 40 W. After passing through the noisy channel, the original signal is corrupted by noise. The noise component has a power of 10 W. What is the Signal to Noise ratio of the signal that emerges from the noisy channel?</item>
+          <item>Consider the situation described in exercise 3. The noisy signal enters a signal processor. The signal processor diminishes the noise power of the signal by 5%, while diminishing the power in the noise component by 95%, What is the SNR of the output of the signal processor?</item>
+          <item>Consider the circuit shown in Figure 3. Let us replace the resistor with another whose value is 200 kΩ. (a) What is the new value of the time constant of the circuit. (b) Find the value of the transient response when <emphasis effect="italics">t</emphasis> = 0.8 seconds. (c) Determine the value of time at which the transient response decays to a value of 1 Volt.</item>
+        </list>
+      </section>
+    </section>
+  </content>
+</document>

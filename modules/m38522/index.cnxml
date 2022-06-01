@@ -1,0 +1,1065 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Units</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38522</md:content-id>
+  <md:title>Units</md:title>
+  <md:abstract>This module is part of a collection of modules intended for use by students enrolled in a PreCalculus (MATH 1508) at the University of Texas at El Paso.</md:abstract>
+  <md:uuid>562d8c88-5329-4bd8-a2ad-64519658b418</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1169124852539">
+      <title>Units</title>
+      <section id="id1169119576994">
+        <title>Introduction</title>
+        <para id="id1169113280095">Engineering is a field of study that involves a very high level of calculations. Thus students of engineering must become familiar with a wide range of formulas and computational methods. Virtually all the calculations that engineers perform involve the use of units. Because many calculations involve the use of multiple units, an engineer must become competent in the process of unit conversions. Unit conversions allow an engineer with the ability to convert units in one system of measurement (say, the British system of measure) to those of another system (say, the System Internationale or SI system of measure.) </para>
+        <para id="id1169112714350">Units and unit conversion are important not just to engineers, but all members of society. Everyday activities such as driving an automobile, shopping at a grocery store, or visiting an pharmacy illustrate situations where an individual experiences units and unit conversions. Let us consider driving an automobile. A simple glance at a vehicle’s speedometer reveals that the speed of the vehicle can be expressed in the units miles/hour or kilometers/hour. Depending upon the country in which you reside, gasoline is sold in the units of gallons or liters. At the grocery store, the volume of a can of your favorite soda is often expressed in terms of ounces or milliliters. Likewise, the dosage of cough syrup that you obtain from your local pharmacy can be expressed in terms of the units ounces or milliliters. This list of examples from everyday life that involve units can be expanded without bound. </para>
+        <para id="id1169126014089">Whenever an engineer deals with a physical quantity, it is essential that units be included. Units are especially important to engineers for they provide the ability for engineers to express their thoughts precisely and to provide meaning to the numerical values that result from engineering calculations. Units provide a means for engineers to communicate results among other engineers as well as laymen. </para>
+        <para id="id1169112201080">Units are an integral part of what could be called the language of engineering. As a student of engineering, you should become accustomed to the inclusion of units with virtually all your answers to engineering problems. Failure to include units with your numerical results can lead to your having points deducted from your grades on assignments, laboratory exercises and examinations.</para>
+      </section>
+      <section id="id1169113833479">
+        <title>Metric Mishaps</title>
+        <para id="id1169112977034">Failing to include the proper units with the results of engineering calculations can lead to unanticipated failures in engineering systems. Serious errors that result from the dual usage of metric and non-metric units are often grouped under the heading of <emphasis>metric mishaps</emphasis>. Some common examples of <emphasis>metric mishaps</emphasis> include the following:</para>
+        <list id="id1169124739325" list-type="bulleted">
+          <item>According to the National Transportation Safety Board, confusion surrounding the use of <emphasis>pounds</emphasis> and <emphasis>kilograms</emphasis> often results in aircraft being overloaded and unsuited for flight.</item>
+          <item>The Institute for Safe Medication Practices has reported that confusion between the units <emphasis>grains</emphasis> and <emphasis>grams</emphasis> is a common reason for errors associated with the dosage of medication. </item>
+        </list>
+      </section>
+      <section id="id1169126650002">
+        <title>A Notable Engineering Failure: The NASA Mars Climate Orbiter</title>
+        <para id="id1169119344716">In 1999, NASA experienced the failure of its Mars Climate Orbitor spacecraft because a Lockheed Martin engineering team used English units of measurement while a NASA engineering team used the more conventional metric system for a key spacecraft operation. (NASA, 1999). This mismatch in units prevented the navigation information from transferring properly as in moved between the Mars Climate Orbiter spacecraft team in at a Lockheed Martin ground station in Denver and the flight team at NASA’s Jet Propulsion Laboratory in Pasadena, California.</para>
+        <para id="id1169112172056">Working with NASA and other contractors, Lockheed Martin helped build, develop and operate the spacecraft for NASA. Its engineers provided navigation commands for Climate Orbiters thrusters in British units although NASA had been using the metric system predominantly since at least 1990.</para>
+        <para id="id1169111905146">After a 286 day journey, the spacecraft neared the planet Mars. As the spacecraft approached the surface of Mars, it fired its propulsion engine to push itself into orbit. Instead of the recommended 276 kilometer orbit, the spacecraft entered an orbit of approximately 57 kilometers. Because the spacecraft was not in the proper orbit, its propulsion system overheated and was subsequently disabled. This allowed the Mars Climate Orbiter to plow through the atmosphere out beyond Mars. It is theorized that it could now be orbiting the sun</para>
+        <para id="id1169132897915">The primary cause of this discrepancy was human error. Specifically, the flight system software on the <emphasis>Mars Climate Orbiter</emphasis> was written to calculate thruster performance using the metric unit Newtons (N), while the ground crew was entering course correction and thruster data using the Imperial measure Pound-force (lbf). This error has since been known as the <emphasis effect="italics">metric mixup</emphasis> and has been carefully avoided in all missions since by NASA. </para>
+      </section>
+      <section id="id1169119591397">
+        <title>Unit Conversion Procedure</title>
+        <para id="id1169110292429">The process of transforming from one unit of measure to another is called <emphasis>unit conversion</emphasis>. One can easily perform unit conversion using the procedure that will be presented in this section. You will soon discover that performing unit conversion can be reduced to multiplying one measurement by a carefully selected form of the integer 1 to produce the desired measurement. </para>
+        <para id="id1169130964486">Prior to presenting the procedure of unit conversion, it is important to understand a simple fact. Numbers with units such as 25.2 kilometers or 36.7 miles can be thought of and treated in exactly the same manner as coefficients that multiply variables, such as 25.2 <emphasis effect="italics">x</emphasis> or 36.7 <emphasis effect="italics">y</emphasis>. Of course here, <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis> are variables.</para>
+        <para id="id1169124074014">From Algebra, we know that we can always multiply a quantity by 1 and retain its value. The key idea of unit conversion is to choose carefully the form of 1 that is used. We will illustrate this idea by means of an example.</para>
+        <para id="id1169120458972">Suppose that we wish to convert 25.2 kilometers to miles. In order to accomplish this conversion of units, it is important that one know the following information</para>
+        <equation id="id1169114824437">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>km</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>621</m:mtext>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>mile</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{1` ital "km"=0 "." "621"` ital "mile"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169116305507">Let us take this equation and divide each side by the term 1 <emphasis effect="italics">km</emphasis>, as shown below</para>
+        <equation id="id1169113564773">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>km</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>km</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>621</m:mtext>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>mile</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>km</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {1` ital "km"}  over  {1` ital "km"} } = {  {0 "." "621"` ital "mile"}  over  {1` ital "km"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169141654528">Clearly the left hand side of this equation is equal to 1. That is </para>
+        <equation id="id1169127619176">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>621</m:mtext>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>mile</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>km</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{1= {  {0 "." "621"` ital "mile"}  over  {1` ital "km"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169114169912">This will serve as our conversion factor to solve our problem at hand. It is important to remember that this conversion factor is nothing more than a carefully selected form of the number 1. </para>
+        <para id="id1169113930361">Let us return to the quantity 25.2 kilometers that we wish to convert to miles. We can apply the conversion factor as follows</para>
+        <equation id="id1169114644656">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>25</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>2</m:mn>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>km</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi/>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mtext>621</m:mtext>
+                              <m:mi/>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>mile</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mi/>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>km</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mtext>25</m:mtext>
+                            <m:mtext>.</m:mtext>
+                            <m:mn>2</m:mn>
+                            <m:mi/>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>km</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                            <m:mrow>
+                              <m:mi/>
+                              <m:mo stretchy="false">×</m:mo>
+                              <m:mn>0</m:mn>
+                            </m:mrow>
+                            <m:mtext>.</m:mtext>
+                            <m:mtext>621</m:mtext>
+                            <m:mi/>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>mile</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                            <m:mi/>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>km</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"25" "." 2` ital "km"` times  {  {0 "." "621"` ital "mile"}  over  {1` ital "km"} } = {  {"25" "." 2` ital "km"` times 0 "." "621"` ital "mile"}  over  {1` ital "km"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169112485993">We observe that the unit (<emphasis effect="italics">km)</emphasis> appears in both the numerator and denominator and can be removed from the from the fraction. So our result is</para>
+        <equation id="id1169112218434">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>25</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>2</m:mn>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>km</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>621</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>mile</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>15</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>65</m:mtext>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>miles</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"25" "." 2` ital "km" times 0 "." "621"` ital "mile"="15" "." "65"` ital "miles"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169121018801">Thus we establish the result that 25.2 <emphasis effect="italics">km</emphasis> is equivalent to 15.65 <emphasis effect="italics">miles</emphasis>.</para>
+        <para id="id1169112713974">In obtaining the result, we developed a fraction that was equal to the integer 1. We then multiplied our original quantity by that fraction to give rise to our result. This is the basic idea behind unit conversion.</para>
+      </section>
+      <section id="id1169119831847">
+        <title>A Two-Step Procedure for Producing Correct Unit Conversion Factors</title>
+        <para id="id1169113342784">Here we will present a simple two-step procedure that produces the conversion factor that can be used to convert between a <emphasis>given</emphasis> unit and a <emphasis>desired</emphasis> unit. For the purpose of illustration, let us use the conversion between the <emphasis>given</emphasis> unit (<emphasis>pounds</emphasis>) and the (<emphasis>desired</emphasis>) unit of <emphasis>kg</emphasis>. </para>
+        <para id="id1169134024937">Step 1: We begin by writing an equation that relates the given unit and the required unit.</para>
+        <equation id="id1169112284848">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>kg</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>205</m:mtext>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>lb</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{1` ital "kg"=2 "." "205"` ital "lb"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169116814476">Step 2: Convert the equation to fractional form with the desired units on top and the given units on the bottom.</para>
+        <para id="id1169140806677"/>
+        <equation id="id7153692">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>kg</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>205</m:mtext>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>lb</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>205</m:mtext>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>lb</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>205</m:mtext>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>lb</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {1` ital "kg"}  over  {2 "." "205"` ital "lb"} } = {  {2 "." "205"` ital "lb"}  over  {2 "." "205"` ital "lb"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169113792401">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>454</m:mtext>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>kg</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>lb</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {0 "." "454"` ital "kg"}  over  { ital "lb"} } =1} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169129066865">So to covert from <emphasis>pounds</emphasis> to <emphasis>kg</emphasis> we may use this as the proper conversion factor. </para>
+      </section>
+      <section id="id1169115785163">
+        <title>Another Notable Engineering Failure: The “Gimli Glider”</title>
+        <para id="id1169111507503">Like the NASA Mars Climate Orbiter, the “Gimli Glider” incident is an engineering failure that can be attributed directly to the errors involving the mismatch of units. The “Gimli Glider” is the nickname of the Air Canada commercial aircraft that was involved in an incident that took place on July 23, 1983. In the incident, a Boeing 767 passenger jet ran out of fuel at an altitude of 26,000 feet, about midway through its flight from Montreal to Edmundton via Ottawa. The aircraft safely landed at a former Canadian Air Force base in Gimli, Manitoba, thus contributing to the nickname associated with the aircraft. (New York Times, 1983) We will trace some of the steps that led to the incident while making use of data drawn from the website (Wikipedia).</para>
+        <para id="id1169124252109">Air Canada Flight 143 originated in Montreal. It safely arrived in Ottawa on its first leg. At that time, the pilot properly determined that the second leg of the flight (from Ottawa to Edmundton) would require 22,300 kilograms of jet fuel. The ground crew at the Ottawa airport, performed a dipstick check on the fuel tanks. They measured that there were 7,682 liters of fuel onboard the aircraft upon its arrival to Ottawa. </para>
+        <para id="id1169114089234">Based on these data, the air and ground crew proceeded to calculate the amount of jet fuel that would need to be transferred to the fuel tanks in order to assure safe arrival in Edmundton. However, they used an incorrect conversion factor in their calculations. At the time of the incident Canada was converting from the Imperial system of measurement to the metric system. The new Boeing 767 aircraft were the first of the Air Canada fleet to calibrated to the new system, using <emphasis>kilograms</emphasis> and <emphasis>liters</emphasis> rather than <emphasis>pounds</emphasis> and <emphasis>Imperial gallons</emphasis>. </para>
+        <para id="id1169114049189">The crew wished to convert the 7,682 liters of fuel to its equivalent went in kilograms. In order to do so the crew applied an incorrect conversion factor (1 liter of fuel weighs 1.77 kg.) Actually, 1 liter of fuel weighs 0.803 pounds, but the crew used an improper weight. </para>
+        <para id="id1169135050013">The crew inaccurately calculated ed the weight of the fuel onboard the aircraft to be 13,597 kilograms. The erroneous calculation is shown below.</para>
+        <equation id="id1169135286874">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>7,</m:mn>
+                      <m:mtext>682</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>l</m:mi>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mtext>77</m:mtext>
+                              <m:mi/>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>kg</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mi/>
+                              <m:mi>l</m:mi>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>13</m:mtext>
+                      </m:mrow>
+                      <m:mi>,</m:mi>
+                      <m:mtext>597</m:mtext>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>kg</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{7,"682"`l times  {  {1 "." "77"` ital "kg"}  over  {1`l} } ="13","597"` ital "kg"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169113389734"/>
+        <para id="id1169119380244">Next, the crew went about determining the weight of fuel that would need to be transferred to the fuel tanks. They found this to be 8,703 kilograms, as shown in the differencing operation below</para>
+        <equation id="id1169136831851">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>22</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>300</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>kg</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mtext>13</m:mtext>
+                      </m:mrow>
+                      <m:mi>,</m:mi>
+                      <m:mtext>597</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>kg</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>8,</m:mn>
+                      </m:mrow>
+                      <m:mtext>703</m:mtext>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>kg</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"22","300"` ital "kg" - "13","597"` ital "kg"=8,"703"` ital "kg"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169129542012">Finally, the volume of fuel in liters that needed to be transferred to the fuel tanks before departure for Edmundton was calculated. Once again, the erroroneous conversion factor was used as shown below</para>
+        <equation id="id1169130615013">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>8,</m:mn>
+                      <m:mtext>703</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>kg</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mi/>
+                              <m:mi>l</m:mi>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mtext>77</m:mtext>
+                              <m:mi/>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>kg</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>4,</m:mn>
+                      </m:mrow>
+                      <m:mtext>916</m:mtext>
+                      <m:mi/>
+                      <m:mi>l</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{8,"703"` ital "kg" times  {  {1`l}  over  {1 "." "77"` ital "kg"} } =4,"916"`l} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169116111367">As consequence of these steps, the ground crew transferred 4,916 liters of jet fuel into the fuel tanks. Both the air and ground crews incorrectly believed that this volume of jet fuel (4,916 liters) would be sufficient to insure a safe arrival in Edmundton. Unfortunately, the sequence of calculations contained errors and the aircraft was forced to glide to a safe landing well short of its desired target.</para>
+        <para id="id1169111371913">Let us now examine the steps of calculation that should have been performed and that would have enabled a safe landing of the aircraft in Edmundton. We first determine the correct weight of fuel that remained in the fuel tanks upon the aircraft’s arrival in Ottawa. Here, we use the proper conversion information. That is one liter of jet fuel weighs 0.803 kilograms.</para>
+        <equation id="id1169116325897">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>l</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>803</m:mtext>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>kg</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{1`l=0 "." "803"` ital "kg"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169125775026">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mi/>
+                          <m:mi>l</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mi/>
+                          <m:mi>l</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>803</m:mtext>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>kg</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mi/>
+                          <m:mi>l</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {1`l}  over  {1`l} } = {  {0 "." "803"` ital "kg"}  over  {1`l} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169113422772">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>803</m:mtext>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>kg</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mi/>
+                          <m:mi>l</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{1= {  {0 "." "803"` ital "kg"}  over  {1`l} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169112660468">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>7,</m:mn>
+                      <m:mtext>682</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>l</m:mi>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>7,</m:mn>
+                      </m:mrow>
+                      <m:mtext>682</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>l</m:mi>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mtext>803</m:mtext>
+                              <m:mi/>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>kg</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mi/>
+                              <m:mi>l</m:mi>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>6,</m:mn>
+                      </m:mrow>
+                      <m:mtext>169</m:mtext>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>kg</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{7,"682"`l times 1=7,"682"`l times  {  {0 "." "803"` ital "kg"}  over  {1`l} } =6,"169"` ital "kg"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169120483914">So only 6,169 kilograms of fuel remained in the fuel tank when the aircraft landed in Ottawa. The next step involves the determination of how much fuel needed to be transferred to the fuel tank in order to accomplish the flight to Edmundton. This is properly computed by differencing the weight of the fuel needed to accomplish the flight to Edmundton and the weight of the fuel remaining in the fuel tanks.</para>
+        <equation id="id1169116265958">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>22</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>300</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>kg</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>6,</m:mn>
+                      </m:mrow>
+                      <m:mtext>169</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>kg</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>16</m:mtext>
+                      </m:mrow>
+                      <m:mi>,</m:mi>
+                      <m:mtext>131</m:mtext>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>kg</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"22","300"` ital "kg" - 6,"169"` ital "kg"="16","131"` ital "kg"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169113597499">Thus a quantity of jet fuel weighing 16,131 needed to be transferred by the ground crew into the fuel tanks in order to insure the safe arrival of the aircraft in Edmundton. This weight of fuel (kilograms) can be converted to a volume (liters) as follows</para>
+        <equation id="id1169141961142">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>l</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>803</m:mtext>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>kg</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{1`l=0 "." "803"` ital "kg"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169124806798">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mi/>
+                          <m:mi>l</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>803</m:mtext>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>kg</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>803</m:mtext>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>kg</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>803</m:mtext>
+                          <m:mi/>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>kg</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {1`l}  over  {0 "." "803"` ital "kg"} } = {  {0 "." "803"` ital "kg"}  over  {0 "." "803"` ital "kg"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1169114709584">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>245</m:mtext>
+                          <m:mi/>
+                          <m:mi>l</m:mi>
+                        </m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>kg</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {1 "." "245"`l}  over  { ital "kg"} } =1} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169132417071">Now this conversion factor can be used to determine the number of liters of fuel that should have been transferred to the fuel tanks.</para>
+        <equation id="id1169121011160">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>16</m:mtext>
+                      <m:mi>,</m:mi>
+                      <m:mtext>131</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>kg</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>16</m:mtext>
+                      </m:mrow>
+                      <m:mi>,</m:mi>
+                      <m:mtext>131</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>kg</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mtext>245</m:mtext>
+                              <m:mi/>
+                              <m:mi>l</m:mi>
+                            </m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>kg</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>20</m:mtext>
+                      </m:mrow>
+                      <m:mi>,</m:mi>
+                      <m:mtext>088</m:mtext>
+                      <m:mi/>
+                      <m:mi>l</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"16","131"` ital "kg" times 1="16","131"` ital "kg" times  {  {1 "." "245"`l}  over  { ital "kg"} } ="20","088"`l} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id2459882">We conclude that 20,088 liters of fuel needed to be transferred to the fuel tank to successfully complete the leg of the flight from Ottawa to Edmundton. This represents approximately 4 times as many liters of fuel as was incorrectly calculated by the air and ground crew in 1983. The inadequacy in the provisioning of fuel resulted in the “Gimli Glider” having to perform an emergency landing well short of its desired arrival location. Due to some skillful piloting of the aircraft, no one onboard was seriously injured. </para>
+      </section>
+      <section id="id1169130322585">
+        <title>Summary</title>
+        <para id="id1169116008546">This chapter has attempted to illustrate the level of importance that engineering students should assign to the topic of units. In addition, a procedure that allows for the conversion of a quantity expressed in one unit to another unit has been presented. This method is quite simple in that all it requires is that one multiply the quantity expressed in the original unit to be multiplied by a fractional form that is equal to the integer 1. A process for correctly determining the proper fractional form is presented also.</para>
+        <para id="id1169110128004">Engineering students should view mastering the topic of units as an importance step in their formal education as an engineer. They should keep in mind that virtually all problems in engineering courses will involve solutions that include units. </para>
+        <para id="id1169124222970">Events surrounding the NASA Mars Climate Orbiter and the “Gimli Glider” show how seemingly small mistakes involving units and conversion factors can cause failures to complex systems.</para>
+      </section>
+      <section id="id1882675">
+        <title>Exercises</title>
+        <list id="id1169110243383" list-type="enumerated" number-style="arabic">
+          <item>Convert 1,052,832 feet to miles, meters, kilometers, and yards. Express each answer using 3 significant digits of accuracy. </item>
+          <item>How many millimeters, centimeters and meters are in 62.8 inches? Use 1 inch = 2.54 centimeters. Express each answer using 3 significant digits of accuracy. </item>
+          <item>Find the range of temperature in degrees Fahrenheit (⁰F) for the following range of temperatures in degrees centigrade/Celsius (⁰C): -15⁰C to +25⁰C .</item>
+          <item>“Normal” body temperature is said to be 98.6⁰F <emphasis effect="underline">+</emphasis> 0.6⁰F. Convert these values to Celsius and give the answer in terms of minimum and maximum values.</item>
+          <item>If a computer file is 8.2 gigabytes and the effective transfer rate is 41 megabits per second, how long does it take to transfer the file from one location to another? Assume that 1 byte = 8 bits.</item>
+          <item>Homeostasis is the condition of keeping our bodies alive by regulating its internal temperature and maintaining a stable environment. Approximately 2,000 calories per day are required to maintain the human body. It is known that 1 calorie is equivalent to 4.184 joules and that one watt is equivalent to one joule per second. Determine the number of watts that are equivalent to 2,000 calories/day. </item>
+        </list>
+      </section>
+    </section>
+  </content>
+</document>

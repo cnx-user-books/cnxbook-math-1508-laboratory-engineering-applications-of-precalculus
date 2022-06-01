@@ -1,0 +1,1567 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Linear Equations</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38533</md:content-id>
+  <md:title>Linear Equations</md:title>
+  <md:abstract>This module is part of a collection of modules intended for students enrolled in a PreCalculus (MATH 1508) course for PreEngineers at the University of Texas at El Paso.</md:abstract>
+  <md:uuid>a9d578c1-917f-48d8-9126-f85abcc7f700</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1165560165170">
+      <title>Linear Equations</title>
+      <section id="id1165560848784">
+        <title>Introduction</title>
+        <para id="id1165578710085">This module is intended to illustrate concepts related to the solution of engineering problems using straight lines. It has formed the basis of a Laboratory session associated with a MATH 1508 (Precalculus) course taught at the University of Texas at El Paso. The examples contained herein are drawn from the fields of fluid mechanics, mechanics, and electric circuits. Exercises are included at the end of this module.</para>
+      </section>
+      <section id="id1165560784920">
+        <title>Fluid Mechanics - Continuity Equation</title>
+        <para id="id1165574198628">Figure 1 illustrates a piping system that consists of two pipes. Pipe1 has a radius of <emphasis effect="italics">r</emphasis><sub>1</sub> while the radius of Pipe 2 is <emphasis effect="italics">r</emphasis><sub>2</sub>. These two pipes are joined so that water can pass from the left to the right. </para>
+        <para id="id8477669">Quite some time ago, engineers observed that the velocity of a fluid in Pipe 1 (<emphasis effect="italics">v</emphasis><sub>1</sub>) for such a system would be quite a bit lower in value than the velocity of the fluid in Pipe 2 (<emphasis effect="italics">v</emphasis><sub>2</sub>). As a consequence, engineers sought a means for determining the relationship between the velocity of fluids in the two pipes that comprise this sort of system. </para>
+        <para id="id1165560613728">Their solution to the problem of determining the relationship between the two velocities (<emphasis effect="italics">v</emphasis><sub>1</sub> and <emphasis effect="italics">v</emphasis><sub>2</sub> ) is provided by a very important principle in fluid mechanics that is called the <emphasis effect="italics">continuity equation</emphasis>. The continuity equation states</para>
+        <equation id="id1165579820791">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>A</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msub>
+                          <m:mi>A</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{A rSub { size 8{1} } `v rSub { size 8{1} } =A rSub { size 8{2} } `v rSub { size 8{2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id7826642">where <emphasis effect="italics">A</emphasis><sub>1</sub> represents the cross-sectional area of Pipe 1 and <emphasis effect="italics">A</emphasis><sub>2</sub> represents the cross-sectional area of Pipe 2. For the continuity equation to be valid it is important to recognize that the flow of water be continuous as it passes from the first to the second pipe. </para>
+        <figure id="id1165561054178"><media id="id1165561054178_media" alt="">
+            <image mime-type="image/jpg" src="../../media/Picture 7.jpg" id="id1165561054178__onlineimage" height="316" width="422"/>
+          </media>
+        <caption>Connection of two pipes of different sizes.</caption></figure>
+        <para id="id1165574777707">By rearranging terms in equation (1), we can formulate an equivalent expression that may be a bit more insightful</para>
+        <equation id="id1165585622145">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>A</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mi/>
+                          <m:msub>
+                            <m:mi>v</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mi>A</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>A</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mi/>
+                          <m:msub>
+                            <m:mi>v</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mi>A</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  {A rSub { size 8{1} } `v rSub { size 8{1} } }  over  {A rSub { size 8{2} } } } = {  {A rSub { size 8{2} } `v rSub { size 8{2} } }  over  {A rSub { size 8{2} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165559969549">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfenced open="(" close=")">
+                        <m:mfrac>
+                          <m:msub>
+                            <m:mi>A</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:msub>
+                            <m:mi>A</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mfrac>
+                      </m:mfenced>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ left ( {  {A rSub { size 8{1} } }  over  {A rSub { size 8{2} } } }  right )`v rSub { size 8{1} } =v rSub { size 8{2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165560606583">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfenced open="(" close=")">
+                          <m:mfrac>
+                            <m:msub>
+                              <m:mi>A</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>1</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:msub>
+                              <m:mi>A</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>2</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                          </m:mfrac>
+                        </m:mfenced>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{2} } = left ( {  {A rSub { size 8{1} } }  over  {A rSub { size 8{2} } } }  right )`v rSub { size 8{1} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165561783164">Thus we can conclude that the ratio of the area of the two pipes provides a multiplicative constant relating the velocities of the fluid in the two pipes.</para>
+        <para id="id1165561017056">We recall that the equation for a straight line takes the form</para>
+        <equation id="id1165559912225">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>y</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>mx</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mi>b</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{y= ital "mx"+b} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165560066136">Equation (4) indicates that there is a linear (straight line) relationship between the velocity (<emphasis>v</emphasis><sub>2</sub>) of the fluid in the second pipe and the velocity (<emphasis>v</emphasis><sub>1</sub>) of the fluid in the first pipe. If we establish <emphasis effect="italics">v</emphasis><sub>1</sub> as the independent variable, then the dependent variable <emphasis effect="italics">v</emphasis><sub>2</sub> is defined as a linear function of <emphasis effect="italics">v</emphasis><sub>1</sub>. The slope (<emphasis effect="italics">m</emphasis>) of the line is the ratio of the cross-sectional areas 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="(" close=")"><m:mfrac><m:msub><m:mi>A</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:msub><m:mi>A</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mfrac></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left ( {  {A rSub { size 8{2} } }  over  {A rSub { size 8{1} } } }  right )} {}</m:annotation></m:semantics></m:math>, while the y-intercept (<emphasis>b</emphasis>) is zero. </para>
+        <para id="id1165571694836">Let us now apply our knowledge of the continuity equation to a problem.</para>
+        <para id="id1165560101750">Question: Suppose that the radius of Pipe 1 is 4.00 cm and the radius of Pipe 2 is 2.50 cm. The velocity of the water in Pipe 1 is measured to be 3.00 m/sec. Find the velocity of the water in Pipe 2.</para>
+        <para id="id1165559872151">Solution: We begin our solution by establishing the cross-sectional areas of each pipe. Because the cross-sectional profile of each pipe is a circle, we may compute the two cross-sectional areas using the formula for the area of a circle:</para>
+        <equation id="id1165575714470">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>A</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi>π</m:mi>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>r</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:msup>
+                                <m:mn>1</m:mn>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi>π</m:mi>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>4</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>cm</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:msup>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mi/>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{A rSub { size 8{1} } =π`r rSub { size 8{1}   rSup { size 8{2} } } =π` \( 4 "." "00"` ital "cm" \)  rSup { size 8{2} } `} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165560725031">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>A</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi>π</m:mi>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>r</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:msup>
+                                <m:mn>2</m:mn>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi>π</m:mi>
+                      </m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>50</m:mtext>
+                      <m:mi/>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>cm</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:msup>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{A rSub { size 8{2} } =π`r rSub { size 8{2}   rSup { size 8{2} } } =π \( 2 "." "50"` ital "cm" \)  rSup { size 8{2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165575430743">We can apply equation (4) to find the velocity of the fluid in Pipe 2. The steps are shown below</para>
+        <equation id="id1165560802205">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfenced open="(" close=")">
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mi>π</m:mi>
+                              <m:mi/>
+                              <m:mo stretchy="false">(</m:mo>
+                              <m:mn>4</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mtext>00</m:mtext>
+                              <m:mi/>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>cm</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                              <m:msup>
+                                <m:mo stretchy="false">)</m:mo>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mi>π</m:mi>
+                              <m:mi/>
+                              <m:mo stretchy="false">(</m:mo>
+                              <m:mn>2</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mtext>50</m:mtext>
+                              <m:mi/>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>cm</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                              <m:msup>
+                                <m:mo stretchy="false">)</m:mo>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mfenced>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{2} } = left ( {  {π` \( 4 "." "00"` ital "cm" \)  rSup { size 8{2} } }  over  {π` \( 2 "." "50"` ital "cm" \)  rSup { size 8{2} } } }  right )` \( v rSub { size 8{1} }  \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165561801905">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mtext>16</m:mtext>
+                            <m:mtext>.</m:mtext>
+                            <m:mtext>00</m:mtext>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mn>6</m:mn>
+                            <m:mtext>.</m:mtext>
+                            <m:mtext>25</m:mtext>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{2} } = {  {"16" "." "00"}  over  {6 "." "25"} } ` \( v rSub { size 8{1} }  \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165560511710">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>56</m:mtext>
+                      <m:mi/>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{2} } =2 "." "56"`v rSub { size 8{1} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        
+        <equation id="id1165561168603">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>56</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi>s</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{2} } =2 "." "56" times 3 "." "00"`m/s} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165581116904">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>7</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>68</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi>s</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{2} } =7 "." "68"`m/s} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165576651979">If we compare our result for the velocity of the fluid in Pipe 2 with the velocity of fluid in Pipe 1, we immediately see that the velocity of the fluid increases as it moves from a pipe with a larger cross-sectional area to another pipe with a smaller cross-sectional area. This result is intuitive with what we may have observed through personal experience. </para>
+        <para id="id1165577046383">Question: Make a plot that relates the dependent variable (<emphasis>v</emphasis><sub>2</sub>) and the independent variable (<emphasis>v</emphasis><sub>1</sub>). </para>
+        <para id="id1165567962406">Referring to equation (10), we note that a linear relationship exists between <emphasis>v</emphasis><sub>2</sub> and <emphasis>v</emphasis><sub>1</sub>. For the straight line, the slope is 2.56 and the y-intercept is 0. We plot the line below</para>
+        <figure id="id1165581076918"><media id="id1165581076918_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics1-0d3b.jpg" id="id1165581076918__onlineimage" height="450" width="600"/>
+          </media>
+        <caption>Graph of the linear relationship between velocities.</caption></figure>
+        <para id="id1165560794289">It is important to note that each axis is labeled and includes the units associated with each variable.</para>
+      </section>
+      <section id="id1165569686666">
+        <title>Mechanics – Velocity and Acceleration</title>
+        <para id="id1165569456644">Let us consider a car that is traveling at an unknown <emphasis effect="italics">initial velocity</emphasis> (<emphasis effect="italics">v</emphasis><sub>0</sub>). The driver of the car decides to enter the on-ramp of a freeway. The driver knows that he will need to increase his velocity in order blend in with the other traffic on the freeway. While situated in the on-ramp, the driver of the car applies pressure to the accelerator of the car. Let us consider that this action occurs at a specific instant of time (<emphasis effect="italics">t</emphasis><sub>0</sub>). By applying constant pressure on the accelerator, the driver causes the car to accelerate at a <emphasis effect="italics">constant acceleration</emphasis> (<emphasis effect="italics">a</emphasis>). </para>
+        <para id="id1165579295682">This constant acceleration causes the velocity of the car to increase. During the time interval that the driver applies constant pressure to the accelerator, the <emphasis effect="italics">velocity</emphasis> of the car can be expressed as a function of time </para>
+        <equation id="id1165561027902">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>v</m:mi>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>t</m:mi>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi>a</m:mi>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>t</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v \( t \) =a`t+v rSub { size 8{0} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165561136962">Inspection of this equation reveals that the velocity is a linear function of time. Here the dependent variable would be velocity and the independent variable would be time. The slope of the straight line that is associated with the equation would equal to the acceleration (<emphasis>a</emphasis>). The y-intercept of the equation would be the initial velocity (<emphasis>v</emphasis><sub>0</sub>).</para>
+        <para id="id1165576500252">Let us apply what we have learned about the relationship between velocity and acceleration coupled with our knowledge of linear equations to work a problem.</para>
+        <para id="id1165567050242">Question: At an instant of time (<emphasis effect="italics">t</emphasis><sub>1</sub> = 1.00 s) after depressing the accerlerator, the driver observes that the car is traveling at a velocity (<emphasis effect="italics">v</emphasis><sub>1</sub> = 17.00 m/s). At an instant of time one second later (that is at <emphasis effect="italics">t</emphasis><sub>2 </sub>= 2.00 s), the driver observes that the velocity of the car has increased to a value (<emphasis effect="italics">v</emphasis><sub>2</sub> = 22.0 m/s). Determine the initial velocity of the vehicle and the value for the constant acceleration (<emphasis effect="italics">a</emphasis>). </para>
+        <para id="id1165580695540">Solution: We know the values of the velocity at two instants of time, 1.00 seconds and 2.00 seconds. Because the acceleration is constant, we also know that the relationship between velocity and time is linear. </para>
+        <para id="id1165576151366">The slope of the line that relates velocity to time is equal to the acceleration (<emphasis effect="italics">a</emphasis>) and the y-intercept corresponds to the intial velocity (<emphasis effect="italics">v</emphasis><sub>0</sub>).</para>
+        <para id="id1165569255941">We begin by stating the two points on the line which are known. They are (<emphasis effect="italics">t</emphasis><sub>1</sub>, <emphasis effect="italics">v</emphasis><sub>1</sub>) and (<emphasis effect="italics">t</emphasis><sub>2</sub>, <emphasis effect="italics">v</emphasis><sub>2</sub>). The numerical values of these points are (1.00 s, 17.00 m/s) and (2.00 s, 22.00 m/s) respectively. </para>
+        <para id="id1165579840159">Our knowledge of straight lines tells us that we can calculate the slope through a differencing operation</para>
+        <equation id="id1165574541326">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>m</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>v</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:msub>
+                            <m:mi>v</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>t</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:msub>
+                            <m:mi>t</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{m= {  {v rSub { size 8{2} }  - v rSub { size 8{1} } }  over  {t rSub { size 8{2} }  - t rSub { size 8{1} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165560085974">Next we enter the numerical values of the problem</para>
+        <equation id="id1165560867481">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>m</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mtext>22</m:mtext>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>00</m:mtext>
+                          <m:mi/>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mi>m</m:mi>
+                              <m:mo stretchy="false">/</m:mo>
+                              <m:mi>s</m:mi>
+                            </m:mrow>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mtext>17</m:mtext>
+                          </m:mrow>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>00</m:mtext>
+                          <m:mi/>
+                          <m:mrow>
+                            <m:mi>m</m:mi>
+                            <m:mo stretchy="false">/</m:mo>
+                            <m:mi>s</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>00</m:mtext>
+                          <m:mi/>
+                          <m:mrow>
+                            <m:mi>s</m:mi>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>00</m:mtext>
+                          <m:mi/>
+                          <m:mi>s</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{m= {  {"22" "." "00"`m/s - "17" "." "00"`m/s}  over  {2 "." "00"`s - 1 "." "00"`s} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id7899113">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>5</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:msup>
+                          <m:mi>s</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{m=5 "." "00"`m/s rSup { size 8{2} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165568868998">We can therefore conclude that the acceleration is 5.00 m/s<sup>2</sup>. We can incorporate this value into the linear equation that relates velocity to time</para>
+        <equation id="id1165576841048">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>v</m:mi>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>t</m:mi>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mn>5</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:msup>
+                          <m:mi>s</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>t</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v \( t \) = \( 5 "." "00"`m/s rSup { size 8{2} }  \) `t+v rSub { size 8{0} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165561009284">Either of the data points can be used to solve for the intital velocity. Let us substitute the values associated with the first data point into the equation. We obtain</para>
+        <equation id="id1165561140954">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>17</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>m</m:mi>
+                          <m:mo stretchy="false">/</m:mo>
+                          <m:mi>s</m:mi>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mn>5</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:msup>
+                          <m:mi>s</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mi>s</m:mi>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"17" "." "00"`m/s= \( 5 "." "00"`m/s rSup { size 8{2} }  \)  times  \( 1 "." "00"`s \) +v rSub { size 8{0} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165561135396">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>17</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>m</m:mi>
+                          <m:mo stretchy="false">/</m:mo>
+                          <m:mi>s</m:mi>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>5</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>m</m:mi>
+                          <m:mo stretchy="false">/</m:mo>
+                          <m:mi>s</m:mi>
+                        </m:mrow>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"17" "." "00"`m/s=5 "." "00"`m/s+v rSub { size 8{0} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165578766748">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>12</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi>s</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{0} } ="12" "." "00"`m/s} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        
+        <para id="id1165585576082">So we conclude that the initial velocity of the vehicle is 12.00 m/s and the constant acceleration of the car while it is situated on the on-ramp is 5.00 m/s<sup>2</sup>.</para>
+      </section>
+      <section id="id1165587848187">
+        <title>Electric Circuits – Variable Source Voltage</title>
+        <para id="id1165560591336">Suppose that we are presented with an electric circuit that contains a fixed voltage source (<emphasis>v</emphasis>), a variable source voltage (<emphasis>v</emphasis><sub>s</sub>) and a resistor (<emphasis>R</emphasis>). This situation is shown in Figure 3. In this figure, the variable source voltage is indicated by the circle and represented by the variable <emphasis effect="italics">v</emphasis><sub>s</sub>. Its units are Volts. The current that flows through the circuit is indicated by the variable <emphasis effect="italics">i</emphasis> and flows in the direction indicated by the arrow. The current has the units Amps. The fixed voltage source is represented by the constant <emphasis effect="italics">v</emphasis>.</para>
+        <figure id="id1165561789827"><media id="id1165561789827_media" alt="">
+            <image mime-type="image/jpg" src="../../media/Picture 3.jpg" id="id1165561789827__onlineimage" height="251" width="335"/>
+          </media>
+        <caption>Electrical circuit with a variable source voltage.</caption></figure>
+        <para id="id1165590148837">One of the most important laws of Physics that govern the behavior of electric circuits is Kirchoff’s Voltage Law. This law states the algebraic sum of the voltage drops experienced as one passes through a complete path through a circuit is equal to zero. </para>
+        <para id="id8242199">Application of Kirchoff’s Voltage Law to this circuit yields the equation</para>
+        <equation id="id1165579182430">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:msub>
+                            <m:mi>v</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi>s</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mi>R</m:mi>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>i</m:mi>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mi>v</m:mi>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ - v rSub { size 8{s} } +R`i+v=0} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165560100764">The terms of this equation may be arranged to produce the following equation</para>
+        <equation id="id1165573205990">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>s</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi>R</m:mi>
+                      </m:mrow>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mi>v</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{s} } =R`i+v} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165561806288">Let us consider the source voltage (<emphasis>v</emphasis><sub>s</sub>) as the dependent variable and the current (<emphasis>i</emphasis>) as the independent variable. Examination of the equation reveals that there is a linear relationship between <emphasis>v</emphasis><sub>s</sub> and <emphasis>i</emphasis>. For this linear equation, the value of the resistor (<emphasis>R</emphasis>) is the slope and the fixed voltage (<emphasis>v</emphasis>) represents the <emphasis>y</emphasis>-intercept. </para>
+        <para id="id1165575286089">Let us apply our knowledge of linear equations to solve a problem associated with this circuit.</para>
+        <para id="id1165578419032">Question: It is observed through measurement that the when the variable source voltage is 6.00 Volts, the current takes on the value of 1.00 Amp. When the variable source voltage is raised to 12.00 Volts, the current rises to a value of 1.50 Amps. Find the values for the resistance and the fixed voltage.</para>
+        <para id="id1165561141708">Solution: We can draw some insight into the solution of this problem by applying our knowledge of straight lines.</para>
+        <para id="id1165587443848">Let us begin by finding the value of the slope or equivalently the value of the resistance. We have two ordered points to consider (1.00 A, 6.00 V) and (1.50 A, 12.00 V). The slope of the line that connects these two points is </para>
+        <equation id="id1165582899883">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>m</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>v</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:msub>
+                            <m:mi>v</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>i</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:msub>
+                            <m:mi>i</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{m= {  {v rSub { size 8{2} }  - v rSub { size 8{1} } }  over  {i rSub { size 8{2} }  - i rSub { size 8{1} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165560970780">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>m</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mtext>12</m:mtext>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>00</m:mtext>
+                          <m:mi/>
+                          <m:mrow>
+                            <m:mi>V</m:mi>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mn>6</m:mn>
+                          </m:mrow>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>00</m:mtext>
+                          <m:mi/>
+                          <m:mi>V</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>50</m:mtext>
+                          <m:mi/>
+                          <m:mrow>
+                            <m:mi>A</m:mi>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>00</m:mtext>
+                          <m:mi/>
+                          <m:mi>A</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{m= {  {"12" "." "00"`V - 6 "." "00"`V}  over  {1 "." "50"`A - 1 "." "00"`A} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165575298771">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>12</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>0</m:mn>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mi>V</m:mi>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi>A</m:mi>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{m="12" "." 0` \( V/A \) } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165560758486">We recognize that the ratio (volts/amps) is equivalent to the unit (Ω). We make the substitution to yield</para>
+        <equation id="id1165560694486">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>12</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>0</m:mn>
+                      <m:mi/>
+                      <m:mo stretchy="false">Ω</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{m="12" "." 0` %OMEGA } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165561773253">Earlier we stated that the slope of the line would be equal to the value of the resistance, so we have the following result</para>
+        <equation id="id1165561165123">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>R</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>12</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>0</m:mn>
+                      <m:mi/>
+                      <m:mo stretchy="false">Ω</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{R="12" "." 0` %OMEGA } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165560735449">The next step in the solution is to solve for the value of the fixed voltage. Incorporation of the slope that was just found into the equation of the line yields the equation</para>
+        <equation id="id1165576326750">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>s</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>12</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mn>0</m:mn>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mi>V</m:mi>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi>A</m:mi>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mi>i</m:mi>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mi/>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mi>v</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{s} } ="12" "." 0` \( V/A \) ` times i`+v} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165561780952">Let us substitute the values 1.00 A and 6.00 V into this equation</para>
+        <equation id="id1165585405379">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>6</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>V</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>12</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mi>V</m:mi>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mi>A</m:mi>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mi>v</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{6 "." "00"`V="12" "." "00"` \( V/A \)  times 1 "." "00"`A+v} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165581003478">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>6</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>V</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>12</m:mtext>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mrow>
+                        <m:mi>V</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mi>v</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{6 "." "00"`V="12" "." "00"`V+v} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <equation id="id1165560989704">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>v</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mn>6</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>00</m:mtext>
+                      <m:mi/>
+                      <m:mi>V</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{v= - 6 "." "00"`V} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1165575591805">So we conclude that the value of the fixed voltage is -6.00 V and that the value for the resistance is 12.0 Ω.</para>
+      </section>
+      <section id="id1165579541795">
+        <title>Summary</title>
+        <para id="id1165561017984">Knowling how to apply the knowledge of linear equations and straight lines is critical for students in engineering. In this module, we have seen how knowledge of linear equations can be used to solve engineering problems. Applications from the fields of fluid mechanics, the mechanics of motion and electric circuits have been presented. Other applications in engineering abound. </para>
+      </section>
+      <section id="id1165560836694">
+        <title>Exercises</title>
+        <list id="id1165561155323" list-type="enumerated" number-style="arabic">
+          <item>Water flows through a piping system that consists of two pipes that are joined together. The cross-sectional area of the first pipe is 10.00 cm<sup>2</sup>, while that of the second pipe is 1.25 cm<sup>2</sup>. If the velocity of the water in the first pipe is known to be 5 cm/s, then what is the velocity of the water in the second pipe. Assume that the continuity equation holds.</item>
+          <item>A vehicle is traveling through a neighborhood at an initial velocity (<emphasis effect="italics">v</emphasis><sub>0</sub>). The driver of the vehicle notices a child who runs out into the street in front of her car. She applies her brakes to reduce the speed of her car and eventually stops. The velocity of her car obeys the linear relationship 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>v</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:mrow><m:msub><m:mi>v</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mi>a</m:mi></m:mrow></m:mrow><m:mi/><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{v \( t \) =v rSub { size 8{0} } +a`t} {}</m:annotation></m:semantics></m:math> Determine the initial velocity and the acceleration (<emphasis effect="italics">a</emphasis>) if the velocity is known to be 30 m/s at <emphasis effect="italics">t</emphasis> = 0.50 s and the velocity is 3 m/s at the time <emphasis effect="italics">t</emphasis> = 1.25 s. Also calculate the total time that it will take the vehicle to stop after the driver applies her brakes.</item>
+          <item>Consider the circuit depicted in Figure 3. The following two facts are known. When the variable voltage is set to 9 Volts, the current is 100 mA. When the variable voltage is sent to 18 Volts, the current is 1.20 A. What are the values for R and <emphasis effect="italics">v</emphasis>?</item>
+        </list>
+      </section>
+    </section>
+  </content>
+</document>
