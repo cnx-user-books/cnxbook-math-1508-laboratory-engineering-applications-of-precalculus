@@ -423,7 +423,7 @@
           </m:math>
         </equation>
         <para id="id1168923006992">We may obtain the fraction of the job that can be completed in an interval of time equal to t by adding the fraction associated with the Subcontractor A to that of Subcontractor B, which is 
-<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:mi>t</m:mi><m:mtext>10</m:mtext></m:mfrac><m:mrow><m:mi/><m:mo stretchy="false">+</m:mo><m:mfrac><m:mi>t</m:mi><m:mtext>15</m:mtext></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {t}  over  {"10"} } `+ {  {t}  over  {"15"} } } {}</m:annotation></m:semantics></m:math><m:math><m:semantics><m:mrow/><m:annotation encoding="StarMath 5.0">{}</m:annotation></m:semantics></m:math></para>
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:mi>t</m:mi><m:mtext>10</m:mtext></m:mfrac><m:mrow><m:mi/><m:mo stretchy="false">+</m:mo><m:mfrac><m:mi>t</m:mi><m:mtext>15</m:mtext></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {t}  over  {"10"} } `+ {  {t}  over  {"15"} } } {}</m:annotation></m:semantics></m:math></para>
         <para id="id1168928825029">If we set this sum to one, we obtain a rational equation that can be solved to produce the amount of time that it will take both subcontractors working together to complete the entire job </para>
         <equation id="id1168935318000">
           <m:math>
